@@ -1,0 +1,286 @@
+body {
+  background-color: white;
+  margin: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 19px;
+  font-family: Futura,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #3c4049;
+  line-height: 1.6;
+}
+
+body ul li {
+  list-style-type: none;
+}
+
+header #accessibilityNav {
+  position: relative;
+  width: 100%;
+}
+
+header #accessibilityNav #container {
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding-left: 25%;
+}
+
+header #accessibilityNav #container .subNavLayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+header #accessibilityNav #container .subNavLayout .background-change {
+  width: auto;
+}
+
+header #accessibilityNav #container .subNavLayout h3 {
+  margin: 0%;
+  margin-bottom: 2%;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+header #accessibilityNav #container button {
+  background-color: transparent;
+  border: none;
+}
+
+header #accessibilityNav #container button :hover {
+  cursor: pointer;
+}
+
+header #accessibilityNav #container .switch {
+  position: relative;
+  display: inline-block;
+  width: 2.5em;
+  height: 1.15em;
+  margin: 2%;
+  margin-left: 10%;
+  /* Hide default HTML checkbox */
+  /* The slider */
+  /* Rounded sliders */
+}
+
+header #accessibilityNav #container .switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+header #accessibilityNav #container .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header #accessibilityNav #container .switch .slider:before {
+  position: absolute;
+  content: "";
+  width: 0.9em;
+  height: 0.8em;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header #accessibilityNav #container .switch input:checked + .slider {
+  background-color: #2196F3;
+}
+
+header #accessibilityNav #container .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+header #accessibilityNav #container .switch input:checked + .slider:before {
+  -webkit-transform: translateX(1em);
+  transform: translateX(1em);
+}
+
+header #accessibilityNav #container .switch .slider.round {
+  border-radius: 34px;
+}
+
+header #accessibilityNav #container .switch .slider.round:before {
+  border-radius: 50%;
+}
+
+header .searchBar {
+  border-bottom: 1px solid #8b8888;
+  width: auto;
+  margin-top: 5%;
+}
+
+header .searchBar #searchBar {
+  width: 70%;
+  height: 45px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: none;
+}
+
+#logo {
+  height: 50px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  max-width: 90%;
+  padding: 2%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid header {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+}
+
+.grid #logo {
+  display: block;
+  padding: 15px;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+}
+
+.grid #menu {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.grid #menu #navMenu {
+  font-size: 16px;
+}
+
+.grid #menu #navMenu a {
+  border-top: 1px solid #d7d8d2;
+  display: block;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #3c4049;
+}
+
+.grid #menu #socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid #menu #socialMedia a {
+  border-top: 1px solid #d7d8d2;
+  padding: 12px 0;
+  padding-right: 10px;
+}
+
+.grid #menu #socialMedia a img {
+  height: 23px;
+}
+
+.grid #mainData {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.grid footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+.grid .data {
+  margin: 2%;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav .miniMenu {
+  padding: 5%;
+}
+
+footer nav .miniMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer nav .miniMenu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer nav .miniMenu form p, footer nav .miniMenu form label {
+  margin-bottom: 5%;
+}
+
+footer nav .miniMenu form button {
+  background-color: #c13121;
+  color: #ffffff;
+  line-height: 1.9;
+  position: relative;
+  padding: 9px 15px;
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+footer nav .miniMenu form input {
+  font-family: Futura,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #3c4049;
+  line-height: 1.6;
+  border-radius: 0;
+  max-width: 100%;
+  background-color: #fff;
+  border: 0;
+  padding: 8px;
+}
+
+footer small {
+  text-align: center !important;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=catalog.css.map */
