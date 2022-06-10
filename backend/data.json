@@ -1,0 +1,275 @@
+{
+    "TopSellers":[
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-7_8bbb7def-e8a8-489c-8872-636058b39a51_360x.jpg?v=1569467714",
+        "name": "Renew Bath Salt",
+        "price": 18
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-6_e9ace195-a65e-45fe-8f22-31a365342c09_360x.jpg?v=1569467919",
+        "name": "Therapy Hair Oil",
+        "price": 20
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-10_7bd42240-c9bb-436d-a925-c39951d7a828_360x.jpg?v=1569467781",
+        "name": "Sea Mist Spritzer",
+        "price": 18
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-21_489cdded-baa3-43c0-8d6a-43a680248940_360x.jpg?v=1569467716",
+        "name": "Repair Healing Balm",
+        "price": 18
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-36_63aea351-185f-4970-8d50-a15623a24fca_360x.jpg?v=1569467700",
+        "name": "Purify Facial Serum",
+        "price": 36
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-31_302ebd91-6e8c-41d0-a234-f5f1c1964df3_360x.jpg?v=1569467624",
+        "name": "Pink Clay Facial Mask",
+        "price": 30
+        }
+    ],
+    "FigYarrow":[
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/e1cbe98ee56471d4216741f90554799d11edafcd_360x.jpg?v=1569468037",
+        "name": "Yarrow Buttercream",
+        "price": 48
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/Parc-8_07d41d5c-ee39-46c6-804c-8942375228f9_360x.jpg?v=1569467960",
+        "name": "Underarm Lotion",
+        "price": 22
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/6db760e693a76ddbdd10a6f5d5d699297e975ae2_360x.jpg?v=1569467941",
+        "name": "Tooth Powder",
+        "price": 16
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-25_ebdf7d5c-d0f6-476f-ba38-1ae3fbb892cc_360x.jpg?v=1569467772",
+        "name": "Rose + Vanilla Lip Blush",
+        "price": 12
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/Parc-5_7660deb2-297c-41f6-ba4b-ff6381ad886f_360x.jpg?v=1569467626",
+        "name": "Pink Love Bath Salts",
+        "price": 32
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/c45fb07313fd3580b5b0f4e9a3d708bd68f974fd_360x.jpg?v=1569467522",
+        "name": "Oral Hygiene Rinse",
+        "price": 26
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-13_82c25457-1858-48fb-925f-748b8a2416ad_360x.jpg?v=1569467497",
+        "name": "Nail + Cutical Salve",
+        "price": 22
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/831972d4016d8da8d9fc926f7f872404c421248c_360x.jpg?v=1569467168",
+        "name": "Healing Salve",
+        "price": 20
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/Parc-4_adc2508b-6071-4d83-9805-035b98a7adaf_360x.jpg?v=1569467075",
+        "name": "Floral Milk Bath Salts",
+        "price": 32
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/558a89d6c26b8d0546a7df4063309ebef14b8de7_360x.jpg?v=1569467046",
+        "name": "Facial Scrub",
+        "price": 22
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/558a89d6c26b8d0546a7df4063309ebef14b8de7_360x.jpg?v=1569467046",
+        "name": "Complexion Waters-Rose/Sandalwood/Neroli",
+        "price": 34
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/52ccc71017f63ebadd6a9f09f65b15052462be75_360x.jpg?v=1569466911",
+        "name": "Clay Mask",
+        "price": 16
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/Parc-9_9b1c7a1d-c4e5-48b9-a49e-e5bd1f37a004_360x.jpg?v=1569466867",
+        "name": "Cardamom + Coffee Body Scrub",
+        "price": 46
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/aa5522bb42e92af6b826d87c655d6b1c0e60b010_360x.jpg?v=1569466796",
+        "name": "Basil + Cardamom Lip Balm",
+        "price": 12
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/14e54a6c072f007af7434e0d67268b4f1e0f0ef7_360x.jpg?v=1569466784",
+        "name": "Balm + Salve Kit",
+        "price": 38
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/Parc-6_3ffeb760-cb86-421a-88c0-0e9bd163425a_360x.jpg?v=1569466774",
+        "name": "Atmosphere Mists-Lemongrass + Geranium",
+        "price": 24
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/b5a545a9a030cd1c2be04086842e135cb0af460d_360x.jpg?v=1569466751",
+        "name": "Alpine Pumice Foot Treatment",
+        "price": 28
+        }
+    ],
+    "GoestPerfumes":[
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-11_5de8f9c4-3562-40da-8cfc-fe543a466e23_360x.jpg?v=1569467713",
+        "name": "Realism Roller Perfume",
+        "price": 48
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-12_973ebd63-b9dd-47df-abfd-5aec639ee830_360x.jpg?v=1569467306",
+        "name": "Lartigue Roller Perfume",
+        "price": 48
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-7_c064b01c-d23b-43c3-b9d1-bd444b565367_360x.jpg?v=1569467305",
+        "name": "Lartigue Atomizer Perfume",
+        "price": 140
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-10_af01d70d-acbd-460f-8382-6474777f6777_360x.jpg?v=1569467148",
+        "name": "Grand Tour Roller",
+        "price": 48
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-13_7962020f-b753-4727-9004-bc67c71797c4_360x.jpg?v=1569466977",
+        "name": "Dauphine Roller Perfume",
+        "price": 48
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-8_0b0ef365-8084-450d-af44-7af6f5888035_360x.jpg?v=1569466976",
+        "name": "Dauphine Atomizer Perfume",
+        "price": 140
+        }
+    ],
+    "HerbivoreBotanical":[
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-7_8bbb7def-e8a8-489c-8872-636058b39a51_360x.jpg?v=1569467714",
+        "name": "Renew Bath Salt",
+        "price": 18
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-6_e9ace195-a65e-45fe-8f22-31a365342c09_360x.jpg?v=1569467919",
+        "name": "Therapy Hair Oil",
+        "price": 20
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-10_7bd42240-c9bb-436d-a925-c39951d7a828_360x.jpg?v=1569467781",
+        "name": "Sea Mist Spritzer",
+        "price": 18
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-21_489cdded-baa3-43c0-8d6a-43a680248940_360x.jpg?v=1569467716",
+        "name": "Repair Healing Balm",
+        "price": 18
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-36_63aea351-185f-4970-8d50-a15623a24fca_360x.jpg?v=1569467700",
+        "name": "Purify Facial Serum",
+        "price": 36
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-31_302ebd91-6e8c-41d0-a234-f5f1c1964df3_360x.jpg?v=1569467624",
+        "name": "Pink Clay Facial Mask",
+        "price": 22
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/a24e1e897ee0586300f9bf0fd4f8414b06028ec8_360x.jpg?v=1569467623",
+        "name": "Pink Clay Cleansing Bar Soap",
+        "price": 10
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-11_467e478b-0510-4392-9f8e-6e72cf7a78f5_360x.jpg?v=1569467523",
+        "name": "Orchid Youth Perserving Facial Oil",
+        "price": 80
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/0a4df3a714315162306fdadf4b5980273e32be48_360x.jpg?v=1569467512",
+        "name": "Nourish Facial Serum",
+        "price": 36
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/d06895bbdb2e1b1ac3b8b98812e17f2ebdae68dd_360x.jpg?v=1569467406",
+        "name": "Luminous Body Oil",
+        "price": 32
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/cb55b76c711531a877cab266de3011d9c3c3e3e8_360x.jpg?v=1569467384",
+        "name": "Lip Butter - Rose",
+        "price": 12
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-5_f1a9bf90-99c1-412e-93e5-c5e5c3185d80_360x.jpg?v=1569467383",
+        "name": "Lip Butter - Mint",
+        "price": 12
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/69a9db6923b44169d5c477033ef86af31ed0eae0_360x.jpg?v=1569467382",
+        "name": "Lip Butter - Blood Orange",
+        "price": 12
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-5_41cae91d-3f12-49ef-8390-4a51fa1cadd3_360x.jpg?v=1569467230",
+        "name": "Jasmine Body Oil",
+        "price": 44
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-6_5b126454-e7d2-4f2f-9643-997dc427d67a_360x.jpg?v=1569467202",
+        "name": "Hydrate Toner",
+        "price": 24
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-8_415d14bc-72b6-4a2e-8cdd-3eff2b9803a1_360x.jpg?v=1569466989",
+        "name": "Detox Bath Salts",
+        "price": 18
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-32_0e929963-3b58-424a-9d28-6ebefe530247_360x.jpg?v=1569466912",
+        "name": "Coconut Bath Soak",
+        "price": 28
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-3_28e65d68-0d3b-49a4-a8a9-f4ae06370ba6_360x.jpg?v=1569466898",
+        "name": "Citrine Body Oil",
+        "price": 48
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-9_d96e7d77-3c33-49b4-9020-fafcb05eb41a_360x.jpg?v=1569466847",
+        "name": "Calm Bath Salts",
+        "price": 18
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/eccd4b87e44709b7118f6abb4c349e7894fea714_360x.jpg?v=1569466834",
+        "name": "Brighten Facial Mask",
+        "price": 34
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/308f98652b96df51df5af0c1c6c7389ee78a19b2_360x.jpg?v=1569466812",
+        "name": "Blue Clay Cleansing Bar Soap",
+        "price": 10
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/ab21479758e6c36cf8e0cc8691ab1cc9fa450cbe_360x.jpg?v=1569466786",
+        "name": "Bamboo Charcoal Cleansing Bar Soap",
+        "price": 10
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/parc-4_3ddd99d2-2ab1-416e-9ee5-892b7ca61e34_360x.jpg?v=1569466783",
+        "name": "Balance Toner",
+        "price": 24
+        },
+        {
+        "img": "https://cdn.shopify.com/s/files/1/0107/9990/6838/products/d9f0ba1ad20cbeca77e8f4b29651623e9a3ce248_360x.jpg?v=1569466749",
+        "name": "Activate Facial Mask",
+        "price": 34
+        }
+    ]
+}
