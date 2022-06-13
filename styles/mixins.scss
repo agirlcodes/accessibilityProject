@@ -109,8 +109,13 @@
   }
 }
 @mixin bodyLayout{
+  @font-face {
+    font-family: Gallaudet;
+    src: url("../font/GallaudetRegular-qZe1.ttf");
+  }
   background-color: white;
   // margin: 1%;
+  font-family: Gallaudet;
   margin-left: 10%;
   margin-right: 10%;
   ul li{
