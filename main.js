@@ -13,24 +13,24 @@ $(document).ready(function(){
     // Background-color and font-color change
     $(function() {  
       $('#highRatio').click(function(){
-          $('.grid').css('background-color', 'white');
+          $('body').css('background-color', 'white');
           $('.data').css('color', 'black');
         });
       });
     $(function() {  
       $('#mediumRatio').click(function(){
-          $('.grid').css('background-color', '#73A1B9');
+          $('body').css('background-color', '#73A1B9');
           $('.data').css('color', '#222A2E');
         });
       });
     $(function() {  
       $('#lowRatio').click(function(){
-          $('.grid').css('background-color', '#045884');
+          $('body').css('background-color', '#045884');
           $('.data').css('color', '#E5C54A');
         });
       });
 
-
+// Select sections to increase size and decrease
   //DATA
   $.getJSON('../backend/data.json', function(data){
     let TopSellers = data.TopSellers;
