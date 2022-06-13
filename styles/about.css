@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  font-family: gallaudet;
+  font-family: Gallaudet;
   margin-left: 10%;
   font-size: 19px;
   font-family: Futura,sans-serif;
@@ -8,6 +8,13 @@ body {
   font-weight: 400;
   color: #3c4049;
   line-height: 1.6;
+}
+
+@font-face {
+  body {
+    font-family: Gallaudet;
+    src: url("../font/GallaudetRegular-qZe1.ttf");
+  }
 }
 
 body ul li {
@@ -150,7 +157,6 @@ header .searchBar #searchBar {
       grid-template-columns: 20% 60% 20%;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
-  max-width: 90%;
   padding: 2%;
   margin: 0%;
   -webkit-box-sizing: border-box;
@@ -210,9 +216,11 @@ header .searchBar #searchBar {
   height: 23px;
 }
 
-.grid #mainData {
+.grid #layout {
+  width: 90%;
   -ms-grid-column: 2;
-  grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/span 3;
   -ms-grid-row: 3;
   grid-row: 3;
 }
