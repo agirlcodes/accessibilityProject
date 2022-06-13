@@ -37,7 +37,7 @@ $(document).ready(function(){
     $.each(TopSellers, function(index, value){
       // console.log(index, value)
       console.log(value.name)
-      $('#topSellers').append(`<figure><a href="" alt="contains Image of product"><img src=${value.img}></a></img><figcaption><ul><li><h2><a href="" alt="contains Name of product"></h2>${value.name}</a></li><li>£ ${value.price}</li></ul></figcaption></figure>`)
+      $('#topSellers').append(`<figure><a href="" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a></img><figcaption><ul><li><h2><a href="" alt="contains Name of product"></h2>${value.name}</a></li><li>£ ${value.price}</li></ul></figcaption></figure>`)
     })
   })
 
