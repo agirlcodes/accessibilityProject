@@ -32,7 +32,7 @@ $(document).ready(function(){
     // FingerSpell Language
     $(function() {  
       $('#fingerspell').click(function(){
-          $('.data').css('font-family', 'ZoeGermany');
+          $('.data').css('font-family', 'Gallaudet');
           $('.data').css('font-size', '40px');
         });
       });
