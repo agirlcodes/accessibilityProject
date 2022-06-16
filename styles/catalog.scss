@@ -5,14 +5,10 @@ body{
 header{
   @include accessibility;
 }
-#logo{
-  height: 50px;
-}
 .grid{
   @include gridLayout;
   .data{
-    margin: 2%;
-  }
+    margin-left: 30px;  }
 }
 footer{
   @include footer;

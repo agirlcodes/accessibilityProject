@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Gallaudet;
+  src: url("../font/GallaudetRegular-qZe1.ttf");
+}
+
 body {
   background-color: white;
   margin-left: 10%;
@@ -126,20 +131,41 @@ header #accessibilityNav #container .switch .slider.round:before {
 }
 
 header .searchBar {
-  border-bottom: 1px solid #8b8888;
-  width: auto;
-  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .searchBar #logo {
+  max-height: 250px;
 }
 
 header .searchBar #searchBar {
-  width: 70%;
-  height: 45px;
-  margin-right: 5%;
-  border: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 84%;
+  margin-bottom: 10%;
 }
 
-#logo {
+header .searchBar #searchBar button, header .searchBar #searchBar input {
+  background-color: transparent;
+  border: none;
   height: 50px;
+}
+
+header .searchBar #searchBar button :hover, header .searchBar #searchBar input :hover {
+  cursor: pointer;
+}
+
+header .searchBar #searchBar button img, header .searchBar #searchBar input img {
+  height: 23px;
+}
+
+header .searchBar #searchBar input[type=text] {
+  font-size: 16px;
+  width: 70%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
 }
 
 .grid {
@@ -158,16 +184,6 @@ header .searchBar #searchBar {
 .grid header {
   -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/span 3;
-}
-
-.grid #logo {
-  display: block;
-  padding: 15px;
-  -ms-grid-row: 2;
-  grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/span 3;
@@ -223,14 +239,6 @@ header .searchBar #searchBar {
   grid-column: 1/span 3;
   -ms-grid-row: 4;
   grid-row: 4;
-}
-
-.grid .data {
-  margin: 2%;
-}
-
-.grid .data #aboutImg {
-  width: 100%;
 }
 
 footer nav {

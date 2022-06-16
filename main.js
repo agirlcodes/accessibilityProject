@@ -29,6 +29,14 @@ $(document).ready(function(){
           $('.data').css('color', '#E5C54A');
         });
       });
+    // FingerSpell Language
+    $(function() {  
+      $('#fingerspell').click(function(){
+          $('.data').css('font-family', 'ZoeGermany');
+          $('.data').css('font-size', '40px');
+        });
+      });
+      
 
 // Select sections to increase size and decrease
   //DATA
@@ -42,6 +50,15 @@ $(document).ready(function(){
   })
 
 
-  
-  
+// MODALS
+
+
+
+
+
+
+
+
+
+
 });

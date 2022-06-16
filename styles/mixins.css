@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=mixins.css.map */
+@font-face {
+  font-family: Gallaudet;
+  src: url("../font/GallaudetRegular-qZe1.ttf");
+}
+
+@font-face {
+  font-family: ZoeGermany;
+  src: url("../font/ZoeGermanyFingeralphabetGraffiti-2vwW.ttf");
+}
+/*# sourceMappingURL=mixins.css.map */

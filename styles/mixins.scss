@@ -98,7 +98,7 @@
     }
     #searchBar{
       align-self: flex-end;
-      width: 70%;
+      width: 84%;
       margin-bottom: 10%;
       button, input{
         background-color: transparent;
@@ -120,10 +120,6 @@
     }
   }
 }
-// @font-face {
-//   font-family: Gallaudet;
-//   src: url("../font/GallaudetRegular-qZe1.ttf");
-// }
 @mixin bodyLayout{
   background-color: white;
   // margin: 1%;
@@ -150,12 +146,6 @@
   box-sizing: border-box;
   header{
     grid-row: 1;
-    grid-column: 1/span 3;
-  }
-  #logo{
-    display: block;
-    padding: 15px;
-    grid-row: 2;
     grid-column: 1/span 3;
   }
   #menu{
@@ -244,4 +234,12 @@
     // margin-left: 25%;
     padding-bottom: 30px;
   }
+}
+@font-face {
+  font-family: Gallaudet;
+  src: url("../font/GallaudetRegular-qZe1.ttf");
+}
+@font-face {
+  font-family: ZoeGermany;
+  src: url("../font/ZoeGermanyFingeralphabetGraffiti-2vwW.ttf");
 }

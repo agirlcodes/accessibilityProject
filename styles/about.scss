@@ -5,17 +5,14 @@ body{
 header{
   @include accessibility;
 }
-#logo{
-  height: 50px;
-}
 .grid{
   @include gridLayout;
-  .data{
-    margin: 2%;
-    #aboutImg{
-      width: 100%
-    }
-  }
+  // .data{
+  //   margin: 2%;
+  //   #aboutImg{
+  //     width: 100%
+  //   }
+  // }
 }
 footer{
     @include footer;
