@@ -1,6 +1,5 @@
 body {
   background-color: white;
-  font-family: Gallaudet;
   margin-left: 10%;
   font-size: 19px;
   font-family: Futura,sans-serif;
@@ -8,13 +7,6 @@ body {
   font-weight: 400;
   color: #3c4049;
   line-height: 1.6;
-}
-
-@font-face {
-  body {
-    font-family: Gallaudet;
-    src: url("../font/GallaudetRegular-qZe1.ttf");
-  }
 }
 
 body ul li {

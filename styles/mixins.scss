@@ -1,17 +1,10 @@
 @mixin accessibility {
   #accessibilityNav{
-  // display: block;
   position: relative;
   width: 100%;
-  // text-align: center;
-  // min-height: 5px;
-  // background-color: #c13121;
-  // text-decoration: none;
-  // position: sticky;
   #container{
     width: 100%;
     margin-left: -15%;
-    // margin-right: -10%;
     background-color: #ffffff;
       display: flex;
       position: fixed;
@@ -97,25 +90,44 @@
       }
     }
   .searchBar{
-      border-bottom: 1px solid rgb(139, 136, 136);
-      width: auto;
-      margin-top: 5%;
-      #searchBar{
-          width: 70%;
-          height: 45px;
-          margin-right: 5%;
-          border: none;
+    display: flex;
+    // flex-direction: row;
+    // height: 100px;
+    #logo{
+      max-height: 250px;
+    }
+    #searchBar{
+      align-self: flex-end;
+      width: 70%;
+      margin-bottom: 10%;
+      button, input{
+        background-color: transparent;
+        border: none;
+        height: 50px;
+        :hover{
+          cursor: pointer;
+        }
+        img{
+          height: 23px;
+        }
       }
+      input[type=text]{
+        font-size: 16px;
+        width: 70%;
+        transition: width 0.15s ease-in-out;
+        // max-width: 800px;
+      }
+    }
   }
 }
+// @font-face {
+//   font-family: Gallaudet;
+//   src: url("../font/GallaudetRegular-qZe1.ttf");
+// }
 @mixin bodyLayout{
-  @font-face {
-    font-family: Gallaudet;
-    src: url("../font/GallaudetRegular-qZe1.ttf");
-  }
   background-color: white;
   // margin: 1%;
-  font-family: Gallaudet;
+  // font-family: Gallaudet;
   margin-left: 10%;
   // margin-right: 10%;
   ul li{
