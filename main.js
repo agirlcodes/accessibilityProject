@@ -1,10 +1,21 @@
 $(document).ready(function(){
-    // dropdown font
-    $(".increaseFont").click(function(){
-    var type= $(this).val();
-    console.log(type)
-    $('.data').css('font-size', type);
-    });
+    // Alter Font-Size - NEED TO SET LIMITS ON FONT-SIZE
+    $(".increaseFont,.decreaseFont").click(function(){
+    var type=  $(this).val();
+    var curFontSize = $('.data').css('font-size');
+     if(type=='increase'){
+      $('.data').css('font-size', parseInt(curFontSize)+7);
+      }else{
+      $('.data').css('font-size', parseInt(curFontSize)-7);
+     }  
+       });
+
+    // // dropdown font
+    // $(".increaseFont").click(function(){
+    // var type= $(this).val();
+    // console.log(type)
+    // $('.data').css('font-size', type);
+    // });
     // Background-color and font-color change
     $(function() {  
       $('#highRatio').click(function(){
@@ -30,6 +41,7 @@ $(document).ready(function(){
           $('.data').css('font-family', 'Gallaudet');
           $('.data').css('font-size', '50px');
           $('.data').css('font-weight', 'normal');
+          $('.data').css('letter-spacing', '10px');
         });
       });
       
@@ -38,10 +50,7 @@ $(document).ready(function(){
   //DATA
   $.getJSON('../backend/data.json', function(data){
     let TopSellers = data.TopSellers;
-    // console.log(TopSellers)
     $.each(TopSellers, function(index, value){
-      // console.log(index, value)
-      // console.log(value.name)
       $('#topSellers').append(`
       <figure class="data">
         <a href="" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>

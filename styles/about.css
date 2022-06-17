@@ -10,7 +10,6 @@
 
 body {
   background-color: white;
-  margin-left: 10%;
   font-family: Futura,sans-serif;
   color: #3c4049;
   line-height: 1.6;
@@ -146,28 +145,28 @@ header .searchBar #logo {
   max-height: 250px;
 }
 
-header .searchBar #searchBar {
+header .searchBar #searchBarLayout {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 84%;
   margin-bottom: 10%;
 }
 
-header .searchBar #searchBar button, header .searchBar #searchBar input {
+header .searchBar #searchBarLayout button, header .searchBar #searchBarLayout input {
   background-color: transparent;
   border: none;
   height: 50px;
 }
 
-header .searchBar #searchBar button :hover, header .searchBar #searchBar input :hover {
+header .searchBar #searchBarLayout button :hover, header .searchBar #searchBarLayout input :hover {
   cursor: pointer;
 }
 
-header .searchBar #searchBar button img, header .searchBar #searchBar input img {
+header .searchBar #searchBarLayout button img, header .searchBar #searchBarLayout input img {
   height: 23px;
 }
 
-header .searchBar #searchBar input[type=text] {
+header .searchBar #searchBarLayout input[type=text] {
   font-size: 16px;
   width: 70%;
   -webkit-transition: width 0.15s ease-in-out;

@@ -12,7 +12,7 @@
             <header>
                 <nav id="accessibilityNav">
                     <div id="container">
-                        <button><img src="/icons/icons8-sign-language-50.png" alt=""></button>
+                        <button id="fingerspell"><img src="/icons/icons8-sign-language-50.png" alt=""></button>
                         <button value="increase" class="increaseFont">
                             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
                                 <text id="_" data-name="+" transform="translate(10 30)" font-size="20" font-family="SegoeUI, Segoe UI" ><tspan x="0" y="0">+</tspan></text>
@@ -25,6 +25,29 @@
                             <text id="_" data-name="-" transform="translate(10 30)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-</tspan></text>
                             </svg>
                         </button>
+                        <!-- <form>
+                            <label for="font size picker">Font-Size:</label> 
+                             <select name="fontSize" class="increaseFont"> 
+                                <option value="16px">16px</option> 
+                                <option value="18px">18px</option> 
+                                <option value="20px">20px</option> 
+                                <option value="22px">22px</option> 
+                                <option value="24px">24px</option> 
+                                <option value="26px">26px</option> 
+                                <option value="28px">28px</option> 
+                                <option value="30px">30px</option> 
+                                <option value="32px">32px</option> 
+                                <option value="34px">34px</option> 
+                                <option value="36px">36px</option> 
+                                <option value="38px">38px</option> 
+                                <option value="40px">40px</option> 
+                                <option value="42px">42px</option> 
+                                <option value="44px">44px</option> 
+                                <option value="46px">46px</option> 
+                                <option value="48px">48px</option> 
+                                <option value="50px">50px</option> 
+                             </select> 
+                        </form> -->
                         <div class="subNavLayout">
                             <h3>Colour Palette</h3>
                             <div class="background-change">
@@ -68,10 +91,11 @@
                 </nav>
                 <div class="searchBar">
                 <dfn title="Search Field"><img id="logo" src="/icons/editedLady.png" alt="search icon"></dfn>
-                    <form id="searchBar">
+                    <form id="searchBarLayout">
                         <button><img src="/icons/search.png" alt=""></button>
-                        <input type="text" placeholder="Search">
+                        <input id="searchBar" type="text" name="Search Bar" placeholder="Search">
                         <button><dfn title="Cart"><img src="/icons/shopping-cart.png" alt="Cart Icon"></dfn></button>
+                        <section class="searchBarResults"></section>
                     </form>
                 </div>
             </header>
