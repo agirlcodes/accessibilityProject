@@ -3,19 +3,25 @@
   src: url("../font/GallaudetRegular-qZe1.ttf");
 }
 
+@font-face {
+  font-family: ZoeGermany;
+  src: url("../font/ZoeGermanyFingeralphabetGraffiti-2vwW.ttf");
+}
+
 body {
   background-color: white;
   margin-left: 10%;
-  font-size: 19px;
   font-family: Futura,sans-serif;
-  font-style: normal;
-  font-weight: 400;
   color: #3c4049;
   line-height: 1.6;
 }
 
 body ul li {
   list-style-type: none;
+}
+
+body h2 {
+  font-weight: normal;
 }
 
 header #accessibilityNav {

@@ -96,7 +96,7 @@
     #logo{
       max-height: 250px;
     }
-    #searchBar{
+    #searchBarLayout{
       align-self: flex-end;
       width: 84%;
       margin-bottom: 10%;
@@ -122,19 +122,15 @@
 }
 @mixin bodyLayout{
   background-color: white;
-  // margin: 1%;
-  // font-family: Gallaudet;
-  margin-left: 10%;
-  // margin-right: 10%;
   ul li{
     list-style-type: none;
   }
-  font-size: 19px;
   font-family: Futura,sans-serif;
-  font-style: normal;
-  font-weight: 400;
   color: #3c4049;
   line-height: 1.6;
+  h2{
+    font-weight: normal;
+  }
 }
 @mixin gridLayout{
   display: grid;

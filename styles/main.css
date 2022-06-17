@@ -10,17 +10,17 @@
 
 body {
   background-color: white;
-  margin-left: 10%;
-  font-size: 19px;
   font-family: Futura,sans-serif;
-  font-style: normal;
-  font-weight: 400;
   color: #3c4049;
   line-height: 1.6;
 }
 
 body ul li {
   list-style-type: none;
+}
+
+body h2 {
+  font-weight: normal;
 }
 
 .grid {
@@ -218,28 +218,28 @@ body ul li {
   max-height: 250px;
 }
 
-.grid header .searchBar #searchBar {
+.grid header .searchBar #searchBarLayout {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 84%;
   margin-bottom: 10%;
 }
 
-.grid header .searchBar #searchBar button, .grid header .searchBar #searchBar input {
+.grid header .searchBar #searchBarLayout button, .grid header .searchBar #searchBarLayout input {
   background-color: transparent;
   border: none;
   height: 50px;
 }
 
-.grid header .searchBar #searchBar button :hover, .grid header .searchBar #searchBar input :hover {
+.grid header .searchBar #searchBarLayout button :hover, .grid header .searchBar #searchBarLayout input :hover {
   cursor: pointer;
 }
 
-.grid header .searchBar #searchBar button img, .grid header .searchBar #searchBar input img {
+.grid header .searchBar #searchBarLayout button img, .grid header .searchBar #searchBarLayout input img {
   height: 23px;
 }
 
-.grid header .searchBar #searchBar input[type=text] {
+.grid header .searchBar #searchBarLayout input[type=text] {
   font-size: 16px;
   width: 70%;
   -webkit-transition: width 0.15s ease-in-out;
@@ -302,7 +302,6 @@ body ul li {
 
 .grid #topSellers figure figcaption ul li {
   list-style-type: none;
-  font-size: 22px;
 }
 
 .grid #topSellers figure figcaption ul li a {
@@ -361,5 +360,263 @@ body ul li {
 .grid footer small {
   text-align: center !important;
   padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+    margin-top: 10%;
+  }
+  .grid header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid header #accessibilityNav {
+    position: relative;
+    width: 100%;
+    margin-left: -4%;
+  }
+  .grid header #accessibilityNav #container {
+    width: 100%;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: fixed;
+    padding: 0%;
+    margin: 0%;
+    top: 0;
+  }
+  .grid header #accessibilityNav #container .subNavLayout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .grid header #accessibilityNav #container .subNavLayout .background-change {
+    width: auto;
+  }
+  .grid header #accessibilityNav #container .subNavLayout h3 {
+    margin: 0%;
+    margin-bottom: 2%;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  .grid header #accessibilityNav #container button {
+    background-color: transparent;
+    border: none;
+  }
+  .grid header #accessibilityNav #container button :hover {
+    cursor: pointer;
+  }
+  .grid header #accessibilityNav #container .switch {
+    position: relative;
+    display: inline-block;
+    width: 2.5em;
+    height: 1.15em;
+    margin: 2%;
+    margin-left: 10%;
+    /* Hide default HTML checkbox */
+    /* The slider */
+    /* Rounded sliders */
+  }
+  .grid header #accessibilityNav #container .switch .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .grid header #accessibilityNav #container .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .grid header #accessibilityNav #container .switch .slider:before {
+    position: absolute;
+    content: "";
+    width: 0.9em;
+    height: 0.8em;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .grid header #accessibilityNav #container .switch input:checked + .slider {
+    background-color: #2196F3;
+  }
+  .grid header #accessibilityNav #container .switch input:focus + .slider {
+    -webkit-box-shadow: 0 0 1px #2196F3;
+            box-shadow: 0 0 1px #2196F3;
+  }
+  .grid header #accessibilityNav #container .switch input:checked + .slider:before {
+    -webkit-transform: translateX(1em);
+    transform: translateX(1em);
+  }
+  .grid header #accessibilityNav #container .switch .slider.round {
+    border-radius: 34px;
+  }
+  .grid header #accessibilityNav #container .switch .slider.round:before {
+    border-radius: 50%;
+  }
+  .grid header .searchBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid header .searchBar #logo {
+    position: relative;
+    left: 15%;
+  }
+  .grid header .searchBar #searchBarLayout {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 84%;
+    margin-bottom: 5%;
+  }
+  .grid header .searchBar #searchBarLayout button, .grid header .searchBar #searchBarLayout input {
+    background-color: transparent;
+    border: none;
+    height: 50px;
+  }
+  .grid header .searchBar #searchBarLayout button :hover, .grid header .searchBar #searchBarLayout input :hover {
+    cursor: pointer;
+  }
+  .grid header .searchBar #searchBarLayout button img, .grid header .searchBar #searchBarLayout input img {
+    height: 23px;
+  }
+  .grid header .searchBar #searchBarLayout input[type=text] {
+    font-size: 16px;
+    width: 70%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+  }
+  .grid #menu {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin: 0%;
+  }
+  .grid #menu #navMenu {
+    font-size: 16px;
+  }
+  .grid #menu #navMenu a {
+    border-top: 1px solid #d7d8d2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #3c4049;
+  }
+  .grid #layout {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    width: 90%;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .grid #layout #topSellers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid #layout #topSellers figure {
+    padding-left: 30px;
+    min-width: 150px;
+    max-width: 300px;
+  }
+  .grid #layout #topSellers figure a img {
+    margin-left: 25%;
+    width: auto;
+    height: 250px;
+  }
+  .grid #layout #topSellers figure figcaption {
+    text-align: center;
+  }
+  .grid #layout #topSellers figure figcaption ul li {
+    list-style-type: none;
+  }
+  .grid #layout #topSellers figure figcaption ul li a {
+    text-decoration: none;
+    color: #3c4049;
+  }
+  .grid footer {
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+  .grid footer nav {
+    display: block;
+  }
+  .grid footer nav .miniMenu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .grid footer nav .miniMenu ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  .grid footer nav .miniMenu form p, .grid footer nav .miniMenu form label {
+    margin-bottom: 5%;
+  }
+  .grid footer nav .miniMenu form button {
+    background-color: #c13121;
+    color: #ffffff;
+    line-height: 1.9;
+    position: relative;
+    padding: 9px 15px;
+    border-radius: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 0;
+  }
+  .grid footer nav .miniMenu form input {
+    font-family: Futura,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    border-radius: 0;
+    max-width: 100%;
+    background-color: #fff;
+    border: 0;
+    padding: 8px;
+  }
+  .grid footer small {
+    text-align: center !important;
+    padding-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
