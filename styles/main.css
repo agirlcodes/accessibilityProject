@@ -82,8 +82,7 @@ body h2 {
 .grid #layout {
   width: 90%;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2/span 3;
+  grid-column: 2;
   -ms-grid-row: 3;
   grid-row: 3;
 }
@@ -229,6 +228,7 @@ body h2 {
   background-color: transparent;
   border: none;
   height: 50px;
+  border-bottom: 2px solid black;
 }
 
 .grid header .searchBar #searchBarLayout button :hover, .grid header .searchBar #searchBarLayout input :hover {
@@ -306,6 +306,10 @@ body h2 {
 .grid #topSellers figure figcaption ul li a {
   text-decoration: none;
   color: #3c4049;
+}
+
+.grid footer {
+  font-weight: normal !important;
 }
 
 .grid footer nav {

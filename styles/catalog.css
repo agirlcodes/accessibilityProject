@@ -167,6 +167,7 @@ header .searchBar #searchBarLayout button img, header .searchBar #searchBarLayou
 }
 
 header .searchBar #searchBarLayout input[type=text] {
+  border-bottom: 1px solid #585858;
   font-size: 16px;
   width: 70%;
   -webkit-transition: width 0.15s ease-in-out;
@@ -232,8 +233,7 @@ header .searchBar #searchBarLayout input[type=text] {
 .grid #layout {
   width: 90%;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2/span 3;
+  grid-column: 2;
   -ms-grid-row: 3;
   grid-row: 3;
 }
@@ -248,6 +248,10 @@ header .searchBar #searchBarLayout input[type=text] {
 
 .grid .data {
   margin-left: 30px;
+}
+
+footer {
+  font-weight: normal !important;
 }
 
 footer nav {
