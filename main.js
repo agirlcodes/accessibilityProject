@@ -10,13 +10,6 @@ $(document).ready(function(){
      }  
        });
 
-    // // dropdown font
-    // $(".increaseFont").click(function(){
-    // var type= $(this).val();
-    // console.log(type)
-    // $('.data').css('font-size', type);
-    // });
-    // Background-color and font-color change
     $(function() {  
       $('#highRatio').click(function(){
           $('body').css('background-color', 'white');
@@ -58,6 +51,7 @@ $(document).ready(function(){
         <ul>
         <li><h2><a href="" alt="contains Name of product"></h2>${value.name}</a></li>
         <li>£ ${value.price}</li></ul>
+        <button>Add to Cart</button>
         </figcaption>
       </figure>`)
     })
@@ -79,7 +73,7 @@ $(document).ready(function(){
               <figcaption>£${dataValue.price}</figcaption>
               <figcaption>${dataValue.category}</figcaption>`)
               console.log(dataValue.category)
-            }else(console.log("no work"))
+            }
         }
       });
       console.log(input)

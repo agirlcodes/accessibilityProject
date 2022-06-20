@@ -6,3 +6,10 @@ https://www.achrafothman.net/aslsmt/corpus/sample-corpus-asl-en.en
 
 
 TO-DO: 
+login/ sign up
+category
+    brand base for category 
+    base on gender search
+Work on admin page and user page
+make the webpage more complex
+Cookies - maybe?
