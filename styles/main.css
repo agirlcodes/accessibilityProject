@@ -98,12 +98,8 @@ body h2 {
 .grid header #accessibilityNav {
   position: relative;
   width: 100%;
-}
-
-.grid header #accessibilityNav #container {
   width: 100%;
   margin-left: -15%;
-  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,99 +108,13 @@ body h2 {
   padding-left: 45%;
 }
 
-.grid header #accessibilityNav #container .subNavLayout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.grid header #accessibilityNav #container .subNavLayout .background-change {
-  width: auto;
-}
-
-.grid header #accessibilityNav #container .subNavLayout h3 {
-  margin: 0%;
-  margin-bottom: 2%;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-.grid header #accessibilityNav #container button {
+.grid header #accessibilityNav button {
   background-color: transparent;
   border: none;
 }
 
-.grid header #accessibilityNav #container button :hover {
+.grid header #accessibilityNav button :hover {
   cursor: pointer;
-}
-
-.grid header #accessibilityNav #container .switch {
-  position: relative;
-  display: inline-block;
-  width: 2.5em;
-  height: 1.15em;
-  margin: 2%;
-  margin-left: 10%;
-  /* Hide default HTML checkbox */
-  /* The slider */
-  /* Rounded sliders */
-}
-
-.grid header #accessibilityNav #container .switch .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.grid header #accessibilityNav #container .switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.grid header #accessibilityNav #container .switch .slider:before {
-  position: absolute;
-  content: "";
-  width: 0.9em;
-  height: 0.8em;
-  left: 4px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.grid header #accessibilityNav #container .switch input:checked + .slider {
-  background-color: #2196F3;
-}
-
-.grid header #accessibilityNav #container .switch input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #2196F3;
-          box-shadow: 0 0 1px #2196F3;
-}
-
-.grid header #accessibilityNav #container .switch input:checked + .slider:before {
-  -webkit-transform: translateX(1em);
-  transform: translateX(1em);
-}
-
-.grid header #accessibilityNav #container .switch .slider.round {
-  border-radius: 34px;
-}
-
-.grid header #accessibilityNav #container .switch .slider.round:before {
-  border-radius: 50%;
 }
 
 .grid header .searchBar {
@@ -228,7 +138,6 @@ body h2 {
   background-color: transparent;
   border: none;
   height: 50px;
-  border-bottom: 2px solid black;
 }
 
 .grid header .searchBar #searchBarLayout button :hover, .grid header .searchBar #searchBarLayout input :hover {
@@ -240,6 +149,7 @@ body h2 {
 }
 
 .grid header .searchBar #searchBarLayout input[type=text] {
+  border-bottom: 1px solid #585858;
   font-size: 16px;
   width: 70%;
   -webkit-transition: width 0.15s ease-in-out;

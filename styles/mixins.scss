@@ -3,28 +3,28 @@
   #accessibilityNav{
   position: relative;
   width: 100%;
-  #container{
+  // #container{
     width: 100%;
     margin-left: -15%;
-    background-color: #ffffff;
+    // background-color: #ffffff;
       display: flex;
       position: fixed;
       top: 0;
       padding-left: 45%;
-        .subNavLayout{
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          .background-change{
-            width: auto;
-          }
-          h3{
-              margin: 0%;
-              margin-bottom: 2%;
-              font-weight:normal;
-              font-size: 16px;
-          }
-        }
+        // .subNavLayout{
+        //   display: flex;
+        //   flex-direction: column;
+        //   text-align: center;
+        //   .background-change{
+        //     width: auto;
+        //   }
+        //   h3{
+        //       margin: 0%;
+        //       margin-bottom: 2%;
+        //       font-weight:normal;
+        //       font-size: 16px;
+        //   }
+        // }
         button{
             background-color: transparent;
             border: none;
@@ -32,63 +32,63 @@
                 cursor: pointer;
             }
         }
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 2.5em;
-            height: 1.15em;
-            margin: 2%;
-            margin-left: 10%;
-          /* Hide default HTML checkbox */
-          .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-          }
-          /* The slider */
-          .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-          }
-          .slider:before {
-            position: absolute;
-            content: "";
-            width: 0.9em;
-            height: 0.8em;
-            left: 4px;
-            bottom: 3px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-          }
-          input:checked + .slider {
-            background-color: #2196F3;
-          }
-          input:focus + .slider {
-            box-shadow: 0 0 1px #2196F3;
-          }
-          input:checked + .slider:before {
-            -webkit-transform: translateX(1em);
-            -ms-transform: translateX(1em);
-            transform: translateX(1em);
-          }
-          /* Rounded sliders */
-          .slider.round {
-            border-radius: 34px;
-          }
+        // .switch {
+        //     position: relative;
+        //     display: inline-block;
+        //     width: 2.5em;
+        //     height: 1.15em;
+        //     margin: 2%;
+        //     margin-left: 10%;
+        //   /* Hide default HTML checkbox */
+        //   .switch input {
+        //     opacity: 0;
+        //     width: 0;
+        //     height: 0;
+        //   }
+        //   /* The slider */
+        //   .slider {
+        //     position: absolute;
+        //     cursor: pointer;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     background-color: #ccc;
+        //     -webkit-transition: .4s;
+        //     transition: .4s;
+        //   }
+        //   .slider:before {
+        //     position: absolute;
+        //     content: "";
+        //     width: 0.9em;
+        //     height: 0.8em;
+        //     left: 4px;
+        //     bottom: 3px;
+        //     background-color: white;
+        //     -webkit-transition: .4s;
+        //     transition: .4s;
+        //   }
+        //   input:checked + .slider {
+        //     background-color: #2196F3;
+        //   }
+        //   input:focus + .slider {
+        //     box-shadow: 0 0 1px #2196F3;
+        //   }
+        //   input:checked + .slider:before {
+        //     -webkit-transform: translateX(1em);
+        //     -ms-transform: translateX(1em);
+        //     transform: translateX(1em);
+        //   }
+        //   /* Rounded sliders */
+        //   .slider.round {
+        //     border-radius: 34px;
+        //   }
           
-          .slider.round:before {
-            border-radius: 50%;
-          }
-        }
-      }
+        //   .slider.round:before {
+        //     border-radius: 50%;
+        //   }
+        // }
+      // }
     }
   .searchBar{
     display: flex;
