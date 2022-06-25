@@ -1,14 +1,14 @@
 $(document).ready(function(){
     // Alter Font-Size - NEED TO SET LIMITS ON FONT-SIZE
-    // $(".increaseFont,.decreaseFont").click(function(){
-    // var type=  $(this).val();
-    // var curFontSize = $('.data').css('font-size');
-    //  if(type=='increase'){
-    //   $('.data').css('font-size', parseInt(curFontSize)+7);
-    //   }else{
-    //   $('.data').css('font-size', parseInt(curFontSize)-7);
-    //  }  
-    //    });
+    $(".increaseFont,.decreaseFont").click(function(){
+    var type=  $(this).val();
+    var curFontSize = $('.data').css('font-size');
+     if(type=='increase'){
+      $('.data').css('font-size', parseInt(curFontSize)+7);
+      }else{
+      $('.data').css('font-size', parseInt(curFontSize)-7);
+     }  
+       });
 
     $(function() {  
       $('#highRatio').click(function(){
@@ -96,26 +96,26 @@ $.getJSON('../backend/data.json', function(data){
   })
 
   // SEARCHBAR
-  $('#searchBar').keyup(function(e){
-    let input = $('#searchBar').val()
-    input = input.toLowerCase();
-    $.each(data, function(index, value){
-      for(var key in value) {
-        let dataValue = value[key]
-          if (dataValue.name.toLowerCase().indexOf(input)!= -1) {
-            $('.searchBarResults').html(`
-            <figure class="data">
-                <img src="${dataValue.img} alt="image of products available>
-            </figure>
-            <figcaption>${dataValue.name}</figcaption>
-            <figcaption>£${dataValue.price}</figcaption>
-            <figcaption>${dataValue.category}</figcaption>`)
-            console.log(dataValue.category)
-          }else(console.log("no work"))
-      }
-    });
-    console.log(input)
-    e.preventDefault();
-  })
+  // $('#searchBar').keyup(function(e){
+  //   let input = $('#searchBar').val()
+  //   input = input.toLowerCase();
+  //   $.each(data, function(index, value){
+  //     for(var key in value) {
+  //       let dataValue = value[key]
+  //         if (dataValue.name.toLowerCase().indexOf(input)!= -1) {
+  //           $('.searchBarResults').html(`
+  //           <figure class="data">
+  //               <img src="${dataValue.img} alt="image of products available>
+  //           </figure>
+  //           <figcaption>${dataValue.name}</figcaption>
+  //           <figcaption>£${dataValue.price}</figcaption>
+  //           <figcaption>${dataValue.category}</figcaption>`)
+  //           console.log(dataValue.category)
+  //         }else(console.log("no work"))
+  //     }
+  //   });
+  //   console.log(input)
+  //   e.preventDefault();
+  // })
 })
 // });
