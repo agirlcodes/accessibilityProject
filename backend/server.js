@@ -1,6 +1,6 @@
 var axios = require('axios');
 var data = JSON.stringify({
-    "collection": "users",
+    "collection": "products",
     "database": "eCommerce",
     "dataSource": "Cluster0",
     "projection": {
