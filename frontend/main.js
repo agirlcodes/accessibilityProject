@@ -57,7 +57,7 @@ $.getJSON('../backend/data.json', function(data){
 
   $.each(data, function(index, value){
     let dataValue = value[0]
-    console.log(dataValue)
+    // console.log(dataValue)
       $('#catalogLayout').append(`
       <figure class="data">
         <a href="" alt="contains Image of product"><img src=${dataValue.img} alt="image of products available"></a>
@@ -95,27 +95,11 @@ $.getJSON('../backend/data.json', function(data){
     })
   })
 
-  // SEARCHBAR
-  // $('#searchBar').keyup(function(e){
-  //   let input = $('#searchBar').val()
-  //   input = input.toLowerCase();
-  //   $.each(data, function(index, value){
-  //     for(var key in value) {
-  //       let dataValue = value[key]
-  //         if (dataValue.name.toLowerCase().indexOf(input)!= -1) {
-  //           $('.searchBarResults').html(`
-  //           <figure class="data">
-  //               <img src="${dataValue.img} alt="image of products available>
-  //           </figure>
-  //           <figcaption>${dataValue.name}</figcaption>
-  //           <figcaption>£${dataValue.price}</figcaption>
-  //           <figcaption>${dataValue.category}</figcaption>`)
-  //           console.log(dataValue.category)
-  //         }else(console.log("no work"))
-  //     }
-  //   });
-  //   console.log(input)
-  //   e.preventDefault();
-  // })
+  // CART FUNCTION
+    $('#cartBtn').click(function(){
+      window.open('cart.html')
+      console.log("I AM THE CART FUNCTION")
+    })
+    
 })
 // });
