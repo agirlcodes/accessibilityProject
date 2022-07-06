@@ -1,4 +1,4 @@
-require('./mongoose/server.js')
+require('./server.js')
 // ADDING DATA TO DB
 
 const sleep = async (ms) => {
@@ -10,11 +10,11 @@ const products = async () => {
 // SCHEMA
     const Products = require('./models/products')
     const newProduct = new Products({
-        proName: "",
-        img: "",
-        proDescription: "",
-        proPrice: 12,
-        proCategory: ""
+        proName: req.body.name,
+        // proImg: req.body.img,
+        proDescription: req.body.desc,
+        proPrice: req.body.price,
+        proCategory: req.body.category
     })
 
     newProduct.save((err, products)=>{
@@ -24,4 +24,3 @@ const products = async () => {
 
 }
 products()
-
