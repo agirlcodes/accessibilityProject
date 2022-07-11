@@ -15,17 +15,22 @@
         <section id="overviewSection"></section>
         <h1>Alter products</h1>
         <h1>Add products</h1>
+        <h3>Category</h3>
         <form method="POST" action="submit">
+            <label for="proCategory">Add New Category:</label>
+            <input type="text" name="" id="productCategory" placeholder="Category Name">
+            <input type="button" value="Add" id="addCatBtn">
+        </form>
+        <h3>Product</h3>
+        <form method="POST" action="submit"> 
+            <label for="category">Select Category</label>
+            <select name="" id="categoryList"></select>
             <label for="proName">Product Name:</label>
             <input type="text" name="productName" id="productName" placeholder="e.g Bath Bomb">
             <label for="proImg">Image of Product:</label>
             <input type="url" name="productImg" id="productImg" placeholder="Link to image">
             <label for="proPrice">Price:</label>
             <input type="number" name="productPrice" id="productPrice" placeholder="e.g £16">
-            <label for="proDescription">Product Description:</label>
-            <input type="text" name="" id="productDescription" placeholder="Description">
-            <label for="proCategory">Product Category:</label>
-            <input type="text" name="" id="productCategory" placeholder="Category">
             <input type="button" value="submit" id="subBtn">
         </form>
     </main>

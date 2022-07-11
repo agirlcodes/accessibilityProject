@@ -10,11 +10,9 @@ const products = async () => {
 // SCHEMA
     const Products = require('./models/products')
     const newProduct = new Products({
-        proName: req.body.name,
-        // proImg: req.body.img,
-        proDescription: req.body.desc,
-        proPrice: req.body.price,
-        proCategory: req.body.category
+        img: req.body.img,
+        name: req.body.name,
+        price: req.body.price
     })
 
     newProduct.save((err, products)=>{

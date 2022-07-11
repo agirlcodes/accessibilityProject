@@ -44,13 +44,12 @@ app.post ('/insert', function(req,res,next) {
 
 app.get('/getData', (req,res)=>{
   mongoose.connect(url, function(err, db) {
-    if (err) throw err;
-    db.collection("products").find({}).toArray(function(err, result) {
       if (err) throw err;
-      console.log("I have  read");
-      // console.log(result)
+      db.collection("products").find({}).toArray(function(err, result) {
+          if (err) throw err;
+          res.send(result);
+        });
     });
-  });
 })
 
 app.get("/", (req,res)=>{
