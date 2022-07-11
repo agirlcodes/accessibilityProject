@@ -31,10 +31,10 @@ $(document).ready(function(){
         if(value.category === category){ 
           console.log(value.product)
           // value.product = ()=>{
-            // $.post(`${db_url}/insert`, {newData}, function(){
+            $.post(`${db_url}/insert`, {newData}, function(){
               console.log("insert successful")
               console.log(newData)
-            // })
+            })
           // }
         }
       })
@@ -48,26 +48,26 @@ $(document).ready(function(){
       // })
 
     // DATA DISPLAY ON CLICK
-        // $('#overviewBtn').click(()=>{
-        // category = '<h1>'+ value.category + '</h1>';
-        // $(category).appendTo('#overviewSection')
-        // $.each(value.product,function(key, item){
-        //   console.log(category)
-        //   product = `
-        //     <figure>
-        //       <img src="${item.img}">
-        //       <figcaption>
-        //         <h3>${item.name}</h2>
-        //         <h4>£${item.price}</h4>
-        //       </figcatpion>
-        //     </figure>
-        //     <button onclick="editRequest" id="editBtn">Edit</button>
-        //     <button onclick="deleteRequest" id="deleteBtn">Delete</button>
-        //   `;
-        //   $(product).appendTo('#overviewSection')
-        // })
+        $('#overviewBtn').click(()=>{
+        category = '<h1>'+ value.category + '</h1>';
+        $(category).appendTo('#overviewSection')
+        $.each(value.product,function(key, item){
+          console.log(category)
+          product = `
+            <figure>
+              <img src="${item.img}">
+              <figcaption>
+                <h3>${item.name}</h2>
+                <h4>£${item.price}</h4>
+              </figcatpion>
+            </figure>
+            <button onclick="editRequest" id="editBtn">Edit</button>
+            <button onclick="deleteRequest" id="deleteBtn">Delete</button>
+          `;
+          $(product).appendTo('#overviewSection')
+        })
         
-      // })
+      })
       
     })
   })
