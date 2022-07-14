@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  const db_url = 'http://localhost:3000'
     // Alter Font-Size - NEED TO SET LIMITS ON FONT-SIZE
     $(".increaseFont,.decreaseFont").click(function(){
     var type=  $(this).val();
@@ -40,10 +41,12 @@ $(document).ready(function(){
       
 
 // Select sections to increase size and decrease
-$.getJSON('../backend/data.json', function(data){
+$.getJSON(`${db_url}/getData`, function(data){
+  console.log([data[0].category])
   //TOP SELLERS Home page
-  let TopSellers = data.TopSellers;
+  let TopSellers = data[0].product;
   $.each(TopSellers, function(index, value){
+    console.log(value)
     $('#topSellers').append(`
     <figure class="data">
       <a href="" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
@@ -97,7 +100,7 @@ $.getJSON('../backend/data.json', function(data){
 
   // CART FUNCTION
     $('#cartBtn').click(function(){
-      window.open('cart.html')
+      window.open('/cart/cart.html')
       console.log("I AM THE CART FUNCTION")
     })
     

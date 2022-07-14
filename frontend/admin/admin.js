@@ -14,8 +14,6 @@ $(document).ready(function(){
       
     $.getJSON(`${db_url}/getData`,(data)=>{
       $.each(data,function(key, value){      
-      // let category = $("#productCategory").val();
-      // console.log(value)
       // POST DATA FROM FORM
     $("#subBtn").click(function () {
       let name = $("#productName").val();
@@ -48,29 +46,25 @@ $(document).ready(function(){
       // })
 
     // DATA DISPLAY ON CLICK
-        // $('#overviewBtn').click(()=>{
-        // category = '<h1>'+ value.category + '</h1>';
-        // $(category).appendTo('#overviewSection')
-        // $.each(value.product,function(key, item){
-        //   console.log(category)
-        //   product = `
-        //     <figure>
-        //       <img src="${item.img}">
-        //       <figcaption>
-        //         <h3>${item.name}</h2>
-        //         <h4>£${item.price}</h4>
-        //       </figcatpion>
-        //     </figure>
-        //     <button onclick="editRequest" id="editBtn">Edit</button>
-        //     <button onclick="deleteRequest" id="deleteBtn">Delete</button>
-        //   `;
-        //   $(product).appendTo('#overviewSection')
-        // })
-        
-      // })
-      
+        $('#overviewBtn').click(()=>{
+        category = '<h1>'+ value.category + '</h1>';
+          $(category).appendTo('#overviewSection')
+          $.each(value.product,function(key, item){
+            console.log(category)
+            product = `
+              <figure>
+                <img src="${item.img}">
+                <figcaption>
+                  <h3>${item.name}</h2>
+                  <h4>£${item.price}</h4>
+                </figcatpion>
+              </figure>
+              <button onclick="editRequest" id="editBtn">Edit</button>
+              <button onclick="deleteRequest" id="deleteBtn">Delete</button>
+            `;
+            $(product).appendTo('#overviewSection')
+          })
+        })
+      })
     })
-  })
-
-
 });
