@@ -40,14 +40,11 @@ $(document).ready(function(){
       // Get Category for form
       listCat = `<option value="${value.category}">${value.category}</option>`
       $('#categoryList').append(listCat)
-<<<<<<< HEAD
-=======
       // db.getCollection('products').find({product: value.product},()=>{
 
 
       //   console.log(product)
       })
->>>>>>> 375658b1812715ec538d3e8ebce144cb0c88902b
 
     // DATA DISPLAY ON CLICK
       //   $('#overviewBtn').click(()=>{
@@ -73,3 +70,4 @@ $(document).ready(function(){
       
     })
 })
+
