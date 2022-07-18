@@ -28,18 +28,19 @@ mongoose.connect(url).then(()=>{
 
 // HTTP ENDPOINTS
 app.post ('/insert', function(req,res,next) {
-  var item = {
-      proName: req.body.name,
-      proDescription: req.body.desc,
-      proPrice: req.body.price,
-      proCategory: req.body.category
-  };
-  mongoose.connect(url, function (err, db) {
-      db.collection('products').insertOne(item, function (err, result) {
-          // console.log(result)
-          console.log('item has been inserted');
-      });
-  });
+  // console.log(req)
+  // let newData = {
+  //   name: req.body.name,
+  //   img: req.body.img,
+  //   price: req.body.price
+  // }
+  // mongoose.connect(url, function (err, db) {
+  //     db.collection('products')
+  //     .insertOne({"category":"TopSellers", newData}, function (err, result) {
+  //         // console.log(newData)
+  //         console.log('item has been inserted');
+  //     });
+  // });
 });
 
 app.get('/getData', (req,res)=>{

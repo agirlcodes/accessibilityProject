@@ -14,11 +14,10 @@ const products = async () => {
         name: req.body.name,
         price: req.body.price
     })
-
-    newProduct.save((err, products)=>{
-        if(err) console.log(err)
-        console.log(products)
-    })
-
+    console.log(newProduct)
+    Products.findOneAndUpdate(
+        {_id: mongoose.Types.ObjectId(req.body._id)},
+        { products: { $push: { newProduct }}}
+      )
 }
 products()

@@ -16,36 +16,35 @@ $(document).ready(function(){
       $.each(data,function(key, value){      
       // let category = $("#productCategory").val();
       // console.log(value)
+        
+
+
       // POST DATA FROM FORM
     $("#subBtn").click(function () {
       let name = $("#productName").val();
       let img = $("#productImg").val();
       let price = $("#productPrice").val();
       let category = $("#categoryList").val();
-      console.log(name, img, price, category )
+      let id = value._id
+      console.log(name, img, price, category, id )
       let newData = {
+          id,
+          category:category,
           name: name,
           img: img,
           price: price,
         }
-        if(value.category === category){ 
-          console.log(value.product)
+        // if(value.category === category){ 
+          // console.log(
+          // targetID = get data into right category
           // value.product = ()=>{
-            $.post(`${db_url}/insert`, {newData}, function(){
-              console.log("insert successful")
-              console.log(newData)
-            })
-          // }
-        }
+          $.post(`${db_url}/insert`, {newData}, function(){
+            console.log("insert successful")
+          })
       })
       // Get Category for form
       listCat = `<option value="${value.category}">${value.category}</option>`
       $('#categoryList').append(listCat)
-      // db.getCollection('products').find({product: value.product},()=>{
-
-
-      //   console.log(product)
-      // })
 
     // DATA DISPLAY ON CLICK
         $('#overviewBtn').click(()=>{

@@ -38,12 +38,15 @@ $(document).ready(function(){
         });
       });
       
-
+const db_url = 'http://localhost:3000'
 // Select sections to increase size and decrease
-$.getJSON('../backend/data.json', function(data){
+$.getJSON(`${db_url}/getData`, function(data){
+  // console.log(data[0])
   //TOP SELLERS Home page
-  let TopSellers = data.TopSellers;
+// })
+  let TopSellers = data[0];
   $.each(TopSellers, function(index, value){
+    console.log(value)
     $('#topSellers').append(`
     <figure class="data">
       <a href="" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
@@ -55,20 +58,20 @@ $.getJSON('../backend/data.json', function(data){
     </figure>`)
   })
 
-  $.each(data, function(index, value){
-    let dataValue = value[0]
-    // console.log(dataValue)
-      $('#catalogLayout').append(`
-      <figure class="data">
-        <a href="" alt="contains Image of product"><img src=${dataValue.img} alt="image of products available"></a>
-        <figcaption>
-        <ul>
-        <li><h2><a href="" alt="contains Name of product"></h2>${value.name}</a></li>
-        <li>£ ${value.price}</li></ul>
-        <button>Add to Cart</button>
-        </figcaption>
-      </figure>`)
-    })
+  // $.each(data, function(index, value){
+  //   let dataValue = value[0]
+  //   // console.log(dataValue)
+  //     $('#catalogLayout').append(`
+  //     <figure class="data">
+  //       <a href="" alt="contains Image of product"><img src=${dataValue.img} alt="image of products available"></a>
+  //       <figcaption>
+  //       <ul>
+  //       <li><h2><a href="" alt="contains Name of product"></h2>${value.name}</a></li>
+  //       <li>£ ${value.price}</li></ul>
+  //       <button>Add to Cart</button>
+  //       </figcaption>
+  //     </figure>`)
+  //   })
 
 
     // SEARCHBAR
