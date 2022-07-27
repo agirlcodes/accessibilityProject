@@ -79,8 +79,41 @@ $(document).ready(function(){
         //   $(".popup, .popup-content").removeClass("active");
         // });
 
-
-     
+        for (let i = 0; i < goestPro.length; i++) {
+          const goest = goestPro[i];
+          $("#modalContent2").html(`
+          <figure>
+          <img src="${goest.img}">
+          <h2>${goest.name}</h2>  
+          <h4>£${goest.price}</h4>
+          <button>Add To Cart</button>
+          </figure>
+          `)
+          console.log(goest)
+        }
+        for (let i = 0; i < figPro.length; i++) {
+          const fig = figPro[i];
+          console.log(fig)
+            $("#modalContent3").html(`
+            <figure>
+              <img src="${fig.img}">
+              <h2>${fig.name}</h2>  
+              <h4>£${fig.price}</h4>
+              <button>Add To Cart</button>
+            </figure>
+            `)
+        }
+        for (let i = 0; i < boPro.length; i++) {
+          const botanical = boPro[i];
+            $("#modalContent4").html(`
+            <figure>
+              <img src="${botanical.img}">
+              <h2>${botanical.name}</h2>  
+              <h4>£${botanical.price}</h4>
+              <button>Add To Cart</button>
+            </figure>
+            `)
+        }
 
     })
 
