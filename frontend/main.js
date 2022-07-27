@@ -9,7 +9,7 @@ $(document).ready(function(){
     }else{
     $('.data').css('font-size', parseInt(curFontSize)-7);
     }  
-      });
+    });
   $(function() {  
     $('#highRatio').click(function(){
         $('body').css('background-color', 'white');

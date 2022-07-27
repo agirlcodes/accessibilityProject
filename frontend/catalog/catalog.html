@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Us</title>
         <link rel="stylesheet" href="/frontend/styles/catalog.css">
-            <link rel="stylesheet" href="/frontend/modal/modal.css">
+            <!-- <link rel="stylesheet" href="/frontend/modal/modal.css"> -->
     </head>
     <body>
         <div class="grid">
@@ -93,14 +93,43 @@
             <h1>Catalog</h1>
             <div id="catalog"></div>
             </main>
-                    <!--Creates the popup body-->
-    <div class="popup-overlay">
-        <!--Creates the popup content-->
-        <div class="popup-content">
-            <button class="close">Close</button>        
-        </div>
-    </div>
-    <!-- <button class="open">Open</button> -->
+            <!-- <div class="container">
+                <button class="btn" data-target="#modal1">Open Modal</button>
+                <button class="btn" data-target="#modal2">Open Modal 2</button>
+                <br />
+              </div> -->
+          
+              <div class="modal" id="modal1">
+                <div class="header">
+                  <div class="title">First Modal</div>
+                  <button class="btn close-modal">&times;</button>
+                </div>
+                <div class="modalContent" id="modalContent1">
+                </div>
+              </div>
+              <div class="modal" id="modal2">
+                <div class="header">
+                  <div class="title">Second Modal</div>
+                  <button class="btn close-modal">&times;</button>
+                </div>
+                <div class="modalContent" id="modalContent2"></div>
+              </div>
+              <div class="modal" id="modal3">
+                <div class="header">
+                  <div class="title">third Modal</div>
+                  <button class="btn close-modal">&times;</button>
+                </div>
+                <div class="modalContent" id="modalContent3"></div>
+              </div>
+              <div class="modal" id="modal4">
+                <div class="header">
+                  <div class="title">Fourth Modal</div>
+                  <button class="btn close-modal">&times;</button>
+                </div>
+                <div class="modalContent" id="modalContent4"></div>
+              </div>
+          
+              <div id="overlay"></div>
             <footer class="data">
                 <nav>
                     <aside class="miniMenu">
