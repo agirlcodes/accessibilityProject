@@ -15,7 +15,6 @@ Cookies - maybe?
 - [ ] mobile view
 - [ ] Security of login/sign up
   - [ ] regular expression
-- [ ] Carousel functionality
 - [ ] cart functionality
   - [ ] when the cart is opened, have a redirect to page that showcases the amount/ objeccts you have in the cart
   - [ ] Also allow for payment gateway
