@@ -1,11 +1,13 @@
 // FIX NAV MENU
 @mixin accessibility {
+  // display: flex;
+  // flex-direction: row;
   #accessibilityNav{
   position: relative;
   width: 100%;
   // #container{
-    width: 100%;
-    margin-left: -15%;
+  width: 100%;
+  margin-left: -15%;
     // background-color: #ffffff;
       display: flex;
       flex-direction: row;
@@ -19,17 +21,23 @@
                 cursor: pointer;
             }
         }
-       }
-  .searchBar{
-    display: flex;
-    // flex-direction: row;
+  }
+}
+@mixin shoppingLayout{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  // .searchBar{
     // height: 100px;
     #logo{
       max-height: 250px;
     }
     #searchBarLayout{
-      align-self: flex-end;
-      width: 84%;
+      margin-top: 5%;
+      // align-self: flex-end;
+      display: flex;
+      flex-direction: row;
+      width: 80%;
       margin-bottom: 10%;
       button, input{
         background-color: transparent;
@@ -45,8 +53,17 @@
       input[type=text]{
         border-bottom: 1px solid rgb(88, 88, 88);
         font-size: 16px;
-        width: 70%;
+        width: 60%;
         transition: width 0.15s ease-in-out;
+      }
+    // }
+    #cartModal{
+      background-color: transparent;
+      border: none;
+      justify-self: flex-start;
+      img{
+        height: 25px;
+        width: auto;
       }
     }
   }
@@ -65,7 +82,7 @@
 }
 @mixin gridLayout{
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 20% 80% ;
   grid-template-rows: auto auto auto auto;
   // max-width: 90%;
   padding: 2%;
@@ -73,7 +90,7 @@
   box-sizing: border-box;
   header{
     grid-row: 1;
-    grid-column: 1/span 3;
+    grid-column: 1/span 2;
   }
   #menu{
     grid-column: 1;
@@ -107,7 +124,7 @@
     grid-row: 3;
   }
   footer{
-    grid-column: 1/span 3;
+    grid-column: 1/span 2;
     grid-row: 4;
   }
 }

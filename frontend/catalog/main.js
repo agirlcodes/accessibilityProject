@@ -20,7 +20,7 @@ $(document).ready(function(){
             <h2>
             <a href="subpages/topSellers.html" alt="contains Name of product">${topSellers.category}</a></h2>
         </figcaption>
-            <a id=${topPro[0]._id} href="topSellers.html" alt="contains Image of product"><img src=${topPro[0].img} alt="image of products available"></a>
+            <a id=${topPro[0]._id} href="subpages/topSellers.html" alt="contains Image of product"><img src=${topPro[0].img} alt="image of products available"></a>
         </figure>
         <figure id="goest" class="data" >
         <figcaption>
@@ -44,76 +44,9 @@ $(document).ready(function(){
             <a id=${boPro[0]._id} href="subpages/botanical.html" alt="contains Image of product"><img src=${boPro[0].img} alt="image of products available"></a>
         </figure>`)
 
-        // $("#topSeller").click(function(e){
-        //   e.preventDefault()
-        //   $(".popup, .popup-content").addClass("active");
-        //   // console.log(dataSelected)
-        //   $(".popup-content").append(`
-        //   <h1>${botanical.category}</h1>
-        //   `)
-        //   console.log("hello?")
-        // });
-        // $("#goest").click(function(e){
-        //   e.preventDefault()
-        //   $(".popup, .popup-content").addClass("active");
-        //   // let dataSelected = $("#topData").val()
-        //   // console.log(dataSelected)
-        //   $(".popup-content").append(`
-        //   <h1>${figYarrow.category}</h1>`)
-        //   console.log("hello?")
-        // });
-        // $("#figYarrow").click(function(e){
-        //   e.preventDefault()
-        //   $(".popup, .popup-content").addClass("active");
-        //   // console.log(dataSelected)
-        //   // $(".popup-content").append(dataSelected)
-        //   console.log("hello?")
-        // });
-        // $("#botanical").click(function(e){
-        //   e.preventDefault()
-        //   $(".popup, .popup-content").addClass("active");
-        // });
-
-
-        // $(".close, .popup").click(function(){
-        //   $(".popup, .popup-content").removeClass("active");
-        // });
-
-        for (let i = 0; i < goestPro.length; i++) {
-          const goest = goestPro[i];
-          $("#modalContent2").html(`
-          <figure>
-          <img src="${goest.img}">
-          <h2>${goest.name}</h2>  
-          <h4>£${goest.price}</h4>
-          <button>Add To Cart</button>
-          </figure>
-          `)
-          console.log(goest)
-        }
-        for (let i = 0; i < figPro.length; i++) {
-          const fig = figPro[i];
-          console.log(fig)
-            $("#modalContent3").html(`
-            <figure>
-              <img src="${fig.img}">
-              <h2>${fig.name}</h2>  
-              <h4>£${fig.price}</h4>
-              <button>Add To Cart</button>
-            </figure>
-            `)
-        }
-        for (let i = 0; i < boPro.length; i++) {
-          const botanical = boPro[i];
-            $("#modalContent4").html(`
-            <figure>
-              <img src="${botanical.img}">
-              <h2>${botanical.name}</h2>  
-              <h4>£${botanical.price}</h4>
-              <button>Add To Cart</button>
-            </figure>
-            `)
-        }
+        $("#topSeller",function(e){
+          e.preventDefault()
+        })
 
     })
 

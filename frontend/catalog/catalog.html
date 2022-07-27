@@ -6,14 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Us</title>
         <link rel="stylesheet" href="/frontend/styles/catalog.css">
-            <!-- <link rel="stylesheet" href="/frontend/modal/modal.css"> -->
+        <link rel="stylesheet" href="../styles/cart.css">
     </head>
     <body>
         <div class="grid">
             <header>
                 <nav id="accessibilityNav">
                     <div id="container">
-                        <button id="fingerspell"><img src="../icons/icons8-sign-language-50.png" alt=""></button>
+                        <span>X</span>
+                        <button id="fingerspell"><img src="/frontend/icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
                         <button value="increase" class="increaseFont">
                             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
                                 <text id="_" data-name="+" transform="translate(10 30)" font-size="20" font-family="SegoeUI, Segoe UI" ><tspan x="0" y="0">+</tspan></text>
@@ -26,46 +27,43 @@
                             <text id="_" data-name="-" transform="translate(10 30)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-</tspan></text>
                             </svg>
                         </button>
-                        <div class="subNavLayout">
-                            <h3>Colour Palette</h3>
-                            <div class="background-change">
-                                <button id="highRatio" >
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 42 42">
-                                        <g id="Rectangle_17" data-name="Rectangle 17" fill="#fff" stroke="#000" stroke-width="5">
-                                            <rect width="42" height="42" stroke="none"/>
-                                            <rect x="2.5" y="2.5" width="37" height="37" fill="none"/>
-                                        </g>
-                                        <path id="Path_12" data-name="Path 12" d="M2830.251,292.421l-38.881,38.468h38.881Z" transform="translate(-2789.893 -290.891)"/>
-                                    </svg>
-                                </button>
-                                <button id="mediumRatio">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
-                                        <g id="Rectangle_18" data-name="Rectangle 18" fill="#222a2e" stroke="#000" stroke-width="5">
-                                            <rect width="41" height="42" stroke="none"/>
-                                            <rect x="2.5" y="2.5" width="36" height="37" fill="none"/>
-                                        </g>
-                                        <path id="Path_13" data-name="Path 13" d="M2822.344,292.421l-30.974,31.991h30.974Z" transform="translate(-2786.416 -287.438)" fill="#73a1b9"/>
-                                    </svg>
-                                </button>
-                                <button id="lowRatio">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
-                                        <g id="Rectangle_19" data-name="Rectangle 19" fill="#e5c54a" stroke="#000" stroke-width="5">
-                                            <rect width="41" height="42" stroke="none"/>
-                                            <rect x="2.5" y="2.5" width="36" height="37" fill="none"/>
-                                        </g>
-                                        <path id="Path_14" data-name="Path 14" d="M2822.446,292.421l-31.076,32.048h31.076Z" transform="translate(-2786.441 -287.432)" fill="#045884"/>
-                                    </svg>
-                                </button>
+                        <div class="background-change">
+                            <button id="highRatio" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 42 42">
+                                    <g id="Rectangle_17" data-name="Rectangle 17" fill="#fff" stroke="#000" stroke-width="5">
+                                        <rect width="42" height="42" stroke="none"/>
+                                        <rect x="2.5" y="2.5" width="37" height="37" fill="none"/>
+                                    </g>
+                                    <path id="Path_12" data-name="Path 12" d="M2830.251,292.421l-38.881,38.468h38.881Z" transform="translate(-2789.893 -290.891)"/>
+                                </svg>
+                            </button>
+                            <button id="mediumRatio">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
+                                    <g id="Rectangle_18" data-name="Rectangle 18" fill="#222a2e" stroke="#000" stroke-width="5">
+                                        <rect width="41" height="42" stroke="none"/>
+                                        <rect x="2.5" y="2.5" width="36" height="37" fill="none"/>
+                                    </g>
+                                    <path id="Path_13" data-name="Path 13" d="M2822.344,292.421l-30.974,31.991h30.974Z" transform="translate(-2786.416 -287.438)" fill="#73a1b9"/>
+                                </svg>
+                            </button>
+                            <button id="lowRatio">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
+                                    <g id="Rectangle_19" data-name="Rectangle 19" fill="#e5c54a" stroke="#000" stroke-width="5">
+                                        <rect width="41" height="42" stroke="none"/>
+                                        <rect x="2.5" y="2.5" width="36" height="37" fill="none"/>
+                                    </g>
+                                    <path id="Path_14" data-name="Path 14" d="M2822.446,292.421l-31.076,32.048h31.076Z" transform="translate(-2786.441 -287.432)" fill="#045884"/>
+                                </svg>
+                            </button>
                             </div>
-                        </div>
                     </div>
                 </nav>
-                <div class="searchBar">
-                <dfn title="Search Field"><img id="logo" src="../icons/editedLady.png" alt="search icon"></dfn>
+                <div class="searchBar" id="cart">
+                <dfn title="Search Field"><img id="logo" src="/frontend/icons/editedLady.png" alt="search icon"></dfn>
                     <form id="searchBarLayout">
-                        <button><img src="../icons/search.png" alt=""></button>
+                        <button><img src="/frontend/icons/search.png" alt=""></button>
                         <input id="searchBar" type="text" name="Search Bar" placeholder="Search">
-                        <button><dfn title="Cart"><img src="../icons/shopping-cart.png" alt="Cart Icon"></dfn></button>
+                        <button class="cartBtn"><dfn title="Cart"><img class="cartBtn"src="/frontend/icons/shopping-cart.png" alt="Cart Icon"></dfn></button>
                         <section class="searchBarResults"></section>
                     </form>
                 </div>
@@ -92,7 +90,7 @@
                 <br />
               </div> -->
           
-              <div class="modal" id="modal1">
+              <!-- <div class="modal" id="modal1">
                 <div class="header">
                   <div class="title">First Modal</div>
                   <button class="btn close-modal">&times;</button>
@@ -122,7 +120,7 @@
                 <div class="modalContent" id="modalContent4"></div>
               </div>
           
-              <div id="overlay"></div>
+              <div id="overlay"></div> -->
             <footer class="data">
                 <nav>
                     <aside class="miniMenu">

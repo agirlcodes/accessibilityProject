@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce</title>
     <link rel="stylesheet" href="/frontend/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/frontend/styles/cart.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome.min.css"> -->
+
     </head>
 <body>
     <div class="grid">
-    <header>
         <nav id="accessibilityNav">
             <div id="container">
                 <span>X</span>
@@ -57,15 +59,20 @@
                     </div>
             </div>
         </nav>
-        <div class="searchBar">
-        <dfn title="Search Field"><img id="logo" src="/frontend/icons/editedLady.png" alt="search icon"></dfn>
+    <header>
+        <!-- <div class="searchBar"> -->
+            <img id="logo" src="/frontend/icons/editedLady.png" alt="search icon">
+        <dfn title="Search Field">
+        </dfn>
             <form id="searchBarLayout">
                 <button><img src="/frontend/icons/search.png" alt=""></button>
                 <input id="searchBar" type="text" name="Search Bar" placeholder="Search">
-                <button id="cartBtn"><dfn title="Cart"><img src="/frontend/icons/shopping-cart.png" alt="Cart Icon"></dfn></button>
                 <section class="searchBarResults"></section>
+                <button id="cartModal"><dfn title="Cart"><img src="/frontend/icons/shopping-cart.png" alt="Cart Icon"></dfn>
+                    <div id="cart"></div>
+                </button>
             </form>
-        </div>
+        <!-- </div> -->
     </header>
         <nav id="menu">
             <ul class="data" id="navMenu">
@@ -118,4 +125,8 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>    
 <script src="/frontend/main.js"></script>
+<link href="/simple_cart.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="/frontend/cart.js" ></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </html>

@@ -4,8 +4,9 @@ body{
 }
 .grid{
   @include gridLayout;
+  @include accessibility;
   header{
-    @include accessibility;
+    @include shoppingLayout;
   }
   .data{
     margin-left: 30px;

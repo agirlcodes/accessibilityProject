@@ -26,8 +26,8 @@ body h2 {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 60% 20%;
-      grid-template-columns: 20% 60% 20%;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
   padding: 2%;
@@ -40,8 +40,8 @@ body h2 {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/span 3;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
 }
 
 .grid #menu {
@@ -89,13 +89,13 @@ body h2 {
 
 .grid footer {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/span 3;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
   -ms-grid-row: 4;
   grid-row: 4;
 }
 
-.grid header #accessibilityNav {
+.grid #accessibilityNav {
   position: relative;
   width: 100%;
   width: 100%;
@@ -103,57 +103,83 @@ body h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: fixed;
   top: 0;
   padding-left: 45%;
 }
 
-.grid header #accessibilityNav button {
+.grid #accessibilityNav button {
   background-color: transparent;
   border: none;
 }
 
-.grid header #accessibilityNav button :hover {
+.grid #accessibilityNav button :hover {
   cursor: pointer;
 }
 
-.grid header .searchBar {
+.grid header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
 }
 
-.grid header .searchBar #logo {
+.grid header #logo {
   max-height: 250px;
 }
 
-.grid header .searchBar #searchBarLayout {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 84%;
+.grid header #searchBarLayout {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
   margin-bottom: 10%;
 }
 
-.grid header .searchBar #searchBarLayout button, .grid header .searchBar #searchBarLayout input {
+.grid header #searchBarLayout button, .grid header #searchBarLayout input {
   background-color: transparent;
   border: none;
   height: 50px;
 }
 
-.grid header .searchBar #searchBarLayout button :hover, .grid header .searchBar #searchBarLayout input :hover {
+.grid header #searchBarLayout button :hover, .grid header #searchBarLayout input :hover {
   cursor: pointer;
 }
 
-.grid header .searchBar #searchBarLayout button img, .grid header .searchBar #searchBarLayout input img {
+.grid header #searchBarLayout button img, .grid header #searchBarLayout input img {
   height: 23px;
 }
 
-.grid header .searchBar #searchBarLayout input[type=text] {
+.grid header #searchBarLayout input[type=text] {
   border-bottom: 1px solid #585858;
   font-size: 16px;
-  width: 70%;
+  width: 60%;
   -webkit-transition: width 0.15s ease-in-out;
   transition: width 0.15s ease-in-out;
+}
+
+.grid header #searchBarLayout #cartModal {
+  background-color: transparent;
+  border: none;
+  justify-self: flex-start;
+}
+
+.grid header #searchBarLayout #cartModal img {
+  height: 25px;
+  width: auto;
 }
 
 .grid .data {
