@@ -2,7 +2,7 @@
 #cart{
     /* margin-top: 10%; */
     background-color: #ffffff;
-    /* display: block; */
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,10 @@
 }
 /* .cart-grid  {
 } */
-
+.close{
+    font-size: 1.5em;
+    visibility: visible;
+}
 .cart-heading{
     display: flex;
     padding: 2%;

@@ -86,15 +86,12 @@ $(document).ready(function(){
       e.preventDefault();
     })
     $('#cart').simpleCart();
-    // $('#cart').hide()
-    $('.cartBtn').click(function(e){
-      console.log("open")
-      e.preventDefault()
+
+    $('.cartBtn').click(function(){
       $('#cart').show()
     })
     $('.close').click(function(e){
       e.preventDefault();
-      console.log("close")
       $('#cart').hide()
     })
   })
