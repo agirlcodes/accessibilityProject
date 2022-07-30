@@ -62,44 +62,48 @@ $(document).ready(function(){
     })
     
     
-    // SEARCHBAR
-    $('#searchBar').keyup(function(e){
-      let input = $('#searchBar').val()
-      input = input.toLowerCase();
-      $.each(data, function(index, value){
-        for(var key in value) {
-          let dataValue = value[key]
-          if (dataValue.name.toLowerCase().indexOf(input)!= -1) {
-            $('.searchBarResults').html(`
-            <figure class="data">
-            <img src="${dataValue.img} alt="image of products available>
-            </figure>
-            <figcaption>${dataValue.name}</figcaption>
-            <figcaption>£${dataValue.price}</figcaption>
-            <figcaption>${dataValue.category}</figcaption>
-            `)
-            console.log(dataValue.category)
-          }
-        }
-      });
-      console.log(input)
-      e.preventDefault();
-    })
-    $('#cart').simpleCart();
+    // // SEARCHBAR
+    // $('#searchBar').keyup(function(e){
+    //   let input = $('#searchBar').val()
+    //   input = input.toLowerCase();
+    //   $.each(data, function(index, value){
+    //     for(var key in value) {
+    //       let dataValue = value[key]
+    //       if (dataValue.name.toLowerCase().indexOf(input)!= -1) {
+    //         $('.searchBarResults').html(`
+    //         <figure class="data">
+    //         <img src="${dataValue.img} alt="image of products available>
+    //         </figure>
+    //         <figcaption>${dataValue.name}</figcaption>
+    //         <figcaption>£${dataValue.price}</figcaption>
+    //         <figcaption>${dataValue.category}</figcaption>
+    //         `)
+    //         console.log(dataValue.category)
+    //       }
+    //     }
+    //   });
+    //   console.log(input)
+    //   e.preventDefault();
+    // })
 
-    $('.cartBtn').click(function(){
-      $('#cart').show()
+      $('#cart').simpleCart();
+      $("#cart").css("display", "none");
+    $('#cartModal').click(function(event){
+      event.preventDefault();
+      // $('#cart').show();
+      console.log("im on catalog?")
+      $('#cart').toggle()
+      // $('.cart-grid').addClass("cart-grid")
+      // $('#cart').css({"background-color": "yellow"})
+      
     })
-    $('.close').click(function(e){
-      e.preventDefault();
-      $('#cart').hide()
+    $('#closeModal').click(function(event){
+      event.preventDefault();
+      $('#cart').css("display: none")
+      // $('#cart').toggle()
+      // $('.cart-grid').removeClass("cart-grid")
+      console.log("close it damnnit")
     })
   })
-  
-  // // CART FUNCTION
-  // $('#cartBtn').click(function(){
-  //   window.open('/cart/cart.html')
-  //   console.log("I AM THE CART FUNCTION")
-  // })
-  
+ 
 })

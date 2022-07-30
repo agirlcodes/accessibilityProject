@@ -2,17 +2,19 @@
 body{
   @include bodyLayout;
 }
-header{
-  @include accessibility;
-}
+
 .grid{
   @include gridLayout;
-  // .data{
-  //   margin: 2%;
-  //   #aboutImg{
-  //     width: 100%
-  //   }
-  // }
+  @include accessibility;
+  header{
+    @include shoppingLayout;
+  }
+  .data{
+    margin: 2%;
+    #aboutImg{
+      width: 100%
+    }
+  }
 }
 footer{
     @include footer;
