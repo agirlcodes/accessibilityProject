@@ -13,19 +13,19 @@ $(document).ready(function(){
     }  
     });
   $(function() {  
-    $('#highRatio').click(function(){
+    $('#highBackgroundContrast').click(function(){
         $('body').css('background-color', 'white');
         $('.data').css('color', 'black');
       });
     });
   $(function() {  
-    $('#mediumRatio').click(function(){
+    $('#mediumBackgroundContrast').click(function(){
         $('body').css('background-color', '#73A1B9');
         $('.data').css('color', '#222A2E');
       });
     });
   $(function() {  
-    $('#lowRatio').click(function(){
+    $('#lowBackgroundContrast').click(function(){
         $('body').css('background-color', '#045884');
         $('.data').css('color', '#E5C54A');
       });
