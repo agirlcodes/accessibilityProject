@@ -13,23 +13,23 @@ $(document).ready(function(){
     }  
     });
   $(function() {  
-    $('#highBackgroundContrast').click(function(){
+    $('#coloredBackground').click(function(){
         $('body').css('background-color', 'white');
         $('.data').css('color', 'black');
       });
     });
   $(function() {  
-    $('#mediumBackgroundContrast').click(function(){
+    $('#monochromeBackground').click(function(){
         $('body').css('background-color', '#73A1B9');
         $('.data').css('color', '#222A2E');
       });
     });
-  $(function() {  
-    $('#lowBackgroundContrast').click(function(){
-        $('body').css('background-color', '#045884');
-        $('.data').css('color', '#E5C54A');
-      });
-    });
+  // $(function() {  
+  //   $('#lowBackgroundContrast').click(function(){
+  //       $('body').css('background-color', '#045884');
+  //       $('.data').css('color', '#E5C54A');
+  //     });
+  //   });
   // FingerSpell
   $(function() {  
     $('#fingerspell').click(function(){
