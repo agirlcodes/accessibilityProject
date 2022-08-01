@@ -43,10 +43,10 @@ $(document).ready(function(){
                 $.each(topPro, function(index, value){
                     $('#topSellers').append(`
                     <figure class="data">
-                    <a href="/frontend/catalog/subpages/topSellers.html" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
+                    <img src=${value.img} alt="image of products available">
                     <figcaption>
                     <ul>
-                    <li><h2><a href="/frontend/catalog/subpages/topSellers.html" alt="contains Name of product"></h2>${value.name}</a></li>
+                    <li><h2>${value.name}</h2></li>
                     <li data-price="${value.price}">£ ${value.price}</li></ul>
                     </figcaption>
                     </figure>
