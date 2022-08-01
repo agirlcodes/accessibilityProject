@@ -11,12 +11,12 @@
 
     </head>
 <body>
+    <h1>Nirvana Cosmetics</h1>
     <div class="grid">
-        <h1>Beauty Cosmetics</h1>
         <nav id="accessibilityNav">
             <div id="container">
                 <span>X</span>
-                <button id="fingerspell"><img src="/frontend/icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
+                <button aria-label="change text to fingerspell" id="fingerspell"><img src="/frontend/icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
                 <button aria-label="Increase font size" value="increase" class="increaseFont">
                     <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
                         <text id="_" data-name="+" transform="translate(10 30)" font-size="20" font-family="SegoeUI, Segoe UI" ><tspan x="0" y="0">+</tspan></text>
@@ -30,6 +30,7 @@
                     </svg>
                 </button>
                 <div class="background-change">
+                    <p>Colour Palette:</p>
                     <button aria-label="colored background" id="coloredBackground" >
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 42 42">
                             <g id="Rectangle_17" data-name="Rectangle 17" fill="#fff" stroke="#000" stroke-width="5">
@@ -39,15 +40,6 @@
                             <path id="Path_12" data-name="Path 12" d="M2830.251,292.421l-38.881,38.468h38.881Z" transform="translate(-2789.893 -290.891)"/>
                         </svg>
                     </button>
-                    <!-- <button id="mediumBackgroundContrast">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
-                            <g id="Rectangle_18" data-name="Rectangle 18" fill="#222a2e" stroke="#000" stroke-width="5">
-                                <rect width="41" height="42" stroke="none"/>
-                                <rect x="2.5" y="2.5" width="36" height="37" fill="none"/>
-                            </g>
-                            <path id="Path_13" data-name="Path 13" d="M2822.344,292.421l-30.974,31.991h30.974Z" transform="translate(-2786.416 -287.438)" fill="#73a1b9"/>
-                        </svg>
-                    </button> -->
                     <button aria-label="black and white color background" id="monochromeBackground">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
                             <g id="Rectangle_19" data-name="Rectangle 19" fill="#e5c54a" stroke="#000" stroke-width="5">
@@ -69,6 +61,7 @@
                     <button aria-label="Search Bar button"><img src="/frontend/icons/search.png" alt=""></button>
                     <input id="searchBar" type="text" placeholder="Search Bar">
                     <section class="searchBarResults"></section>
+                    <!-- CART -->
                     <button id="cartModal"><dfn title="Cart"><img src="/frontend/icons/shopping-cart.png" alt="Cart Icon"></dfn>
                         <div id="cart"></div>
                     </button>
@@ -94,7 +87,7 @@
                 </section>
                 <article><p>Our products are inspired by the people and world around us. High quality goods that are designed especially for you. Discover our story and meet the people that make our brand what it is.</p></article>
                 <h2>Top Sellers</h2>
-                <section id="topSellers"></section>
+                <section id="topSellersContent"></section>
             </section>
         </main>
     <footer class="data">
@@ -118,13 +111,18 @@
     </footer>
     </div>
 </body>
-<script async defer 
-    id="aweb-script"
-    type="text/javascript"
-    src="https://ramp.accessibleweb.com/badge/tfK0AO4zefc2ccRP7o3_P379AikBiyv9-7N5Q8Vaxxs/script.js"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>    
-<script src="/frontend/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<!-- ACCESSIBILITY API -->
+<!-- <script async defer id="aweb-script" src="https://ramp.accessibleweb.com/badge/tfK0AO4zefc2ccRP7o3_P379AikBiyv9-7N5Q8Vaxxs/script.js"></script>  -->
+<!-- MODAL PLUGIN -->
+<link href="/frontend/styles/cart.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous"></script>
 <script src="/frontend/cart.js" ></script>
+
+<!-- PAYPAL LINK -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<script src="/frontend/main.js"></script>
+<script src="/frontend/cart.js" ></script>
 </html>

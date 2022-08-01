@@ -1,18 +1,16 @@
 // FIX NAV MENU
 @mixin accessibility {
-  // display: flex;
-  // flex-direction: row;
   #accessibilityNav{
   position: relative;
-  width: 100%;
-  // #container{
-  width: 100%;
-  margin-left: -15%;
+  // width: 100%;
+  #container{
+  // width: 100%;
+  // margin-left: -15%;
     // background-color: #ffffff;
       display: flex;
       flex-direction: row;
       position: fixed;
-      top: 0;
+      top: 1%;
       padding-left: 45%;
         button{
             background-color: transparent;
@@ -21,6 +19,7 @@
                 cursor: pointer;
             }
         }
+      }
   }
 }
 @mixin shoppingLayout{

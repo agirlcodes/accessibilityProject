@@ -187,6 +187,3 @@
     }
     ;
 })(jQuery, window, document);
-
-
-
