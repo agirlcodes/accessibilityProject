@@ -39,35 +39,35 @@ $(document).ready(function(){
             <a id=${boPro[0]._id} href="subpages/botanical.html" alt="contains Image of product"><img src=${boPro[0].img} alt="image of products available"></a>
             </figure>`)
             
-            $("#topSeller",function(){
-                $.each(topPro, function(index, value){
-                    $('#topSellers').append(`
-                    <figure class="data">
-                    <img src=${value.img} alt="image of products available">
-                    <figcaption>
-                    <ul>
-                    <li><h2>${value.name}</h2></li>
-                    <li data-price="${value.price}">£ ${value.price}</li></ul>
-                    </figcaption>
-                    </figure>
-                    <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
-                    `)
-                })
-                $('#cart').simpleCart();
-                $("#cart").css("display", "none");
-                $('#cartModal').click(function(event){
-                  event.preventDefault();
-                  console.log("im on catalog?")
-                  $('#cart').toggle()
-                  
-                })
-                $('#closeModal').click(function(event){
-                  event.preventDefault();
-                  $('#cart').css("display: none")
-                  console.log("close it damnnit")
-                })
+        $("#topSeller",function(){
+            $.each(topPro, function(index, value){
+                $('#topSellers').append(`
+                <figure class="data">
+                <img src=${value.img} alt="image of products available">
+                <figcaption>
+                <ul>
+                <li><h2>${value.name}</h2></li>
+                <li data-price="${value.price}">£ ${value.price}</li></ul>
+                </figcaption>
+                </figure>
+                <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
+                `)
             })
-            
+            // $('#cart').simpleCart();
+            // $("#cart").css("display", "none");
+            // $('#cartModal').click(function(event){
+            //     event.preventDefault();
+            //     console.log("im on catalog?")
+            //     $('#cart').toggle()
+                
+            // })
+        //     $('#closeModal').click(function(event){
+        //         event.preventDefault();
+        //         $('#cart').css("display: none")
+        //         console.log("close it damnnit")
+        //     })
         })
-        
+            
     })
+    
+})

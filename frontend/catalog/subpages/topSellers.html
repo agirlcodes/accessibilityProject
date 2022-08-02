@@ -14,7 +14,7 @@
             <nav id="accessibilityNav">
                 <div id="container">
                     <span>X</span>
-                    <button id="fingerspell"><img src="/frontend/icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
+                    <button aria-label="change text to fingerspell" id="fingerspell"><img src="/frontend/icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
                     <button aria-label="Increase font size" value="increase" class="increaseFont">
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
                             <text id="_" data-name="+" transform="translate(10 30)" font-size="20" font-family="SegoeUI, Segoe UI" ><tspan x="0" y="0">+</tspan></text>
@@ -28,6 +28,7 @@
                         </svg>
                     </button>
                     <div class="background-change">
+                        <p>Colour Palette:</p>
                         <button aria-label="colored background" id="coloredBackground" >
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 42 42">
                                 <g id="Rectangle_17" data-name="Rectangle 17" fill="#fff" stroke="#000" stroke-width="5">
@@ -37,15 +38,6 @@
                                 <path id="Path_12" data-name="Path 12" d="M2830.251,292.421l-38.881,38.468h38.881Z" transform="translate(-2789.893 -290.891)"/>
                             </svg>
                         </button>
-                        <!-- <button id="mediumBackgroundContrast">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
-                                <g id="Rectangle_18" data-name="Rectangle 18" fill="#222a2e" stroke="#000" stroke-width="5">
-                                    <rect width="41" height="42" stroke="none"/>
-                                    <rect x="2.5" y="2.5" width="36" height="37" fill="none"/>
-                                </g>
-                                <path id="Path_13" data-name="Path 13" d="M2822.344,292.421l-30.974,31.991h30.974Z" transform="translate(-2786.416 -287.438)" fill="#73a1b9"/>
-                            </svg>
-                        </button> -->
                         <button aria-label="black and white color background" id="monochromeBackground">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
                                 <g id="Rectangle_19" data-name="Rectangle 19" fill="#e5c54a" stroke="#000" stroke-width="5">
@@ -67,6 +59,7 @@
                         <button aria-label="Search Bar button"><img src="/frontend/icons/search.png" alt=""></button>
                         <input id="searchBar" type="text" placeholder="Search Bar">
                         <section class="searchBarResults"></section>
+                        <!-- CART -->
                         <button id="cartModal"><dfn title="Cart"><img src="/frontend/icons/shopping-cart.png" alt="Cart Icon"></dfn>
                             <div id="cart"></div>
                         </button>
@@ -117,6 +110,7 @@
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <script src="../../main.js"></script>
 <script src="../../cart.js"></script>
+<script src="../../cartModal.js"></script>
 <script src="../catalog.js"></script>
 <!-- <script src="modals.js"></script> -->
 </html>

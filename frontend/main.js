@@ -39,28 +39,15 @@ $(document).ready(function(){
     $.each(TopSellers, function(index, value){
       $('#topSellersContent').append(`
       <figure class="data">
-      <a href="" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
+      <a href="/frontend/catalog/subpages/topSellers.html" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
       <figcaption>
       <ul>
-      <li><h2><a href="" alt="contains Name of product"></h2>${value.name}</a></li>
+      <li><h2><a href="/frontend/catalog/subpages/topSellers.html" alt="contains Name of product">${value.name}<h2></a></li>
       <li data-price="${value.price}">£ ${value.price}</li></ul>
       </figcaption>
       <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
       </figure>
       `)
-    })
-    $('#cart').simpleCart();
-    $("#cart").css("display", "none");
-    $('#cartModal').click(function(event){
-      event.preventDefault();
-      console.log("im on catalog?")
-      $('#cart').toggle()
-      
-    })
-    $('#closeModal').click(function(event){
-      event.preventDefault();
-      $('#cart').css("display: none")
-      console.log("close it damnnit")
     })
   })
 });
