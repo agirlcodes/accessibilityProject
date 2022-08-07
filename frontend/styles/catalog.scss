@@ -1,15 +1,66 @@
 @import 'mixins';
 body{
   @include bodyLayout;
+  @include searchbar;
+  @include accessibility;
+}
+header{
+@include landingLayout
 }
 .grid{
   @include gridLayout;
-  @include accessibility;
-  header{
-    @include shoppingLayout;
+  .searchBar{
+  @include shoppingLayout;
   }
   .data{
-    margin-left: 30px;  
+    // margin-left: 30px;  
+    padding: 2%;;
+    #catalog{
+      display: flex;
+      flex-wrap: wrap;
+      // width: 100px;
+      figure{
+        position: relative;
+        text-align: center;
+        color: #5c89b4;
+        // position: relative;
+        a img{
+          max-width: 300px;
+          // border-radius: 9%;
+        }
+      }
+      figcaption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 1%;
+        h2{
+          background-color: #ffffff9a;
+          font-size: 25px;
+          letter-spacing: 3px;
+        }
+        a{
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+    // #layout {
+    // }
+    #topSellers{
+      @include productLayout
+    }
+    #goest{
+      @include productLayout
+    }
+    #yarrow{
+      @include productLayout
+    }
+    #botanical{
+      @include productLayout
+    }
   }
 }
 footer{

@@ -23,6 +23,116 @@ body h2 {
   font-weight: normal;
 }
 
+body p {
+  letter-spacing: 1px;
+}
+
+body #searchBarLayout {
+  margin-top: 2%;
+  margin-left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2%;
+}
+
+body #searchBarLayout button, body #searchBarLayout input {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+}
+
+body #searchBarLayout button :hover, body #searchBarLayout input :hover {
+  cursor: pointer;
+}
+
+body #searchBarLayout button img, body #searchBarLayout input img {
+  height: 23px;
+}
+
+body #searchBarLayout input[type=text] {
+  border-bottom: 1px solid #585858;
+  font-size: 16px;
+  width: 60%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+body #searchBarLayout #cartModal {
+  background-color: transparent;
+  border: none;
+  justify-self: flex-start;
+}
+
+body #searchBarLayout #cartModal img {
+  height: 25px;
+  width: auto;
+}
+
+body #accessibilityNav {
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0%;
+  z-index: 999;
+}
+
+body #accessibilityNav #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 0%;
+  padding-left: 45%;
+}
+
+body #accessibilityNav #container button {
+  background-color: transparent;
+  border: none;
+}
+
+body #accessibilityNav #container button :hover {
+  cursor: pointer;
+}
+
+body #accessibilityNav .background-change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header {
+  background-image: url(../icons/skincare-1.jpg);
+  height: 600px;
+  top: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 55px;
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 5%;
+  width: 600px;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -30,13 +140,12 @@ body h2 {
       grid-template-columns: 20% 80%;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
-  padding: 2%;
   margin: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.grid header {
+.grid #landingImg {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
@@ -47,8 +156,8 @@ body h2 {
 .grid #menu {
   -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 3;
-  grid-row: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .grid #menu #navMenu {
@@ -83,45 +192,17 @@ body h2 {
   width: 90%;
   -ms-grid-column: 2;
   grid-column: 2;
-  -ms-grid-row: 3;
-  grid-row: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
-.grid footer {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/span 2;
-  -ms-grid-row: 4;
-  grid-row: 4;
+.grid #layout article {
+  text-align: left;
+  max-width: 80%;
+  margin-left: 10%;
 }
 
-.grid #accessibilityNav {
-  position: relative;
-}
-
-.grid #accessibilityNav #container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: fixed;
-  top: 1%;
-  padding-left: 45%;
-}
-
-.grid #accessibilityNav #container button {
-  background-color: transparent;
-  border: none;
-}
-
-.grid #accessibilityNav #container button :hover {
-  cursor: pointer;
-}
-
-.grid header {
+.grid .searchBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,83 +213,69 @@ body h2 {
   width: 100%;
 }
 
-.grid header #logo {
+.grid .searchBar #logo {
   max-height: 250px;
 }
 
-.grid header #searchBarLayout {
-  margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 80%;
-  margin-bottom: 10%;
-}
-
-.grid header #searchBarLayout button, .grid header #searchBarLayout input {
-  background-color: transparent;
-  border: none;
-  height: 50px;
-}
-
-.grid header #searchBarLayout button :hover, .grid header #searchBarLayout input :hover {
-  cursor: pointer;
-}
-
-.grid header #searchBarLayout button img, .grid header #searchBarLayout input img {
-  height: 23px;
-}
-
-.grid header #searchBarLayout input[type=text] {
-  border-bottom: 1px solid #585858;
-  font-size: 16px;
-  width: 60%;
-  -webkit-transition: width 0.15s ease-in-out;
-  transition: width 0.15s ease-in-out;
-}
-
-.grid header #searchBarLayout #cartModal {
-  background-color: transparent;
-  border: none;
-  justify-self: flex-start;
-}
-
-.grid header #searchBarLayout #cartModal img {
-  height: 25px;
-  width: auto;
-}
-
 .grid .data {
-  margin-left: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.grid .data #carousel {
-  max-width: 700px;
-}
-
-.grid .data #carousel img {
-  height: auto;
-  width: 100%;
-}
-
-.grid .data #carousel a {
-  width: auto;
-  text-decoration: none;
+.grid .data h2 {
   text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  text-transform: uppercase;
-  min-height: 44px;
-  line-height: 1.9;
-  background-color: #c13121;
-  color: #fff;
+}
+
+.grid .data p {
+  letter-spacing: 3px;
+}
+
+.grid #newCollection {
+  margin-bottom: 20px;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+}
+
+.grid #newCollection #launchBanner {
+  width: 100%;
+  height: 490px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid #newCollection aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 15%;
+}
+
+.grid #newCollection aside img {
+  max-width: 600px;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+.grid #newCollection h2 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin: 0%;
+}
+
+.grid #newCollection p {
+  margin: 5%;
+  letter-spacing: 2px;
+}
+
+.grid #newCollection .bannerContent {
+  text-align: center;
+  margin: 1%;
+  letter-spacing: 5px;
 }
 
 .grid #topSellersContent {
@@ -217,345 +284,105 @@ body h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .grid #topSellersContent figure {
   margin: 0%;
-  padding-left: 30px;
-  min-width: 150px;
-  max-width: 300px;
+  margin-left: 5%;
+  margin-bottom: 4%;
 }
 
 .grid #topSellersContent figure a img {
   width: auto;
-  height: 350px;
+  height: 400px;
 }
 
 .grid #topSellersContent figure figcaption {
+  margin: 0%;
+  position: relative;
+  bottom: 17%;
+  background-color: #ffffff9a;
   text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 1%;
+  width: 100%;
 }
 
-.grid #topSellersContent figure figcaption ul li {
-  list-style-type: none;
-}
-
-.grid #topSellersContent figure figcaption ul li a {
+.grid #topSellersContent figure figcaption a {
   text-decoration: none;
-  color: #3c4049;
+  color: #030303;
 }
 
-.grid footer {
+footer {
   font-weight: normal !important;
+  width: 100%;
+  margin-bottom: -1%;
+  background-color: #205e69;
+  color: #ffffff;
 }
 
-.grid footer nav {
+footer a {
+  color: white;
+}
+
+footer #footerLayout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.grid footer nav .miniMenu {
-  padding: 5%;
+footer #footerLayout a {
+  display: block;
+  padding: 12px 0;
 }
 
-.grid footer nav .miniMenu ul {
+footer #footerLayout .dividedLayout {
+  padding: 2%;
+}
+
+footer #footerLayout #missionStatement {
+  width: 30%;
+}
+
+footer #socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40%;
   list-style-type: none;
-  padding: 0;
 }
 
-.grid footer nav .miniMenu ul li a {
+footer #socialMedia a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 50px;
   text-decoration: none;
-  color: black;
+  padding: 12px 0;
+  padding-right: 10px;
+  max-height: 65px;
 }
 
-.grid footer nav .miniMenu form p, .grid footer nav .miniMenu form label {
-  margin-bottom: 5%;
-}
-
-.grid footer nav .miniMenu form button {
-  background-color: #c13121;
-  color: #ffffff;
-  line-height: 1.9;
-  position: relative;
-  padding: 9px 15px;
-  border-radius: 0;
-  font-size: 14px;
-  letter-spacing: 1px;
-  border: 0;
-}
-
-.grid footer nav .miniMenu form input {
-  font-family: Futura,sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6;
-  border-radius: 0;
-  max-width: 100%;
-  background-color: #fff;
-  border: 0;
-  padding: 8px;
-}
-
-.grid footer small {
+footer #fineprint {
   text-align: center !important;
-  padding-bottom: 30px;
 }
 
-@media (max-width: 768px) {
-  .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto;
-    margin-top: 10%;
-  }
-  .grid header {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
-  .grid header #accessibilityNav {
-    position: relative;
-    width: 100%;
-    margin-left: -4%;
-  }
-  .grid header #accessibilityNav #container {
-    width: 100%;
-    background-color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: fixed;
-    padding: 0%;
-    margin: 0%;
-    top: 0;
-  }
-  .grid header #accessibilityNav #container .subNavLayout {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  .grid header #accessibilityNav #container .subNavLayout .background-change {
-    width: auto;
-  }
-  .grid header #accessibilityNav #container .subNavLayout h3 {
-    margin: 0%;
-    margin-bottom: 2%;
-    font-weight: normal;
-    font-size: 16px;
-  }
-  .grid header #accessibilityNav #container button {
-    background-color: transparent;
-    border: none;
-  }
-  .grid header #accessibilityNav #container button :hover {
-    cursor: pointer;
-  }
-  .grid header #accessibilityNav #container .switch {
-    position: relative;
-    display: inline-block;
-    width: 2.5em;
-    height: 1.15em;
-    margin: 2%;
-    margin-left: 10%;
-    /* Hide default HTML checkbox */
-    /* The slider */
-    /* Rounded sliders */
-  }
-  .grid header #accessibilityNav #container .switch .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  .grid header #accessibilityNav #container .switch .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  .grid header #accessibilityNav #container .switch .slider:before {
-    position: absolute;
-    content: "";
-    width: 0.9em;
-    height: 0.8em;
-    left: 4px;
-    bottom: 3px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  .grid header #accessibilityNav #container .switch input:checked + .slider {
-    background-color: #2196F3;
-  }
-  .grid header #accessibilityNav #container .switch input:focus + .slider {
-    -webkit-box-shadow: 0 0 1px #2196F3;
-            box-shadow: 0 0 1px #2196F3;
-  }
-  .grid header #accessibilityNav #container .switch input:checked + .slider:before {
-    -webkit-transform: translateX(1em);
-    transform: translateX(1em);
-  }
-  .grid header #accessibilityNav #container .switch .slider.round {
-    border-radius: 34px;
-  }
-  .grid header #accessibilityNav #container .switch .slider.round:before {
-    border-radius: 50%;
-  }
-  .grid header .searchBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .grid header .searchBar #logo {
-    position: relative;
-    left: 15%;
-  }
-  .grid header .searchBar #searchBarLayout {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    width: 84%;
-    margin-bottom: 5%;
-  }
-  .grid header .searchBar #searchBarLayout button, .grid header .searchBar #searchBarLayout input {
-    background-color: transparent;
-    border: none;
-    height: 50px;
-  }
-  .grid header .searchBar #searchBarLayout button :hover, .grid header .searchBar #searchBarLayout input :hover {
-    cursor: pointer;
-  }
-  .grid header .searchBar #searchBarLayout button img, .grid header .searchBar #searchBarLayout input img {
-    height: 23px;
-  }
-  .grid header .searchBar #searchBarLayout input[type=text] {
-    font-size: 16px;
-    width: 70%;
-    -webkit-transition: width 0.15s ease-in-out;
-    transition: width 0.15s ease-in-out;
-  }
-  .grid #menu {
-    -ms-grid-row: 2;
-    grid-row: 2;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    margin: 0%;
-  }
-  .grid #menu #navMenu {
-    font-size: 16px;
-  }
-  .grid #menu #navMenu a {
-    border-top: 1px solid #d7d8d2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 12px 0;
-    text-decoration: none;
-    color: #3c4049;
-  }
-  .grid #layout {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    width: 90%;
-    -ms-grid-row: 4;
-    grid-row: 4;
-  }
-  .grid #layout #topSellers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .grid #layout #topSellers figure {
-    padding-left: 30px;
-    min-width: 150px;
-    max-width: 300px;
-  }
-  .grid #layout #topSellers figure a img {
-    margin-left: 25%;
-    width: auto;
-    height: 250px;
-  }
-  .grid #layout #topSellers figure figcaption {
-    text-align: center;
-  }
-  .grid #layout #topSellers figure figcaption ul li {
-    list-style-type: none;
-  }
-  .grid #layout #topSellers figure figcaption ul li a {
-    text-decoration: none;
-    color: #3c4049;
-  }
-  .grid footer {
-    -ms-grid-row: 5;
-    grid-row: 5;
-  }
-  .grid footer nav {
-    display: block;
-  }
-  .grid footer nav .miniMenu ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .grid footer nav .miniMenu ul li a {
-    text-decoration: none;
-    color: black;
-  }
-  .grid footer nav .miniMenu form p, .grid footer nav .miniMenu form label {
-    margin-bottom: 5%;
-  }
-  .grid footer nav .miniMenu form button {
-    background-color: #c13121;
-    color: #ffffff;
-    line-height: 1.9;
-    position: relative;
-    padding: 9px 15px;
-    border-radius: 0;
-    font-size: 14px;
-    letter-spacing: 1px;
-    border: 0;
-  }
-  .grid footer nav .miniMenu form input {
-    font-family: Futura,sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.6;
-    border-radius: 0;
-    max-width: 100%;
-    background-color: #fff;
-    border: 0;
-    padding: 8px;
-  }
-  .grid footer small {
-    text-align: center !important;
-    padding-bottom: 30px;
-  }
+footer #fineprint small {
+  margin-left: 1%;
 }
 /*# sourceMappingURL=main.css.map */

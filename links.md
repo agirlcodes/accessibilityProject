@@ -17,6 +17,9 @@ make the webpage more complex
 - [ ] Debugging
 - [ ] Write up - 3 weeks needed
 - [X] font-size limit set
+-  go over About layout
+-  copywritting
+-  go over home layout - 3 grid
 
 Maybe:
 - [ ] Filters????

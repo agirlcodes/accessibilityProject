@@ -1,18 +1,37 @@
 @import 'mixins';
 body{
   @include bodyLayout;
+  @include searchbar;
+  @include accessibility;
 }
-
+#landingImg{
+  @include landingLayout
+}
 .grid{
   @include gridLayout;
-  @include accessibility;
-  header{
-    @include shoppingLayout;
+  .searchBar{
+  @include shoppingLayout;
   }
   .data{
     margin: 2%;
-    #aboutImg{
-      width: 100%
+    .imageLayout{
+    display: flex;
+    flex-wrap: wrap;
+      .aboutImg{
+        width: 45%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+      }
+      #bottomImg{
+        padding-left: 1%;
+        width: 91%;
+      }
+    }
+    #aboutUsContent{
+      // text-align: center;
+      width: 70%;
+      margin-left: 0%;
+      padding-left: 10%;
     }
   }
 }

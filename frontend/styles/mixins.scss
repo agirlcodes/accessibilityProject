@@ -1,16 +1,17 @@
 // FIX NAV MENU
 @mixin accessibility {
   #accessibilityNav{
-  position: relative;
-  // width: 100%;
-  #container{
-  // width: 100%;
-  // margin-left: -15%;
-    // background-color: #ffffff;
+    background: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-bottom: 0%;
+    z-index: 999;
+    #container{
+      // background-color: #205e69;
       display: flex;
       flex-direction: row;
-      position: fixed;
-      top: 1%;
+      top: 0%;
       padding-left: 45%;
         button{
             background-color: transparent;
@@ -19,7 +20,12 @@
                 cursor: pointer;
             }
         }
-      }
+    
+    }
+    .background-change{
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 @mixin shoppingLayout{
@@ -31,41 +37,63 @@
     #logo{
       max-height: 250px;
     }
-    #searchBarLayout{
-      margin-top: 5%;
-      // align-self: flex-end;
-      display: flex;
-      flex-direction: row;
-      width: 80%;
-      margin-bottom: 10%;
-      button, input{
-        background-color: transparent;
-        border: none;
-        height: 50px;
-        :hover{
-          cursor: pointer;
-        }
-        img{
-          height: 23px;
-        }
-      }
-      input[type=text]{
-        border-bottom: 1px solid rgb(88, 88, 88);
-        font-size: 16px;
-        width: 60%;
-        transition: width 0.15s ease-in-out;
-      }
-    // }
-    #cartModal{
+
+}
+@mixin searchbar{
+  #searchBarLayout{
+    margin-top: 2%;
+    margin-left: 25%;
+    // align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    // width: 80%;
+    margin-bottom: 2%;
+    button, input{
       background-color: transparent;
       border: none;
-      justify-self: flex-start;
+      height: 50px;
+      :hover{
+        cursor: pointer;
+      }
       img{
-        height: 25px;
-        width: auto;
+        height: 23px;
       }
     }
+    input[type=text]{
+      border-bottom: 1px solid rgb(88, 88, 88);
+      font-size: 16px;
+      width: 60%;
+      transition: width 0.15s ease-in-out;
+    }
+  // }
+  #cartModal{
+    background-color: transparent;
+    border: none;
+    justify-self: flex-start;
+    img{
+      height: 25px;
+      width: auto;
+    }
   }
+}
+}
+@mixin landingLayout{
+    background-image: url(../icons/skincare-1.jpg);
+      height: 600px;
+      top: 20%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      h1{
+        font-size: 55px;
+        color: white;
+        position: relative;
+        top: 50%;
+        left: 5%;
+        width: 600px;
+        letter-spacing:5px;
+        font-weight: normal;
+      }
 }
 @mixin bodyLayout{
   background-color: white;
@@ -78,22 +106,23 @@
   h2{
     font-weight: normal;
   }
+  p{
+    letter-spacing: 1px;
+  }
 }
 @mixin gridLayout{
   display: grid;
-  grid-template-columns: 20% 80% ;
+  grid-template-columns:20% 80% ;
   grid-template-rows: auto auto auto auto;
-  // max-width: 90%;
-  padding: 2%;
   margin: 0%;
   box-sizing: border-box;
-  header{
+  #landingImg{
     grid-row: 1;
     grid-column: 1/span 2;
   }
   #menu{
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     #navMenu{
       font-size: 16px;
       a{
@@ -119,64 +148,106 @@
   #layout{
     // grid-column: 2/span 3;
     width: 90%;
-    grid-column: 2;
-    grid-row: 3;
+    grid-column:2;
+    grid-row: 2;
+    article{
+      text-align: left;
+      max-width: 80%;
+      margin-left: 10%;
+    }
   }
-  footer{
-    grid-column: 1/span 2;
-    grid-row: 4;
-  }
+  // footer{
+  //   width: 100%;
+  //   grid-column: 1/span 2;
+  //   grid-row: 4;
+  //   background-color: #3f808b;
+  // }
+}
+@mixin productLayout{
+       // background-color: #ec16169a;
+       display: flex;
+       flex-wrap: wrap;
+       margin: 2%;
+       margin-bottom: 5%;
+       figure{
+         width: 20%;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         img{
+           max-width: 100%;
+         }
+         button{
+           background-color: rgb(221, 221, 221);
+           border: none;
+           padding: 1%;
+           height: 40px;
+         }
+         button:hover{
+           background-color: gray;
+           color: white;
+           cursor: pointer;
+         }
+         figcaption{
+           ul{
+             padding: 0%;
+           }
+           h2{
+             font-size: 20px;
+           }
+         }
+       }
 }
 @mixin footer{
   font-weight: normal !important;
-  nav{
+  width: 100%;
+  margin-bottom: -1%;
+  background-color: #205e69;
+  color: #ffffff;
+  a{
+    color: white;
+  }
+  #footerLayout{
     display: flex;
-    .miniMenu{
-      padding: 5%;
-      ul{
-        list-style-type: none;
-        padding: 0;
-        li{
-          a{
-            text-decoration: none;
-            color: black;
-          }
-        }
-      }
-      form{
-        p, label{
-          margin-bottom: 5%;
-        }
-        button{
-          background-color: #c13121;
-          color: #ffffff;
-          line-height: 1.9;
-          position: relative;
-          padding: 9px 15px;
-          border-radius: 0;
-          font-size: 14px;
-          letter-spacing: 1px;
-          border: 0;
-        }
-        input{
-          font-family: Futura,sans-serif;
-          font-style: normal;
-          font-weight: 400;
-          // color: #3c4049;
-          line-height: 1.6;
-          border-radius: 0;
-          max-width: 100%;
-          background-color: #fff;
-          border: 0;
-          padding: 8px;
-        }
-      }
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a{
+      display: block;
+      padding: 12px 0;
+      // color: #b2c8cc;
+      // text-decoration: none;
+    }
+    .dividedLayout{
+      padding: 2%;
+    }
+    #missionStatement{
+      width: 30%;
     }
   }
-  small{
+  #socialMedia{
+    display: flex;
+    padding-left: 40%;
+    // width: 100%;
+    list-style-type: none;
+    a{
+      // border-top: 1px solid #d7d8d2;
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      text-decoration: none;
+      padding: 12px 0;
+      padding-right: 10px;
+      max-height: 65px;
+      // color: #b2c8cc;
+      // svg{
+      // }
+    }
+  }
+  #fineprint{
     text-align: center!important;
-    // margin-left: 25%;
-    padding-bottom: 30px;
+    small{
+      margin-left: 1%;
+    }
   }
 }
 @font-face {

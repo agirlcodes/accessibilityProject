@@ -23,6 +23,116 @@ body h2 {
   font-weight: normal;
 }
 
+body p {
+  letter-spacing: 1px;
+}
+
+body #searchBarLayout {
+  margin-top: 2%;
+  margin-left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2%;
+}
+
+body #searchBarLayout button, body #searchBarLayout input {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+}
+
+body #searchBarLayout button :hover, body #searchBarLayout input :hover {
+  cursor: pointer;
+}
+
+body #searchBarLayout button img, body #searchBarLayout input img {
+  height: 23px;
+}
+
+body #searchBarLayout input[type=text] {
+  border-bottom: 1px solid #585858;
+  font-size: 16px;
+  width: 60%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+body #searchBarLayout #cartModal {
+  background-color: transparent;
+  border: none;
+  justify-self: flex-start;
+}
+
+body #searchBarLayout #cartModal img {
+  height: 25px;
+  width: auto;
+}
+
+body #accessibilityNav {
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0%;
+  z-index: 999;
+}
+
+body #accessibilityNav #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 0%;
+  padding-left: 45%;
+}
+
+body #accessibilityNav #container button {
+  background-color: transparent;
+  border: none;
+}
+
+body #accessibilityNav #container button :hover {
+  cursor: pointer;
+}
+
+body #accessibilityNav .background-change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header {
+  background-image: url(../icons/skincare-1.jpg);
+  height: 600px;
+  top: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 55px;
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 5%;
+  width: 600px;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -30,13 +140,12 @@ body h2 {
       grid-template-columns: 20% 80%;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
-  padding: 2%;
   margin: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.grid header {
+.grid #landingImg {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
@@ -47,8 +156,8 @@ body h2 {
 .grid #menu {
   -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 3;
-  grid-row: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .grid #menu #navMenu {
@@ -83,45 +192,17 @@ body h2 {
   width: 90%;
   -ms-grid-column: 2;
   grid-column: 2;
-  -ms-grid-row: 3;
-  grid-row: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
-.grid footer {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/span 2;
-  -ms-grid-row: 4;
-  grid-row: 4;
+.grid #layout article {
+  text-align: left;
+  max-width: 80%;
+  margin-left: 10%;
 }
 
-.grid #accessibilityNav {
-  position: relative;
-}
-
-.grid #accessibilityNav #container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: fixed;
-  top: 1%;
-  padding-left: 45%;
-}
-
-.grid #accessibilityNav #container button {
-  background-color: transparent;
-  border: none;
-}
-
-.grid #accessibilityNav #container button :hover {
-  cursor: pointer;
-}
-
-.grid header {
+.grid .searchBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,114 +213,304 @@ body h2 {
   width: 100%;
 }
 
-.grid header #logo {
+.grid .searchBar #logo {
   max-height: 250px;
 }
 
-.grid header #searchBarLayout {
-  margin-top: 5%;
+.grid .data {
+  padding: 2%;
+}
+
+.grid .data #catalog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid .data #catalog figure {
+  position: relative;
+  text-align: center;
+  color: #5c89b4;
+}
+
+.grid .data #catalog figure a img {
+  max-width: 300px;
+}
+
+.grid .data #catalog figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1%;
+}
+
+.grid .data #catalog figcaption h2 {
+  background-color: #ffffff9a;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+.grid .data #catalog figcaption a {
+  color: black;
+  text-decoration: none;
+}
+
+.grid .data #topSellers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+  margin-bottom: 5%;
+}
+
+.grid .data #topSellers figure {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 80%;
-  margin-bottom: 10%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
-.grid header #searchBarLayout button, .grid header #searchBarLayout input {
-  background-color: transparent;
+.grid .data #topSellers figure img {
+  max-width: 100%;
+}
+
+.grid .data #topSellers figure button {
+  background-color: #dddddd;
   border: none;
-  height: 50px;
+  padding: 1%;
+  height: 40px;
 }
 
-.grid header #searchBarLayout button :hover, .grid header #searchBarLayout input :hover {
+.grid .data #topSellers figure button:hover {
+  background-color: gray;
+  color: white;
   cursor: pointer;
 }
 
-.grid header #searchBarLayout button img, .grid header #searchBarLayout input img {
-  height: 23px;
+.grid .data #topSellers figure figcaption ul {
+  padding: 0%;
 }
 
-.grid header #searchBarLayout input[type=text] {
-  border-bottom: 1px solid #585858;
-  font-size: 16px;
-  width: 60%;
-  -webkit-transition: width 0.15s ease-in-out;
-  transition: width 0.15s ease-in-out;
+.grid .data #topSellers figure figcaption h2 {
+  font-size: 20px;
 }
 
-.grid header #searchBarLayout #cartModal {
-  background-color: transparent;
+.grid .data #goest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+  margin-bottom: 5%;
+}
+
+.grid .data #goest figure {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.grid .data #goest figure img {
+  max-width: 100%;
+}
+
+.grid .data #goest figure button {
+  background-color: #dddddd;
   border: none;
-  justify-self: flex-start;
+  padding: 1%;
+  height: 40px;
 }
 
-.grid header #searchBarLayout #cartModal img {
-  height: 25px;
-  width: auto;
+.grid .data #goest figure button:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
 }
 
-.grid .data {
-  margin-left: 30px;
+.grid .data #goest figure figcaption ul {
+  padding: 0%;
+}
+
+.grid .data #goest figure figcaption h2 {
+  font-size: 20px;
+}
+
+.grid .data #yarrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+  margin-bottom: 5%;
+}
+
+.grid .data #yarrow figure {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.grid .data #yarrow figure img {
+  max-width: 100%;
+}
+
+.grid .data #yarrow figure button {
+  background-color: #dddddd;
+  border: none;
+  padding: 1%;
+  height: 40px;
+}
+
+.grid .data #yarrow figure button:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.grid .data #yarrow figure figcaption ul {
+  padding: 0%;
+}
+
+.grid .data #yarrow figure figcaption h2 {
+  font-size: 20px;
+}
+
+.grid .data #botanical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+  margin-bottom: 5%;
+}
+
+.grid .data #botanical figure {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.grid .data #botanical figure img {
+  max-width: 100%;
+}
+
+.grid .data #botanical figure button {
+  background-color: #dddddd;
+  border: none;
+  padding: 1%;
+  height: 40px;
+}
+
+.grid .data #botanical figure button:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.grid .data #botanical figure figcaption ul {
+  padding: 0%;
+}
+
+.grid .data #botanical figure figcaption h2 {
+  font-size: 20px;
 }
 
 footer {
   font-weight: normal !important;
+  width: 100%;
+  margin-bottom: -1%;
+  background-color: #205e69;
+  color: #ffffff;
 }
 
-footer nav {
+footer a {
+  color: white;
+}
+
+footer #footerLayout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-footer nav .miniMenu {
-  padding: 5%;
+footer #footerLayout a {
+  display: block;
+  padding: 12px 0;
 }
 
-footer nav .miniMenu ul {
+footer #footerLayout .dividedLayout {
+  padding: 2%;
+}
+
+footer #footerLayout #missionStatement {
+  width: 30%;
+}
+
+footer #socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40%;
   list-style-type: none;
-  padding: 0;
 }
 
-footer nav .miniMenu ul li a {
+footer #socialMedia a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 50px;
   text-decoration: none;
-  color: black;
+  padding: 12px 0;
+  padding-right: 10px;
+  max-height: 65px;
 }
 
-footer nav .miniMenu form p, footer nav .miniMenu form label {
-  margin-bottom: 5%;
-}
-
-footer nav .miniMenu form button {
-  background-color: #c13121;
-  color: #ffffff;
-  line-height: 1.9;
-  position: relative;
-  padding: 9px 15px;
-  border-radius: 0;
-  font-size: 14px;
-  letter-spacing: 1px;
-  border: 0;
-}
-
-footer nav .miniMenu form input {
-  font-family: Futura,sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6;
-  border-radius: 0;
-  max-width: 100%;
-  background-color: #fff;
-  border: 0;
-  padding: 8px;
-}
-
-footer small {
+footer #fineprint {
   text-align: center !important;
-  padding-bottom: 30px;
+}
+
+footer #fineprint small {
+  margin-left: 1%;
 }
 /*# sourceMappingURL=catalog.css.map */

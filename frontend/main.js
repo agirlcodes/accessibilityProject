@@ -38,16 +38,15 @@ $(document).ready(function(){
     let TopSellers = data[0].product;
     $.each(TopSellers, function(index, value){
       $('#topSellersContent').append(`
-      <figure class="data">
+      <figure>
       <a href="/frontend/catalog/subpages/topSellers.html" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
       <figcaption>
-      <ul>
-      <li><h2><a href="/frontend/catalog/subpages/topSellers.html" alt="contains Name of product">${value.name}<h2></a></li>
-      <li data-price="${value.price}">£ ${value.price}</li></ul>
+        <h2>
+        <a href="/frontend/catalog/subpages/topSellers.html" alt="contains Name of product">${value.name}</a><h2>
       </figcaption>
-      <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
       </figure>
       `)
+      // <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
     })
   })
 });
