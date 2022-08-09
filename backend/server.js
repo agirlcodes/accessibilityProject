@@ -1,9 +1,18 @@
-const express = require('express');
-const cors = require('cors');
-const app = express();
-const path = require('path');
-const mongoose = require('mongoose');
+// const express = require('express');
+// const cors = require('cors');
+// const app = express();
+// const path = require('path');
+// const mongoose = require('mongoose');
 import { dirname } from 'path';
+// import { path } from 'path';
+import express from "express";
+import cors from "cors";
+import mongoose from "mongoose";
+//import { dirname } from 'path';
+//import { fileURLToPath } from 'url';
+//const __dirname = dirname(fileURLToPath(import.meta.url));
+// EXPRESS
+const app = express();
 // const Products = require('./models/products')
 // Server set-up
 // const port = 3000;
