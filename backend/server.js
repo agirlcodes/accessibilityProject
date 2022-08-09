@@ -3,6 +3,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
+import { dirname } from 'path';
 // const Products = require('./models/products')
 // Server set-up
 // const port = 3000;
@@ -40,7 +41,7 @@ app.get('/getData', (req,res)=>{
 
 app.get("/", (req,res)=>{
   // res.send("i am base")
-  res.sendFile(path.join(_dirname, '../index.html'))
+  res.sendFile(path.join(dirname, '../index.html'))
 })
 
 // app.post ('/insert', function(req,res,next) {
