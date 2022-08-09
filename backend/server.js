@@ -29,21 +29,21 @@ mongoose.connect(url).then(()=>{
 
 
 // HTTP ENDPOINTS
-app.post ('/insert', function(req,res,next) {
-  // console.log(req)
-  // let newData = {
-  //   name: req.body.name,
-  //   img: req.body.img,
-  //   price: req.body.price
-  // }
-  // mongoose.connect(url, function (err, db) {
-  //     db.collection('products')
-  //     .insertOne({"category":"TopSellers", newData}, function (err, result) {
-  //         // console.log(newData)
-  //         console.log('item has been inserted');
-  //     });
-  // });
-});
+// app.post ('/insert', function(req,res,next) {
+//   // console.log(req)
+//   // let newData = {
+//   //   name: req.body.name,
+//   //   img: req.body.img,
+//   //   price: req.body.price
+//   // }
+//   // mongoose.connect(url, function (err, db) {
+//   //     db.collection('products')
+//   //     .insertOne({"category":"TopSellers", newData}, function (err, result) {
+//   //         // console.log(newData)
+//   //         console.log('item has been inserted');
+//   //     });
+//   // });
+// });
 
 app.get('/getData', (req,res)=>{
   mongoose.connect(url, function(err, db) {
@@ -57,5 +57,6 @@ app.get('/getData', (req,res)=>{
 
 app.get("/", (req,res)=>{
   res.send("i am base")
+  res.sendFile(path.join(_dirname, 'index.html'))
 })
 
