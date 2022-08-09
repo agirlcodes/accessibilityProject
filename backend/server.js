@@ -4,7 +4,8 @@ const app = express();
 const mongoose = require('mongoose');
 // const Products = require('./models/products')
 // Server set-up
-const port = 3000;
+// const port = 3000;
+const port = http.createServer(process.env.PORT || 3000);
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
