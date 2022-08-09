@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-// const http = require('http');
+const path = require('path');
 const mongoose = require('mongoose');
 // const Products = require('./models/products')
 // Server set-up
@@ -27,8 +27,22 @@ mongoose.connect(url).then(()=>{
   console.log(err);
 });
 
-
 // HTTP ENDPOINTS
+app.get('/getData', (req,res)=>{
+  mongoose.connect(url, function(err, db) {
+    if (err) throw err;
+    db.collection("products").find({}).toArray(function(err, result) {
+      if (err) throw err;
+      res.send(result);
+    });
+  });
+})
+
+app.get("/", (req,res)=>{
+  // res.send("i am base")
+  res.sendFile(path.join(_dirname, '../index.html'))
+})
+
 // app.post ('/insert', function(req,res,next) {
 //   // console.log(req)
 //   // let newData = {
@@ -44,19 +58,3 @@ mongoose.connect(url).then(()=>{
 //   //     });
 //   // });
 // });
-
-app.get('/getData', (req,res)=>{
-  mongoose.connect(url, function(err, db) {
-      if (err) throw err;
-      db.collection("products").find({}).toArray(function(err, result) {
-          if (err) throw err;
-          res.send(result);
-        });
-    });
-})
-
-app.get("/", (req,res)=>{
-  // res.send("i am base")
-  res.sendFile(path.join(_dirname, '../index.html'))
-})
-
