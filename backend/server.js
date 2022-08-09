@@ -1,11 +1,11 @@
-const express = require('express');
-const cors = require('cors');
-const app = express();
 // const path = require('path');
-const mongoose = require('mongoose');
 // const Products = require('./models/products')
 // Server set-up
 // const port = 3000;
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const mongoose = require('mongoose');
 const port = process.env.PORT || 3000;
 app.use(express.static('frontend'))
 app.use('/styles', express.static('styles'))
