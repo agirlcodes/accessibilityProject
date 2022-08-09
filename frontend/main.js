@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  const db_url = 'mongodb+srv://tango:admin1@project0.auso3.mongodb.net/eCommerce?retryWrites=true&w=majority'
+  // const db_url = 'mongodb+srv://tango:admin1@project0.auso3.mongodb.net/eCommerce?retryWrites=true&w=majority'
+  const db_url = 'https://accessibilityproject.herokuapp.com/getData'
   $(".increaseFont,.decreaseFont").click(function(){
   var type=  $(this).val();
   var curFontSize = $('.data').css('font-size');
@@ -36,6 +37,24 @@ $(document).ready(function(){
     $("h1, h2, h3").css({"font-size": "70px"});
     $("a").css({"text-align": "center"});
   });
+  
+$.getJSON(`${db_url}/getData`, function(data){
+console.log(data)
+//TOP SELLERS Home page
+let TopSellers = data[0].product;
+$.each(TopSellers, function(index, value){
+$('#topSellersContent').append(`
+<figure>
+<a href="/frontend/catalog/subpages/topSellers.html" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
+<figcaption>
+ <h2>
+ <a href="/frontend/catalog/subpages/topSellers.html" alt="contains Name of product">${value.name}</a><h2>
+</figcaption>
+</figure>
+`)
+// <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
+})
+})
   // // SEARCHBAR
   // $.getJSON(`${db_url}/getData`, function(data){
   //   $.each(data, function(index, value){
@@ -51,21 +70,4 @@ $(document).ready(function(){
   //     })
   //   })
   // })
-         
-  $.getJSON(`${db_url}/getData`, function(data){
-    //TOP SELLERS Home page
-    let TopSellers = data[0].product;
-    $.each(TopSellers, function(index, value){
-      $('#topSellersContent').append(`
-      <figure>
-      <a href="/frontend/catalog/subpages/topSellers.html" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
-      <figcaption>
-        <h2>
-        <a href="/frontend/catalog/subpages/topSellers.html" alt="contains Name of product">${value.name}</a><h2>
-      </figcaption>
-      </figure>
-      `)
-      // <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
-    })
-  })
 });

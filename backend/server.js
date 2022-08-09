@@ -33,6 +33,7 @@ mongoose.connect(url).then(()=>{
 app.get('/getData', (req,res)=>{
   mongoose.connect(url, function(err, db) {
     if (err) throw err;
+    console.log("working")
     db.collection("products").find({}).toArray(function(err, result) {
       if (err) throw err;
       res.send(result);

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    const db_url = 'http://localhost:3000'
+    const db_url = 'https://accessibilityproject.herokuapp.com/getData'
     $.getJSON(`${db_url}/getData`, function(data){
         console.log(data)
         let topSellers = data[1]
