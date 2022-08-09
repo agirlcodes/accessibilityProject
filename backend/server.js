@@ -1,18 +1,8 @@
-// const express = require('express');
-// const cors = require('cors');
-// const app = express();
-// const path = require('path');
-// const mongoose = require('mongoose');
-import { dirname } from 'path';
-import  path  from 'path';
-import express from "express";
-import cors from "cors";
-import mongoose from "mongoose";
-//import { dirname } from 'path';
-//import { fileURLToPath } from 'url';
-//const __dirname = dirname(fileURLToPath(import.meta.url));
-// EXPRESS
+const express = require('express');
+const cors = require('cors');
 const app = express();
+const path = require('path');
+const mongoose = require('mongoose');
 // const Products = require('./models/products')
 // Server set-up
 // const port = 3000;
@@ -49,8 +39,8 @@ app.get('/getData', (req,res)=>{
 })
 
 app.get("/", (req,res)=>{
-  // res.send("i am base")
-  res.sendFile(path.join(dirname, '../index.html'))
+  res.send("i am base")
+  // res.sendFile(path.join(_dirname, '../index.html'))
 })
 
 // app.post ('/insert', function(req,res,next) {
