@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  const db_url = 'http://localhost:3000'
+  const db_url = 'mongodb+srv://tango:admin1@project0.auso3.mongodb.net/eCommerce?retryWrites=true&w=majority'
   $(".increaseFont,.decreaseFont").click(function(){
   var type=  $(this).val();
   var curFontSize = $('.data').css('font-size');
@@ -36,22 +36,21 @@ $(document).ready(function(){
     $("h1, h2, h3").css({"font-size": "70px"});
     $("a").css({"text-align": "center"});
   });
-  cartJS.init()
-  // SEARCHBAR
-  $.getJSON(`${db_url}/getData`, function(data){
-    $.each(data, function(index, value){
-      console.log(value.product);
-      $('#searchResult').addEventListener('input', event => {
-        event.preventDefault()
-        const term = event.target.value.toLowerCase()
-        let searchResult = filteredMountains.filter(filteredMountain => {
-        return filteredMountain.name.toLowerCase().includes(term)
+  // // SEARCHBAR
+  // $.getJSON(`${db_url}/getData`, function(data){
+  //   $.each(data, function(index, value){
+  //     console.log(value.product);
+  //     $('#searchResult').addEventListener('input', event => {
+  //       event.preventDefault()
+  //       const term = event.target.value.toLowerCase()
+  //       let searchResult = filteredMountains.filter(filteredMountain => {
+  //       return filteredMountain.name.toLowerCase().includes(term)
         
-        })
-      createMountainCards(searchResult)
-      })
-    })
-  })
+  //       })
+  //     createMountainCards(searchResult)
+  //     })
+  //   })
+  // })
          
   $.getJSON(`${db_url}/getData`, function(data){
     //TOP SELLERS Home page
