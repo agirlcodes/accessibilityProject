@@ -28,7 +28,7 @@
             </button>
             <div class="background-change">
                 <p>Background:</p>
-                <button aria-label="colored background" id="coloredBackground" >
+                <button aria-label="black and white color background" id="monochromeBackground">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 42 42">
                         <g id="Rectangle_17" data-name="Rectangle 17" fill="#fff" stroke="#000" stroke-width="5">
                             <rect width="42" height="42" stroke="none"/>
@@ -36,8 +36,9 @@
                         </g>
                         <path id="Path_12" data-name="Path 12" d="M2830.251,292.421l-38.881,38.468h38.881Z" transform="translate(-2789.893 -290.891)"/>
                     </svg>
+                    
                 </button>
-                <button aria-label="black and white color background" id="monochromeBackground">
+                <button aria-label="colored background" id="coloredBackground" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
                         <g id="Rectangle_19" data-name="Rectangle 19" fill="#e5c54a" stroke="#000" stroke-width="5">
                             <rect width="41" height="42" stroke="none"/>
@@ -53,14 +54,15 @@
             <dfn title="Search Field">
             </dfn>
             <form id="searchBarLayout">
-                    <button aria-label="Search Bar button"><img src="/frontend/icons/search.png" alt=""></button>
-                    <input id="searchBar" type="text" placeholder="Search Bar">
-                    <section class="searchBarResults"></section>
-                    <!-- CART -->
-                    <button id="cartModal"><dfn title="Cart"><img src="/frontend/icons/shopping-cart.png" alt="Cart Icon"></dfn>
-                        <div id="cart"></div>
-                    </button>
-                </form>
+                <button aria-label="Search Bar button"><img src="/frontend/icons/search.png" alt=""></button>
+                <input id="searchBar" type="text" placeholder="Search Bar">
+                <section class="searchBarResults"></section>
+                <!-- CART -->
+                <button id="cartModal"><dfn title="Cart"><img src="/frontend/icons/shopping-cart.png" alt="Cart Icon"></dfn>
+                    <div id="cart"></div>
+                </button>
+            </form>
+            <div id="searchResult"></div>
         </div>
         <div class="grid">
         <header id="landingImg">
@@ -149,4 +151,5 @@
 <script src="/frontend/main.js"></script>
 <script src="/frontend/cart.js" ></script>
 <script src="/frontend/cartModal.js" ></script>
+<script src="/frontend/cartExample.js"></script>
 </html>

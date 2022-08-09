@@ -1,6 +1,5 @@
 $(document).ready(function(){
   const db_url = 'http://localhost:3000'
-  // Alter Font-Size - NEED TO SET LIMITS ON FONT-SIZE
   $(".increaseFont,.decreaseFont").click(function(){
   var type=  $(this).val();
   var curFontSize = $('.data').css('font-size');
@@ -18,22 +17,43 @@ $(document).ready(function(){
     }
     }  
     });
-    $('#coloredBackground').click(function(){
-        $('body').css('background-color', 'white');
-        $('.data').css('color', 'black');
-      });
-    $('#monochromeBackground').click(function(){
-        $('body').css('background-color', '#73A1B9');
-        $('.data').css('color', '#222A2E');
-      });
-    $('#fingerspell').click(function(){
-        $('.data').css('font-family', 'Gallaudet');
-        $('.data').css('font-size', '50px');
-        $('.data').css('font-weight', 'normal');
-        $('.data').css('letter-spacing', '10px');
-      });
+  $('#monochromeBackground').click(function(){
+      $('.data').css('color', 'black');
+      $('a').css('color', 'black');
+      $('img').css('filter', 'grayscale(1)');
+      $('#landingImg').css('filter', 'grayscale(1)');
+      $ ('footer').css('background-color', 'gray');
+  });
+  $('#coloredBackground').click(function(){
+    $('img').css('filter', 'grayscale(0)');
+    $('#landingImg').css('filter', 'grayscale(0)');
+    $ ('footer').css('background-color', '#205e69');
+    $ ('footer a').css('color', 'white');
+    // $ ('footer a').css('color', 'white');
+  });
+  $('#fingerspell').click(function(){
+    $(".data, a, h1, h2, h3").css({"font-family":"Gallaudet", "font-size": "50px","font-weight": "normal", "letter-spacing": "10px"});
+    $("h1, h2, h3").css({"font-size": "70px"});
+    $("a").css({"text-align": "center"});
+  });
+  cartJS.init()
+  // SEARCHBAR
+  $.getJSON(`${db_url}/getData`, function(data){
+    $.each(data, function(index, value){
+      console.log(value.product);
+      $('#searchResult').addEventListener('input', event => {
+        event.preventDefault()
+        const term = event.target.value.toLowerCase()
+        let searchResult = filteredMountains.filter(filteredMountain => {
+        return filteredMountain.name.toLowerCase().includes(term)
+        
+        })
+      createMountainCards(searchResult)
+      })
+    })
+  })
          
-   $.getJSON(`${db_url}/getData`, function(data){
+  $.getJSON(`${db_url}/getData`, function(data){
     //TOP SELLERS Home page
     let TopSellers = data[0].product;
     $.each(TopSellers, function(index, value){

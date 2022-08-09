@@ -227,10 +227,8 @@
   #socialMedia{
     display: flex;
     padding-left: 40%;
-    // width: 100%;
     list-style-type: none;
     a{
-      // border-top: 1px solid #d7d8d2;
       display: flex;
       flex-direction: column;
       margin-left: 50px;
@@ -238,9 +236,6 @@
       padding: 12px 0;
       padding-right: 10px;
       max-height: 65px;
-      // color: #b2c8cc;
-      // svg{
-      // }
     }
   }
   #fineprint{

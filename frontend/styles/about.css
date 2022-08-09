@@ -251,13 +251,10 @@ footer {
   width: 100%;
   margin-bottom: -1%;
   background-color: #205e69;
-}
-
-footer .data {
   color: #ffffff;
 }
 
-footer .data a {
+footer a {
   color: white;
 }
 
