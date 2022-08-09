@@ -38,7 +38,7 @@ $(document).ready(function(){
     $("a").css({"text-align": "center"});
   });
   
-$.getJSON(`${db_url}/getData`, function(data){
+$.getJSON(`${db_url}`, function(data){
 console.log(data)
 //TOP SELLERS Home page
 let TopSellers = data[0].product;

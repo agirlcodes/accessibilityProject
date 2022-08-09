@@ -1,6 +1,6 @@
 $(document).ready(function(){
     const db_url = 'https://accessibilityproject.herokuapp.com/getData'
-    $.getJSON(`${db_url}/getData`, function(data){
+    $.getJSON(`${db_url}`, function(data){
         console.log(data)
         let topSellers = data[1]
         let topPro = topSellers.product
