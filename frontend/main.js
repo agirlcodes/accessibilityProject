@@ -45,10 +45,10 @@ let TopSellers = data[0].product;
 $.each(TopSellers, function(index, value){
 $('#topSellersContent').append(`
 <figure>
-<a href="/frontend/catalog/subpages/topSellers.html" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
+<a href="catalog/subpages/topSellers.html" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
 <figcaption>
  <h2>
- <a href="/frontend/catalog/subpages/topSellers.html" alt="contains Name of product">${value.name}</a><h2>
+ <a href="/catalog/subpages/topSellers.html" alt="contains Name of product">${value.name}</a><h2>
 </figcaption>
 </figure>
 `)
