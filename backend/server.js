@@ -1,13 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const path = require('path');
+// const path = require('path');
 const mongoose = require('mongoose');
 // const Products = require('./models/products')
 // Server set-up
 // const port = 3000;
 const port = process.env.PORT || 3000;
-app.use(express.static('public'))
+app.use(express.static('frontend'))
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
