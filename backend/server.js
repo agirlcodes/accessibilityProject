@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 // const port = 3000;
 const port = process.env.PORT || 3000;
 app.use(express.static('frontend'))
+app.use('/styles', express.static('styles'))
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
