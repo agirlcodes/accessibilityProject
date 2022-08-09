@@ -56,7 +56,7 @@ app.get('/getData', (req,res)=>{
 })
 
 app.get("/", (req,res)=>{
-  res.send("i am base")
+  // res.send("i am base")
   res.sendFile(path.join(_dirname, 'index.html'))
 })
 
