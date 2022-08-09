@@ -4,7 +4,7 @@
 // const path = require('path');
 // const mongoose = require('mongoose');
 import { dirname } from 'path';
-// import { path } from 'path';
+import  path  from 'path';
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
