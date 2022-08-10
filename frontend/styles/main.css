@@ -10,7 +10,7 @@
 
 body {
   background-color: white;
-  font-family: Futura,sans-serif;
+  font-size: 16px;
   color: #3c4049;
   line-height: 1.6;
 }
@@ -19,17 +19,22 @@ body ul li {
   list-style-type: none;
 }
 
-body h2 {
+body h1, body h2, body h3 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
 }
 
-body p {
-  letter-spacing: 1px;
+body p, body a {
+  font-family: 'Courier Prime', monospace;
 }
 
-body #searchBarLayout {
-  margin-top: 2%;
+body form {
+  width: 50%;
   margin-left: 25%;
+}
+
+body .searchBar {
+  margin-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,39 +42,46 @@ body #searchBarLayout {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
   margin-bottom: 2%;
 }
 
-body #searchBarLayout button, body #searchBarLayout input {
-  background-color: transparent;
+body .searchBar #searchBarLayout {
+  box-shadow: 5px 5px 5px 0px rgba(204, 204, 204, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1%;
+}
+
+body .searchBar #searchBarLayout #submitBtn {
   border: none;
-  height: 50px;
+  background-color: #b8c2c4;
+  width: 60px;
+  padding: 1%;
 }
 
-body #searchBarLayout button :hover, body #searchBarLayout input :hover {
-  cursor: pointer;
+body .searchBar #searchBarLayout #submitBtn img {
+  height: 20px;
 }
 
-body #searchBarLayout button img, body #searchBarLayout input img {
-  height: 23px;
+body .searchBar #searchBarLayout #searchBar {
+  text-indent: 10px;
+  width: 100%;
 }
 
-body #searchBarLayout input[type=text] {
-  border-bottom: 1px solid #585858;
-  font-size: 16px;
-  width: 60%;
-  -webkit-transition: width 0.15s ease-in-out;
-  transition: width 0.15s ease-in-out;
-}
-
-body #searchBarLayout #cartModal {
-  background-color: transparent;
+body .searchBar #searchBarLayout #cartModal {
+  background-color: #b8c2c4;
   border: none;
   justify-self: flex-start;
+  width: 60px;
 }
 
-body #searchBarLayout #cartModal img {
-  height: 25px;
+body .searchBar #searchBarLayout #cartModal img {
+  height: 26px;
   width: auto;
 }
 
@@ -129,7 +141,7 @@ header h1 {
   top: 50%;
   left: 5%;
   width: 600px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-weight: normal;
 }
 
@@ -220,14 +232,11 @@ header h1 {
 .grid .data {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 10%;
 }
 
 .grid .data h2 {
   text-align: center;
-}
-
-.grid .data p {
-  letter-spacing: 3px;
 }
 
 .grid #newCollection {
@@ -269,7 +278,6 @@ header h1 {
 
 .grid #newCollection p {
   margin: 5%;
-  letter-spacing: 2px;
 }
 
 .grid #newCollection .bannerContent {
@@ -292,32 +300,24 @@ header h1 {
       justify-content: space-around;
 }
 
-.grid #topSellersContent figure {
+.grid #topSellersContent a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.grid #topSellersContent a figure {
   margin: 0%;
   margin-left: 5%;
   margin-bottom: 4%;
 }
 
-.grid #topSellersContent figure a img {
+.grid #topSellersContent a figure img {
   width: auto;
   height: 400px;
 }
 
-.grid #topSellersContent figure figcaption {
-  margin: 0%;
-  position: relative;
-  bottom: 17%;
-  background-color: #ffffff9a;
-  text-align: center;
-  font-size: 14px;
-  letter-spacing: 1px;
-  padding: 1%;
-  width: 100%;
-}
-
-.grid #topSellersContent figure figcaption a {
-  text-decoration: none;
-  color: #030303;
+.grid #topSellersContent a:visited {
+  color: #3c4049;
 }
 
 footer {

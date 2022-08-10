@@ -17,11 +17,7 @@ header{
     h2{
       text-align: center;
     }
-    p{
-      // margin: 5%;
-      letter-spacing: 3px;
-      // margin-bottom: 2%;
-    }
+    margin-bottom: 10%;
   }
   #newCollection{
     margin-bottom: 20px;
@@ -56,7 +52,7 @@ header{
     }
     p{
       margin: 5%;
-      letter-spacing: 2px;
+      // letter-spacing: 2px;
       // margin-bottom: 2%;
     }
     .bannerContent{
@@ -73,35 +69,21 @@ header{
     // max-width: 1000px;
     width: fit-content;
     justify-content: space-around;
-    figure{
-      margin: 0%;
-      margin-left: 5%;
-      margin-bottom: 4%;
-      // padding-right: 30px;
-      // min-width: 150px;
-      a img{
-        width: auto;
-        height: 400px;
-        // filter: grayscale(1);
-        // border-radius:4%;
-        // margin-right: 10%;
-      }
-      figcaption{
+    a{
+      text-decoration: none;
+      text-align: center;
+      figure{
         margin: 0%;
-        position: relative;
-        bottom: 17%;
-        // bottom: 90px;
-        background-color: #ffffff9a;
-        text-align: center;
-        font-size: 14px;
-        letter-spacing: 1px;
-        padding: 1%;
-          width: 100%;
-        a{
-          text-decoration: none;
-          color: #030303;
+        margin-left: 5%;
+        margin-bottom: 4%;
+        img{
+          width: auto;
+          height: 400px;
         }
       }
+    }
+    a:visited{
+      color: #3c4049;
     }
   }
 }

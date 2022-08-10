@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  // const db_url = 'mongodb+srv://tango:admin1@project0.auso3.mongodb.net/eCommerce?retryWrites=true&w=majority'
   const db_url = 'https://accessibilityproject.herokuapp.com/getData'
   $(".increaseFont,.decreaseFont").click(function(){
   var type=  $(this).val();
@@ -44,17 +43,15 @@ console.log(data)
 let TopSellers = data[0].product;
 $.each(TopSellers, function(index, value){
 $('#topSellersContent').append(`
-<a href="catalog/subpages/topSellers.html" alt="contains Image of product">
-<figure>
-<img src=${value.img} alt="image of products available">
-<figcaption>
-<h2>
-${value.name}<h2>
-</figcaption>
-</figure>
+<a href="catalog/subpages/topSellers.html" alt="contains product image">
+  <figure>
+    <img src=${value.img} alt="image of products available">
+    <figcaption>
+      <h2>${value.name}<h2>
+    </figcaption>
+  </figure>
 </a>
 `)
-// <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
 })
 })
   // // SEARCHBAR
