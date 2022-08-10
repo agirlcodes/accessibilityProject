@@ -89,6 +89,37 @@ body .searchBar #searchBarLayout button:hover {
   cursor: pointer;
 }
 
+body .searchBarResults {
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  margin-left: 25%;
+}
+
+body .searchBarResults figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .searchBarResults figure img {
+  max-width: 200px;
+}
+
+body .searchBarResults figure figcaption {
+  margin-left: 10%;
+}
+
+body .searchBarResults figure figcaption button {
+  height: 30px;
+  width: 100px;
+  border: none;
+}
+
+body .searchBarResults figure figcaption button:hover {
+  background-color: #a3a3a3;
+}
+
 body #accessibilityNav {
   background: white;
   position: -webkit-sticky;
@@ -136,6 +167,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 2%;
 }
 
 header h1 {
@@ -218,21 +250,6 @@ header h1 {
   margin-left: 10%;
 }
 
-.grid .searchBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-}
-
-.grid .searchBar #logo {
-  max-height: 250px;
-}
-
 .grid .data {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -270,7 +287,7 @@ header h1 {
 
 .grid #newCollection aside img {
   max-width: 600px;
-  margin-left: 1%;
+  width: 100%;
   margin-bottom: 1%;
 }
 
@@ -388,5 +405,121 @@ footer #fineprint {
 
 footer #fineprint small {
   margin-left: 1%;
+}
+
+@media (max-width: 800px) {
+  header {
+    background-image: url(../icons/skincare-1.jpg);
+    height: 300px;
+    top: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2%;
+  }
+  header h1 {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 5%;
+    width: 600px;
+    letter-spacing: 3px;
+    font-weight: normal;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    margin: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+  }
+  .grid #landingImg {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/span 1;
+  }
+  .grid #menu {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    text-align: center;
+  }
+  .grid #menu #navMenu {
+    font-size: 16px;
+    margin: 0%;
+  }
+  .grid #menu #navMenu a {
+    border-top: 1px solid #d7d8d2;
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #3c4049;
+  }
+  .grid #menu #socialMedia {
+    margin: 0%;
+    visibility: hidden;
+  }
+  .grid #layout {
+    width: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .grid #layout article {
+    text-align: left;
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  .grid #landingImg {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid #landingImg h1 {
+    width: 50px;
+  }
+  .grid #newCollection {
+    margin-bottom: 20px;
+    width: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid #newCollection #launchBanner {
+    width: 100%;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid #newCollection aside {
+    margin-left: 0%;
+  }
+  .grid #newCollection aside img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+  }
+  .grid #newCollection h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 0%;
+  }
+  .grid #newCollection p {
+    margin: 5%;
+  }
+  .grid #newCollection .bannerContent {
+    text-align: center;
+    margin: 1%;
+    letter-spacing: 5px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

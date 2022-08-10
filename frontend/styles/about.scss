@@ -9,9 +9,6 @@ body{
 }
 .grid{
   @include gridLayout;
-  .searchBar{
-  @include shoppingLayout;
-  }
   .data{
     margin: 2%;
     .imageLayout{

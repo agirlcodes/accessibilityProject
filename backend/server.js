@@ -1,7 +1,3 @@
-// const path = require('path');
-// const Products = require('./models/products')
-// Server set-up
-// const port = 3000;
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -33,7 +29,6 @@ mongoose.connect(url).then(()=>{
 app.get('/getData', (req,res)=>{
   mongoose.connect(url, function(err, db) {
     if (err) throw err;
-    console.log("working")
     db.collection("products").find({}).toArray(function(err, result) {
       if (err) throw err;
       res.send(result);
@@ -43,21 +38,4 @@ app.get('/getData', (req,res)=>{
 
 app.get("/", (req,res)=>{
   res.send("i am base")
-  // res.sendFile(path.join(_dirname, '../index.html'))
 })
-
-// app.post ('/insert', function(req,res,next) {
-//   // console.log(req)
-//   // let newData = {
-//   //   name: req.body.name,
-//   //   img: req.body.img,
-//   //   price: req.body.price
-//   // }
-//   // mongoose.connect(url, function (err, db) {
-//   //     db.collection('products')
-//   //     .insertOne({"category":"TopSellers", newData}, function (err, result) {
-//   //         // console.log(newData)
-//   //         console.log('item has been inserted');
-//   //     });
-//   // });
-// });
