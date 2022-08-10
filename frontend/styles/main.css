@@ -47,10 +47,9 @@ body .searchBar {
 }
 
 body .searchBar #searchBarLayout {
-  box-shadow: 5px 5px 5px 0px rgba(204, 204, 204, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  border-bottom: 1px solid black;
   width: 100%;
+  margin-bottom: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +58,7 @@ body .searchBar #searchBarLayout {
 
 body .searchBar #searchBarLayout #submitBtn {
   border: none;
-  background-color: #b8c2c4;
+  background-color: transparent;
   width: 60px;
   padding: 1%;
 }
@@ -71,10 +70,11 @@ body .searchBar #searchBarLayout #submitBtn img {
 body .searchBar #searchBarLayout #searchBar {
   text-indent: 10px;
   width: 100%;
+  border: none;
 }
 
 body .searchBar #searchBarLayout #cartModal {
-  background-color: #b8c2c4;
+  background-color: transparent;
   border: none;
   justify-self: flex-start;
   width: 60px;
@@ -83,6 +83,10 @@ body .searchBar #searchBarLayout #cartModal {
 body .searchBar #searchBarLayout #cartModal img {
   height: 26px;
   width: auto;
+}
+
+body .searchBar #searchBarLayout button:hover {
+  cursor: pointer;
 }
 
 body #accessibilityNav {
