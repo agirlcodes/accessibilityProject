@@ -44,13 +44,15 @@ console.log(data)
 let TopSellers = data[0].product;
 $.each(TopSellers, function(index, value){
 $('#topSellersContent').append(`
+<a href="catalog/subpages/topSellers.html" alt="contains Image of product">
 <figure>
-<a href="catalog/subpages/topSellers.html" alt="contains Image of product"><img src=${value.img} alt="image of products available"></a>
+<img src=${value.img} alt="image of products available">
 <figcaption>
- <h2>
- <a href="/catalog/subpages/topSellers.html" alt="contains Name of product">${value.name}</a><h2>
+<h2>
+${value.name}<h2>
 </figcaption>
 </figure>
+</a>
 `)
 // <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
 })

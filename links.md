@@ -6,21 +6,24 @@ API: coEnA3dWJl3LeXhBku231l1e4zE1Hql5P5xaoTRaocfMCCtRbbPiR7NCC5TY6OS2
 
 TO-DO: 
 make the webpage more complex
-- [ ] mobile view
-- [X] cart functionality
-  - [X] when the cart is opened, have a redirect to page that showcases the amount/ objeccts you have in the cart
-  - [X] Also allow for payment gateway
-  - [X] Add feature to remove and add stuff to cart
-- [ ] Design
-- [ ] Accessibility checks
-- [X] Modals
-- [ ] Debugging
-- [ ] Write up - 3 weeks needed
+- [] mobile view
+- [] cart functionality
+- [] Search Bar
+- [] Modals
+  - [] Add feature to remove and add stuff to cart
+  - [X] allow for payment gateway
+- [] Fix catalog subpages
+- [] go over About layout
+- [] Design
+    - change font
+    - alter font-size on h1,h2 and h3 (kinda off for some reason?)
+- [] add copywritting
+- [] Debugging
+- [X] Accessibility checks
+  - [X] Accessibility API
+- [X] Write up - 3 weeks needed
 - [X] font-size limit set
--  go over About layout
--  copywritting
--  go over home layout - 3 grid
-
-Maybe:
-- [ ] Filters????
-- [ ] Animations?????
+- [X] Go LIVE
+- [X] Pick new images for website
+- [X] Heroku
+- [X] Delete uneccessary files
