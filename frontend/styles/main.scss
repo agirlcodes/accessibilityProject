@@ -1,42 +1,158 @@
 @import 'mixins';
-body{
-  @include bodyLayout;
-  @include searchbar;
-  @include accessibility;
-}
-header{
-@include landingLayout
-}
-.grid{
-  @include gridLayout;
-  .data{
-    box-sizing: border-box;
-    h2{
-      text-align: center;
+@media (min-width: 700.5px){
+  body{
+    @include bodyLayout;
+    @include searchbar;
+    @include accessibility;
+  }
+  header{
+  @include landingLayout
+  }
+  .grid{
+    @include gridLayout;
+    .data{
+      box-sizing: border-box;
+      h2{
+        text-align: center;
+      }
+      margin-bottom: 10%;
     }
-    margin-bottom: 10%;
+    #newCollection{
+      margin-bottom: 20px;
+      width: 100%;
+      grid-column: 1/span 2;
+      #launchBanner{
+        width: 100%;
+        height: 490px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        // width: 50%;
+      }
+      aside{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-left: 15%;
+        margin-bottom: 5%;
+        img{
+          // max-width: 600px;
+          width: 40%;
+          height: auto;
+          margin-bottom: 1%;
+          margin-left: 1%;
+        }
+      }
+      h2{
+        font-size: 30px;
+        letter-spacing: 5px;
+        margin: 0%;;
+      }
+      p{
+        margin-left: 10%;
+        width: 80%;
+        margin-bottom: 2%;
+        text-align: center;
+      }
+      .bannerContent{
+        text-align: center;
+        margin: 1%;
+        letter-spacing: 5px;
+      }
+    }
+    #topSellersContent{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      // max-width: 1000px;
+      width: fit-content;
+      justify-content: space-around;
+      a{
+        text-decoration: none;
+        text-align: center;
+        figure{
+          margin: 0%;
+          margin-left: 5%;
+          margin-bottom: 4%;
+          img{
+            width: auto;
+            height: 400px;
+          }
+        }
+      }
+      a:visited{
+        color: #3c4049;
+      }
+    }
+  }
+  footer{
+    @include footer;
+  }
+}
+@media (max-width: 700px){
+  @include mobileLayout;
+  #layout{
+    width: 100%;
+    grid-column:1;
+    grid-row: 3;
+    #mainData{  
+      h2{
+        text-align: center;
+      }
+      #topSellersContent{
+        
+        margin-left: 20%;
+        a{
+          width: auto;
+          width: 400px;
+          margin: 0%;
+          figure{
+            margin: 0%;
+            margin-bottom: 5%;
+            figcaption{
+              text-align: center;
+              width: 400px;
+              margin: 0%;
+              h2{
+                margin: 0%;
+                width: 100%;
+              }
+            }
+            img{
+              max-width: 300px;
+              margin-left: 10%;
+            }
+          }
+        }
+      }
+      article{
+        text-align: left;
+        max-width: 80%;
+        margin-left: 10%;
+      }
+    }
   }
   #newCollection{
     margin-bottom: 20px;
+    margin-top: 5%;
     width: 100%;
-    grid-column: 1/span 2;
+    grid-column: 1;
     #launchBanner{
       width: 100%;
-      height: 490px;
+      height: 390px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      // width: 50%;
     }
     aside{
       display: flex;
       flex-wrap: wrap;
-      margin-left: 15%;
+      margin-left: 5%;
       img{
         max-width: 600px;
         width: 100%;
         margin-bottom: 1%;
-         
+        
       }
     }
     h2{
@@ -52,151 +168,6 @@ header{
       margin: 1%;
       letter-spacing: 5px;
     }
-  }
-  #topSellersContent{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    // max-width: 1000px;
-    width: fit-content;
-    justify-content: space-around;
-    a{
-      text-decoration: none;
-      text-align: center;
-      figure{
-        margin: 0%;
-        margin-left: 5%;
-        margin-bottom: 4%;
-        img{
-          width: auto;
-          height: 400px;
-        }
-      }
-    }
-    a:visited{
-      color: #3c4049;
-    }
-  }
-}
-footer{
-  @include footer;
-}
-@media (max-width: 800px){
-  header{
-    background-image: url(../icons/skincare-1.jpg);
-      height: 300px;
-      top: 20%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin-bottom: 2%;
-      h1{
-        font-size: 30px;
-        color: white;
-        position: relative;
-        top: 50%;
-        left: 5%;
-        width: 600px;
-        letter-spacing:3px;
-        font-weight: normal;
-      }
-  }
-  .grid{
-    @include mobileLayout;
-    width: 100%;
-    #landingImg{
-      grid-column: 1;
-      h1{
-        width: 50px;
-      }
-    }
-    #newCollection{
-      margin-bottom: 20px;
-      width: 100%;
-      grid-column: 1;
-      #launchBanner{
-        width: 100%;
-        height: 350px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        // width: 50%;
-      }
-      aside{
-        margin-left: 0%;
-        img{
-          max-width: 100%;
-    height: auto;
-          // max-height: 0%;
-          // margin-left: 1%;
-          margin-bottom: 1%;
-          
-        }
-      }
-      h2{
-        // top: 20%;
-        // right: 20%;
-        font-size: 30px;
-        letter-spacing: 5px;
-        margin: 0%;;
-      }
-      p{
-        margin: 5%;
-        // letter-spacing: 2px;
-        // margin-bottom: 2%;
-      }
-      .bannerContent{
-        text-align: center;
-        margin: 1%;
-        // position: relative;
-        letter-spacing: 5px;
-      }
-    }
-  }
-  @mixin footer{
-    font-weight: normal !important;
-    width: 100%;
-    margin-bottom: -1%;
-    background-color: #205e69;
-    color: #ffffff;
-    a{
-      color: white;
-    }
-    #footerLayout{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      // justify-content: space-around;
-      a{
-        display: block;
-        padding: 12px 0;
-      }
-      .dividedLayout{
-        padding: 2%;
-      }
-      #missionStatement{
-        width: 30%;
-      }
-    }
-    #socialMedia{
-      display: flex;
-      padding-left: 10%;
-      list-style-type: none;
-      a{
-        display: flex;
-        flex-direction: column;
-        margin-left: 50px;
-        text-decoration: none;
-        padding: 12px 0;
-        padding-right: 10px;
-        max-height: 65px;
-      }
-    }
-    #fineprint{
-      text-align: center!important;
-      small{
-        margin-left: 1%;
-      }
-    }
+    
   }
 }

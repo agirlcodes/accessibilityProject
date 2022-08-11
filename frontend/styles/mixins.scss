@@ -82,10 +82,13 @@
     z-index: 999;
     figure{
       display: flex;
-      max-width: 300px;
-      img{
-        width: 100%;
-        max-height: 400px;
+      min-width: 300px;
+      aside{
+        // width: 100%;
+        img{
+          width: 80%;
+          height: auto;
+        }
       }
       figcaption{
         margin-left: 10%;
@@ -130,13 +133,15 @@
   ul li{
     list-style-type: none;
   }
-  color: #3c4049;
   line-height: 1.6;
+  color: #3c4049;
   h1, h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }
   p, a{
+    color: #3c4049;
+    text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
 }
@@ -153,7 +158,7 @@
   #menu{
     grid-column: 1;
     grid-row: 2;
-    #navMenu{
+    #linksMenu{
       font-size: 16px;
       a{
         border-top: 1px solid #d7d8d2;
@@ -188,11 +193,125 @@
   }
 }
 @mixin mobileLayout{
+  body{
+    @include bodyLayout;
+    margin: 0%;
+    // @include searchbar;
+    @include accessibility;
+    #accessibilityNav{
+      #container{
+        padding: 0%;
+        padding-left: 10%;
+      #fingerspell{
+        visibility: hidden;
+      }
+      }
+    }
+    form{
+      width: 100%;
+      margin-left: 0%;
+    }
+    .searchBar{
+      margin-top: 2%;
+      display: flex;
+      flex-direction: row;
+      // width: 100%;
+      margin-bottom: 2%;
+      #searchBarLayout{
+        border-bottom: 1px solid black;
+        // width: 100%;
+        margin-bottom: 1%;
+        display: flex;
+          #submitBtn{
+            border: none;
+            background-color: transparent;
+            width: 60px;
+            padding: 1%;
+            img{
+              height: 20px;
+            }
+          }
+          #searchBar{
+            text-indent: 10px;
+            width: 100%;
+            border: none;
+          }
+          margin-left: 1%;
+  
+          #cartModal{
+            background-color: transparent;
+            border: none;
+            justify-self: flex-start;
+            width: 60px;
+            img{
+              height: 26px;
+              width: auto;
+            }
+          }
+          button:hover{
+            cursor: pointer;
+          }
+      }
+    }
+    .searchBarResults{
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      margin-left: 0%;
+      z-index: 999;
+      figure{
+        display: flex;
+        max-width: 400px;
+        aside{
+          max-width:200px;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+        figcaption{
+          margin-left: 5%;
+          button{
+            min-height: 30px;
+            min-width: 100px;
+            border: none;
+            h4{
+              margin: 0%;
+            }
+          }
+          button:hover{
+            background-color: rgb(163, 163, 163);
+          }
+  
+        }
+      }
+    }
+  }
+  .grid{
   display: grid;
   grid-template-columns:100% ;
   grid-template-rows: auto auto auto auto;
   margin: 0%;
   box-sizing: border-box;
+  header{
+    background-image: url(../icons/skincare-1.jpg);
+      height: 300px;
+      top: 20%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 2%;
+      h1{
+        font-size: 30px;
+        color: white;
+        position: relative;
+        top: 50%;
+        margin-left: 5%;
+        // width: 600px;
+        letter-spacing:3px;
+        font-weight: normal;
+      }
+  }
   #landingImg{
     grid-row: 1;
     grid-column: 1/span 1;
@@ -201,7 +320,7 @@
     grid-column: 1;
     grid-row: 2;
     text-align: center;
-    #navMenu{
+    #linksMenu{
       font-size: 16px;
       margin: 0%;
       a{
@@ -215,19 +334,65 @@
     #socialMedia{
       margin: 0%;
       visibility: hidden;
+      height: 0px;
+      width: 0px;
     }
   }
-  #layout{
-    // grid-column: 2/span 3;
-    width: 100%;
-    grid-column:1;
-    grid-row: 3;
-    article{
-      text-align: left;
-      max-width: 80%;
-      margin-left: 10%;
+}
+footer{
+  font-weight: normal !important;
+  width: 100%;
+  margin-bottom: -1%;
+  background-color: #205e69;
+  color: #ffffff;
+  a {
+    color: white;
+  }
+  #footerLayout{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 1%;
+    a{
+      display: block;
+      padding: 12px 0;
+      border-bottom: 1px solid white;
+    }
+    p{
+      color: white;
+    }
+    .dividedLayout{
+      padding: 2%;
     }
   }
+  .footerSocialMedia{
+    display: flex;
+    margin-left: 40%;
+    list-style-type: none;
+    a{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      text-decoration: none;
+      padding: 12px 0;
+      padding-right: 20px;
+      max-height: 65px;
+    }
+  }
+  #fineprint{
+    text-align: center!important;
+    small{
+      margin-left: 1%;
+      a{
+        text-decoration: underline;
+      }
+      a:hover{
+        color: black;
+      }
+    }
+  }
+}
 }
 @mixin productLayout{
        // background-color: #ec16169a;
@@ -267,10 +432,10 @@
 @mixin footer{
   font-weight: normal !important;
   width: 100%;
-  margin-bottom: -1%;
+  margin-bottom: -2%;
   background-color: #205e69;
   color: #ffffff;
-  a{
+  a, p{
     color: white;
   }
   #footerLayout{
@@ -280,35 +445,40 @@
     a{
       display: block;
       padding: 12px 0;
+      border-bottom: 1px solid white;
       // color: #b2c8cc;
       // text-decoration: none;
     }
     .dividedLayout{
-      padding: 2%;
+      padding: 1%;
+      width: 250px;
     }
     #missionStatement{
-      width: 30%;
+      width: 450px;
     }
   }
-  #socialMedia{
-    display: flex;
-    padding-left: 40%;
-    list-style-type: none;
-    a{
+  .footerSocialMedia{
+    margin-left: 5%;
+    ul{
       display: flex;
-      flex-direction: column;
-      margin-left: 50px;
-      text-decoration: none;
-      padding: 12px 0;
-      padding-right: 10px;
-      max-height: 65px;
+      list-style-type: none;
+      a{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        text-decoration: none;
+        padding: 12px 0;
+        padding-right: 10px;
+        max-height: 65px;
+      }
     }
   }
   #fineprint{
     text-align: center!important;
-    small{
-      margin-left: 1%;
-    }
+    padding: 1%;
+    // small{
+      //   margin-left: 1%;
+    // }
   }
 }
 @font-face {

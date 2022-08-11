@@ -51,7 +51,7 @@ $('#topSellersContent').append(`
   <figure>
     <img src=${value.img} alt="image of products available">
     <figcaption>
-      <h2>${value.name}<h2>
+      <h2>${value.name}</h2>
     </figcaption>
   </figure>
 </a>
@@ -72,7 +72,9 @@ let compData = [Goest,TopSellers, Yarrow, Botanical]
             $('.searchBarResults').css({'display':'block'})
             $('.searchBarResults').html(`
             <figure class="data">
-              <img class="searchBarImg" src="${dataValue.img} alt="image of products available>
+              <aside>
+                <img class="searchBarImg" src="${dataValue.img} alt="image of products available>
+              </aside>
               <figcaption class="data">
               <h3>${dataValue.name}</h3>
               <p class="data">£${dataValue.price}
