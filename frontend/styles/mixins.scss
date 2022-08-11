@@ -377,7 +377,7 @@ footer{
     a{
       display: flex;
       flex-direction: column;
-      margin-left: 0px;
+      // margin-left: 0px;
       text-decoration: none;
       padding: 12px 0;
       padding-right: 20px;
@@ -480,9 +480,14 @@ footer{
   #fineprint{
     text-align: center!important;
     padding: 1%;
-    // small{
-      //   margin-left: 1%;
-    // }
+    small{
+      a{
+        text-decoration: underline;
+      }
+      a:hover{
+        color: rgb(0, 28, 119);
+      }
+    }
   }
 }
 @font-face {

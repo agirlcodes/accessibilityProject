@@ -315,6 +315,12 @@
     text-align: center !important;
     padding: 1%;
   }
+  footer #fineprint small a {
+    text-decoration: underline;
+  }
+  footer #fineprint small a:hover {
+    color: #001c77;
+  }
 }
 
 @media (max-width: 700px) {
@@ -524,7 +530,6 @@
     width: 0px;
   }
   .grid #layout {
-    width: 100%;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 3;
@@ -579,7 +584,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 0px;
     text-decoration: none;
     padding: 12px 0;
     padding-right: 20px;
