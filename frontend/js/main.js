@@ -35,7 +35,7 @@ $(document).ready(function(){
   });
   $('#fingerspell').click(function(){
     $(".data, a, h1, h2, h3").css({"font-family":"Gallaudet", "font-size": "50px","font-weight": "normal", "letter-spacing": "10px"});
-    $("h1, h2, h3").css({"font-size": "90px", "color":"black"});
+    $("h1").css({"font-size": "90px", "color":"black","top": "25%"});
     $("a").css({"text-align": "center"});
   });
   
@@ -51,7 +51,7 @@ $('#topSellersContent').append(`
   <figure>
     <img src=${value.img} alt="image of products available">
     <figcaption>
-      <h2>${value.name}</h2>
+      <h2 class="data">${value.name}</h2>
     </figcaption>
   </figure>
 </a>
@@ -79,10 +79,13 @@ let compData = [Goest,TopSellers, Yarrow, Botanical]
               <h3>${dataValue.name}</h3>
               <p class="data">£${dataValue.price}
               </p>
-              <button><h4 class="data">Add To Cart</h4></button>
+              <button id="addCart" class="productVal">Add To Cart</button>
               </figcaption>
             </figure>
             `)
+          //   $(document).on('click', 'button[id^="addCart"]', function() {
+          //     console.log(dataValue.name.toLowerCase())
+          // });
           }
       }
     });
