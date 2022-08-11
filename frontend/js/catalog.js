@@ -13,7 +13,9 @@ $(document).ready(function(){
         $('#catalog').append(`
         <a href="subpages/topSellers.html" alt="contains Name of product">
             <figure id="topSeller" class="data" >
-            <img src=${topPro[0].img} alt="image of ${topSellers.category} products available">
+                <aside>
+                    <img src=${topPro[0].img} alt="image of ${topSellers.category} products available">
+                </aside>
                 <figcaption>
                     <h2>${topSellers.category}</h2>
                 </figcaption>
