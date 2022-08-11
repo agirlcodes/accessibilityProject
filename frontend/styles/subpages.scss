@@ -10,36 +10,60 @@
   }
   .grid{
     @include gridLayout;
-    .data{
+    #layout{
       padding: 2%;;
-      #catalog{
+      width: 70%;
+      margin-left: 5%;
+      p{
+        width: 90%;
+      }
+      a{
+        text-decoration: underline;
+      }
+      a:hover{
+        text-decoration: underline;
+        color: rgb(11, 16, 68);
+      }
+      .mainLayout{
         display: flex;
         flex-wrap: wrap;
-        a{
-          color: #3c4049;
-          text-decoration: none;
-          position: relative;
-          text-align: center;
+        margin-bottom: 15%;
+        margin-top: 10%;
+        max-width: 900px;
+        justify-content: space-between;
           figure{
-            figcaption{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            margin: 1%;
+            max-width: 250px;
             width: 100%;
-            padding: 1%;
-            h2{
-              background-color: #fffffff5;
-              font-size: 25px;
-              letter-spacing: 3px;
-              padding: 1%;
-            }
-            img{
-              max-width: 100%;
-            }
+            margin-bottom: 9%;
+              img{
+                  width: 250px;
+              }
+            figcaption{
+                text-align: center;
+                width: 100%;
+                h2{
+                letter-spacing: 1px;
+                font-size: 18px;
+                margin-bottom: 0%;
+                }
+                h3{
+                    margin-top: 0%;
+                    font-size: 16px;
+                }
+                button{
+                    width: 100%;
+                    min-height: 50px;
+                    min-width: 100px;
+                    border: none;
+                }
+                button:hover{
+                    background-color: rgb(163, 163, 163);
+                    cursor: pointer;
+                  }
+                
             }
           }
-        }
       }
     }
   }
@@ -51,41 +75,48 @@
   @include mobileLayout;
   #layout{
     text-align: center;
-  }
-  #catalog{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20%;
-    margin-bottom: 15%;
-    a{
-      color: #3c4049;
-      text-decoration: none;
-      position: relative;
-      text-align: center;
-      figure{
-        width: 100%;
-        figcaption{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 100%;
-          padding: 1%;
-          h2{
-            background-color: #fffffff5;
-            font-size: 25px;
-            letter-spacing: 3px;
-            padding: 1%;
-          }
-          aside{
-            img{
-              max-width: 200px;
-              width: 100%;
-              height: auto;
-            }
-          }
-        }
-      }
+    #goBackOption{
+      visibility: hidden;
+    }
+    h1{
+        text-align: center;
     }
   }
+    .mainLayout{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15%;
+    margin-left: 20%;
+        figure{
+            min-width: 350px;
+            margin-bottom: 10%;
+                img{
+                    width: 200px;
+                }
+            figcaption{
+                text-align: center;
+                width: 100%;
+                h2{
+                letter-spacing: 1px;
+                font-size: 18px;
+                margin-bottom: 0%;
+                }
+                h3{
+                    margin-top: 0%;
+                    font-size: 16px;
+                }
+                button{
+                    // width: 100%;
+                    min-height: 80px;
+                    width: 200px;
+                    border: none;
+                }
+                button:hover{
+                    background-color: rgb(163, 163, 163);
+                    cursor: pointer;
+                    }
+                    
+        }
+        }
+    }
 }

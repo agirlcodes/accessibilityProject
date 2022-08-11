@@ -224,39 +224,65 @@
     max-width: 80%;
     margin-left: 10%;
   }
-  .grid .data {
+  .grid #layout {
     padding: 2%;
+    width: 70%;
+    margin-left: 5%;
   }
-  .grid .data #catalog {
+  .grid #layout p {
+    width: 90%;
+  }
+  .grid #layout a {
+    text-decoration: underline;
+  }
+  .grid #layout a:hover {
+    text-decoration: underline;
+    color: #0b1044;
+  }
+  .grid #layout .mainLayout {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 15%;
+    margin-top: 10%;
+    max-width: 900px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .grid .data #catalog a {
-    color: #3c4049;
-    text-decoration: none;
-    position: relative;
-    text-align: center;
-  }
-  .grid .data #catalog a figure figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+  .grid #layout .mainLayout figure {
+    margin: 1%;
+    max-width: 250px;
     width: 100%;
-    padding: 1%;
+    margin-bottom: 9%;
   }
-  .grid .data #catalog a figure figcaption h2 {
-    background-color: #fffffff5;
-    font-size: 25px;
-    letter-spacing: 3px;
-    padding: 1%;
+  .grid #layout .mainLayout figure img {
+    width: 250px;
   }
-  .grid .data #catalog a figure figcaption img {
-    max-width: 100%;
+  .grid #layout .mainLayout figure figcaption {
+    text-align: center;
+    width: 100%;
+  }
+  .grid #layout .mainLayout figure figcaption h2 {
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 0%;
+  }
+  .grid #layout .mainLayout figure figcaption h3 {
+    margin-top: 0%;
+    font-size: 16px;
+  }
+  .grid #layout .mainLayout figure figcaption button {
+    width: 100%;
+    min-height: 50px;
+    min-width: 100px;
+    border: none;
+  }
+  .grid #layout .mainLayout figure figcaption button:hover {
+    background-color: #a3a3a3;
+    cursor: pointer;
   }
   footer {
     font-weight: normal !important;
@@ -605,43 +631,49 @@
   #layout {
     text-align: center;
   }
-  #catalog {
+  #layout #goBackOption {
+    visibility: hidden;
+  }
+  #layout h1 {
+    text-align: center;
+  }
+  .mainLayout {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 20%;
     margin-bottom: 15%;
+    margin-left: 20%;
   }
-  #catalog a {
-    color: #3c4049;
-    text-decoration: none;
-    position: relative;
+  .mainLayout figure {
+    min-width: 350px;
+    margin-bottom: 10%;
+  }
+  .mainLayout figure img {
+    width: 200px;
+  }
+  .mainLayout figure figcaption {
     text-align: center;
-  }
-  #catalog a figure {
     width: 100%;
   }
-  #catalog a figure figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 1%;
+  .mainLayout figure figcaption h2 {
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 0%;
   }
-  #catalog a figure figcaption h2 {
-    background-color: #fffffff5;
-    font-size: 25px;
-    letter-spacing: 3px;
-    padding: 1%;
+  .mainLayout figure figcaption h3 {
+    margin-top: 0%;
+    font-size: 16px;
   }
-  #catalog a figure figcaption aside img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
+  .mainLayout figure figcaption button {
+    min-height: 80px;
+    width: 200px;
+    border: none;
+  }
+  .mainLayout figure figcaption button:hover {
+    background-color: #a3a3a3;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=subpages.css.map */
