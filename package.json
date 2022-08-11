@@ -1,6 +1,7 @@
 {
   "name": "mp",
   "version": "1.0.0",
+  "type":"module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -25,6 +26,7 @@
     "mongodb": "^4.8.1",
     "mongoose": "^6.5.1",
     "node-fetch": "^3.2.10",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "uuid": "^8.3.2"
   }
 }

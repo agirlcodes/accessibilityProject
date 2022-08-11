@@ -11,8 +11,8 @@ $(document).ready(function(){
                 <img src=${value.img} alt="image of products available">
                 <figcaption>
                 <h2 class="data">${value.name}</h2>
-                <h3>£${value.price}</h3>
-                <button id="addCart" class="productVal">Add To Cart</button>
+                <h3 class="data">£${value.price}</h3>
+                <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </a>`
             )
@@ -23,9 +23,8 @@ $(document).ready(function(){
                 <img src=${value.img} alt="image of products available">
                 <figcaption>
                     <h2 class="data">${value.name}</h2>
-                    <h3>£${value.price}</h3>
-                <button id="addCart" class="productVal">Add To Cart</button>
-                </figcaption>
+                    <h3 class="data">£${value.price}</h3>
+                <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>                </figcaption>
             </figure>
             `
             )
@@ -36,8 +35,8 @@ $(document).ready(function(){
                 <img src=${value.img} alt="image of products available">
                 <figcaption>
                 <h2 class="data">${value.name}</h2>
-                <h3>£${value.price}</h3>
-                <button id="addCart" class="productVal">Add To Cart</button>
+                <h3 class="data">£${value.price}</h3>
+                <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </figure>
             `
@@ -49,8 +48,8 @@ $(document).ready(function(){
                 <img src=${value.img} alt="image of products available">
                 <figcaption>
                 <h2 class="data">${value.name}</h2>
-                <h3>£${value.price}</h3>
-                <button id="addCart" class="productVal">Add To Cart</button>
+                <h3 class="data">£${value.price}</h3>
+                <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </figure>
             `
