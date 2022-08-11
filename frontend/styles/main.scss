@@ -91,11 +91,7 @@
 }
 @media (max-width: 700px){
   @include mobileLayout;
-  #layout{
-    width: 100%;
-    grid-column:1;
-    grid-row: 3;
-    #mainData{  
+  #mainData{  
       h2{
         text-align: center;
       }
@@ -130,7 +126,6 @@
         max-width: 80%;
         margin-left: 10%;
       }
-    }
   }
   #newCollection{
     margin-bottom: 20px;

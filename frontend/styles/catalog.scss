@@ -1,26 +1,70 @@
 @import 'mixins';
-body{
-  @include bodyLayout;
-  @include searchbar;
-  @include accessibility;
+@media (min-width: 700.5px){
+  body{
+    @include bodyLayout;
+    @include searchbar;
+    @include accessibility;
+  }
+  header{
+  @include landingLayout
+  }
+  .grid{
+    @include gridLayout;
+    .data{
+      padding: 2%;;
+      #catalog{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+          color: #3c4049;
+          text-decoration: none;
+          position: relative;
+          text-align: center;
+          figure{
+            figcaption{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 1%;
+            h2{
+              background-color: #fffffff5;
+              font-size: 25px;
+              letter-spacing: 3px;
+              padding: 1%;
+            }
+            img{
+              max-width: 100%;
+            }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    @include footer;
+  }
 }
-header{
-@include landingLayout
-}
-.grid{
-  @include gridLayout;
-  .data{
-    padding: 2%;;
-    #catalog{
-      display: flex;
-      flex-wrap: wrap;
-      a{
-        color: #3c4049;
-        text-decoration: none;
-        position: relative;
-        text-align: center;
-        figure{
-          figcaption{
+@media (max-width: 700px){
+  @include mobileLayout;
+  #layout{
+    text-align: center;
+  }
+  #catalog{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-bottom: 15%;
+    a{
+      color: #3c4049;
+      text-decoration: none;
+      position: relative;
+      text-align: center;
+      figure{
+        width: 100%;
+        figcaption{
           position: absolute;
           top: 50%;
           left: 50%;
@@ -33,15 +77,15 @@ header{
             letter-spacing: 3px;
             padding: 1%;
           }
-          img{
-            max-width: 100%;
-          }
+          aside{
+            img{
+              max-width: 200px;
+              width: 100%;
+              height: auto;
+            }
           }
         }
       }
     }
   }
-}
-footer{
-  @include footer;
 }

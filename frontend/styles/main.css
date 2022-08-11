@@ -572,6 +572,13 @@
     height: 0px;
     width: 0px;
   }
+  .grid #layout {
+    width: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
   footer {
     font-weight: normal !important;
     width: 100%;
@@ -610,7 +617,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 40%;
+    margin-left: 25%;
     list-style-type: none;
   }
   footer .footerSocialMedia a {
@@ -639,42 +646,35 @@
   footer #fineprint small a:hover {
     color: black;
   }
-  #layout {
-    width: 100%;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 3;
-    grid-row: 3;
-  }
-  #layout #mainData h2 {
+  #mainData h2 {
     text-align: center;
   }
-  #layout #mainData #topSellersContent {
+  #mainData #topSellersContent {
     margin-left: 20%;
   }
-  #layout #mainData #topSellersContent a {
+  #mainData #topSellersContent a {
     width: auto;
     width: 400px;
     margin: 0%;
   }
-  #layout #mainData #topSellersContent a figure {
+  #mainData #topSellersContent a figure {
     margin: 0%;
     margin-bottom: 5%;
   }
-  #layout #mainData #topSellersContent a figure figcaption {
+  #mainData #topSellersContent a figure figcaption {
     text-align: center;
     width: 400px;
     margin: 0%;
   }
-  #layout #mainData #topSellersContent a figure figcaption h2 {
+  #mainData #topSellersContent a figure figcaption h2 {
     margin: 0%;
     width: 100%;
   }
-  #layout #mainData #topSellersContent a figure img {
+  #mainData #topSellersContent a figure img {
     max-width: 300px;
     margin-left: 10%;
   }
-  #layout #mainData article {
+  #mainData article {
     text-align: left;
     max-width: 80%;
     margin-left: 10%;

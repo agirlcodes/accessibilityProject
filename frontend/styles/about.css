@@ -11,8 +11,8 @@
 body {
   background-color: white;
   font-size: 16px;
-  color: #3c4049;
   line-height: 1.6;
+  color: #3c4049;
 }
 
 body ul li {
@@ -25,6 +25,8 @@ body h1, body h2, body h3, body h4 {
 }
 
 body p, body a {
+  color: #3c4049;
+  text-decoration: none;
   font-family: 'Courier Prime', monospace;
 }
 
@@ -101,11 +103,12 @@ body .searchBarResults figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 300px;
+  min-width: 300px;
 }
 
-body .searchBarResults figure img {
-  width: 100%;
+body .searchBarResults figure aside img {
+  width: 80%;
+  height: auto;
 }
 
 body .searchBarResults figure figcaption {
@@ -197,6 +200,8 @@ body #accessibilityNav .background-change {
   margin: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
+  margin: 0%;
 }
 
 .grid #landingImg {
@@ -214,11 +219,11 @@ body #accessibilityNav .background-change {
   grid-row: 2;
 }
 
-.grid #menu #navMenu {
+.grid #menu #linksMenu {
   font-size: 16px;
 }
 
-.grid #menu #navMenu a {
+.grid #menu #linksMenu a {
   border-top: 1px solid #d7d8d2;
   display: block;
   padding: 12px 0;
@@ -266,34 +271,51 @@ body #accessibilityNav .background-change {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+}
+
+.grid .data .imageLayout p {
+  margin-top: 5%;
+  width: 45%;
 }
 
 .grid .data .imageLayout .aboutImg {
+  margin-top: 2%;
   width: 45%;
-  padding-bottom: 1%;
-  padding-left: 1%;
+  padding: 1%;
+}
+
+.grid .data .imageLayout #shoulderImg {
+  margin-left: 1%;
+}
+
+.grid .data .imageLayout #smileFaceImg {
+  margin-right: 1%;
+}
+
+.grid .data .imageLayout #shoulderImg {
+  margin-left: 1%;
 }
 
 .grid .data .imageLayout #bottomImg {
   padding-left: 1%;
-  width: 91%;
+  height: 100%;
 }
 
 .grid .data #aboutUsContent {
-  width: 70%;
+  width: 100%;
   margin-left: 0%;
-  padding-left: 10%;
 }
 
 footer {
   font-weight: normal !important;
   width: 100%;
-  margin-bottom: -1%;
+  margin-bottom: -2%;
   background-color: #205e69;
   color: #ffffff;
 }
 
-footer a {
+footer a, footer p {
   color: white;
 }
 
@@ -310,25 +332,30 @@ footer #footerLayout {
 footer #footerLayout a {
   display: block;
   padding: 12px 0;
+  border-bottom: 1px solid white;
 }
 
 footer #footerLayout .dividedLayout {
-  padding: 2%;
+  padding: 1%;
+  width: 250px;
 }
 
 footer #footerLayout #missionStatement {
-  width: 30%;
+  width: 450px;
 }
 
-footer #socialMedia {
+footer .footerSocialMedia {
+  margin-left: 5%;
+}
+
+footer .footerSocialMedia ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 40%;
   list-style-type: none;
 }
 
-footer #socialMedia a {
+footer .footerSocialMedia ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,9 +372,6 @@ footer #socialMedia a {
 
 footer #fineprint {
   text-align: center !important;
-}
-
-footer #fineprint small {
-  margin-left: 1%;
+  padding: 1%;
 }
 /*# sourceMappingURL=about.css.map */

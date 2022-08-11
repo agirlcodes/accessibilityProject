@@ -10,23 +10,25 @@ make the webpage more complex
   - [X] home
   - [] about
   - [] catalog
-    - [] subpages
-  - [] footer
-  - [] accessibiltiy menu
+    - find way to scale images
+    - [X] subpages
+  - [X] footer
+  - [X] accessibiltiy menu
 - [] cart functionality
+- [X] Fix catalog subpages
+- [] Add content to subpages
+- [] go over About layout
+- [] add copywritting
+- [] Debugging
+- [] Design
 - [X] Search Bar
   - [] add a way to close pop-up
-  - [] fix colour change
+  - [X] fix colour change
 - [] Modals
   - [] Add feature to remove and add stuff to cart
   - [X] allow for payment gateway
-- [] Fix catalog subpages
-- [] go over About layout
-- [] Design
-    - change font
-    - alter font-size on h1,h2 and h3 (kinda off for some reason?)
-- [] add copywritting
-- [] Debugging
+    - [X] change font
+    - [X] alter font-size on h1,h2 and h3 (kinda off for some reason?)
 - [X] Accessibility checks
   - [X] Accessibility API
 - [X] Write up - 3 weeks needed

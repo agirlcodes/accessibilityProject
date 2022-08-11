@@ -9,26 +9,44 @@ body{
 }
 .grid{
   @include gridLayout;
+  width: 100%;
+  margin: 0%;
   .data{
     margin: 2%;
     .imageLayout{
     display: flex;
     flex-wrap: wrap;
-      .aboutImg{
+    width: 100%;
+    p{
+      margin-top: 5%;
+      width: 45%;
+    }
+    .aboutImg{
+        margin-top: 2%;
         width: 45%;
-        padding-bottom: 1%;
-        padding-left: 1%;
+        // padding-bottom: 1%;
+        padding: 1%;
+      }
+      #shoulderImg{
+        margin-left: 1%;
+      }
+      #smileFaceImg{
+        margin-right: 1%;
+      }
+      #shoulderImg{
+        margin-left: 1%;
       }
       #bottomImg{
         padding-left: 1%;
-        width: 91%;
+        // width: %;
+        height: 100%;
       }
     }
     #aboutUsContent{
       // text-align: center;
-      width: 70%;
+      width: 100%;
       margin-left: 0%;
-      padding-left: 10%;
+      // padding-left: 10%;
     }
   }
 }

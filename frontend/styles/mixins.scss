@@ -196,7 +196,6 @@
   body{
     @include bodyLayout;
     margin: 0%;
-    // @include searchbar;
     @include accessibility;
     #accessibilityNav{
       #container{
@@ -337,6 +336,11 @@
       height: 0px;
       width: 0px;
     }
+  }
+  #layout{
+    width: 100%;
+    grid-column:1;
+    grid-row: 3;
   }
 }
 footer{
