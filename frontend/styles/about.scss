@@ -1,55 +1,88 @@
 @import 'mixins';
-body{
-  @include bodyLayout;
-  @include searchbar;
-  @include accessibility;
+@media (min-width: 700px){
+  body{
+    @include bodyLayout;
+    @include searchbar;
+    @include accessibility;
+  }
+  #landingImg{
+    @include landingLayout
+  }
+  .grid{
+    @include gridLayout;
+    width: 100%;
+    margin: 0%;
+    .data{
+      margin: 2%;
+      margin-bottom: 10%;
+      .imageLayout{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      p{
+        margin-top: 5%;
+        width: 45%;
+      }
+      .aboutImg{
+          margin-top: 2%;
+          width: 45%;
+          height: auto;
+          // padding-bottom: 1%;
+          padding: 1%;
+        }
+        #shoulderImg{
+          margin-left: 1%;
+        }
+        #smileFaceImg{
+          margin-right: 1%;
+        }
+        #shoulderImg{
+          margin-left: 1%;
+        }
+        #bottomImg{
+          padding-left: 1%;
+          // width: %;
+          height: 100%;
+        }
+      }
+      #aboutUsContent{
+        width: 100%;
+        margin-left: 0%;
+      }
+    }
+  }
+  footer{
+      @include footer;
+  }
 }
-#landingImg{
-  @include landingLayout
-}
-.grid{
-  @include gridLayout;
-  width: 100%;
-  margin: 0%;
-  .data{
-    margin: 2%;
-    .imageLayout{
+@media (max-width: 700px){
+  @include mobileLayout;
+  #layout{
+    padding-left: 10%;
+    margin-bottom: 5%;
+    h1{
+      text-align: center;
+    }
+  }
+  .imageLayout{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     p{
       margin-top: 5%;
-      width: 45%;
+      width: 80%;
     }
     .aboutImg{
         margin-top: 2%;
-        width: 45%;
+        width: 80%;
+        height: auto;
         // padding-bottom: 1%;
         padding: 1%;
-      }
-      #shoulderImg{
-        margin-left: 1%;
-      }
-      #smileFaceImg{
-        margin-right: 1%;
-      }
-      #shoulderImg{
-        margin-left: 1%;
-      }
-      #bottomImg{
-        padding-left: 1%;
-        // width: %;
-        height: 100%;
+        margin-left: 0%;
       }
     }
     #aboutUsContent{
-      // text-align: center;
-      width: 100%;
+      width: 90%;
       margin-left: 0%;
-      // padding-left: 10%;
     }
-  }
-}
-footer{
-    @include footer;
 }
