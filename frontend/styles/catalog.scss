@@ -14,45 +14,31 @@ header{
     #catalog{
       display: flex;
       flex-wrap: wrap;
-      figure{
+      a{
+        color: #3c4049;
+        text-decoration: none;
         position: relative;
         text-align: center;
-        color: #5c89b4;
-        a img{
-          max-width: 300px;
+        figure{
+          figcaption{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          padding: 1%;
+          h2{
+            background-color: #fffffff5;
+            font-size: 25px;
+            letter-spacing: 3px;
+            padding: 1%;
+          }
+          img{
+            max-width: 100%;
+          }
+          }
         }
       }
-      figcaption{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        padding: 1%;
-        h2{
-          background-color: #ffffff9a;
-          font-size: 25px;
-          letter-spacing: 3px;
-        }
-        a{
-          color: black;
-          text-decoration: none;
-        }
-      }
-    }
-    // #layout {
-    // }
-    #topSellers{
-      @include productLayout
-    }
-    #goest{
-      @include productLayout
-    }
-    #yarrow{
-      @include productLayout
-    }
-    #botanical{
-      @include productLayout
     }
   }
 }

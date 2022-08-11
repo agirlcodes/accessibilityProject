@@ -11,34 +11,38 @@ $(document).ready(function(){
         let botanical = data[3]
         let boPro = botanical.product
         $('#catalog').append(`
-        <figure id="topSeller" class="data" >
-            <figcaption>
-                <h2>
-                <a href="subpages/topSellers.html" alt="contains Name of product">${topSellers.category}</a></h2>
-            </figcaption>
-            <a class="overlay" id=${topPro[0]._id} href="subpages/topSellers.html" alt="contains Image of product"><img src=${topPro[0].img} alt="image of products available"></a>
-        </figure>
+        <a href="subpages/topSellers.html" alt="contains Name of product">
+            <figure id="topSeller" class="data" >
+            <img src=${topPro[0].img} alt="image of ${topSellers.category} products available">
+                <figcaption>
+                    <h2>${topSellers.category}</h2>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="subpages/goest.html" alt="contains Name of product">
             <figure id="goestPerfume" class="data" >
-            <figcaption>
-            <h2>
-            <a href="subpages/goest.html" alt="contains Name of product">${goestperf.category}</a></h2>
-            </figcaption>
-            <a id=${goestPro[0]._id} href="subpages/goest.html" alt="contains Image of product"><img src=${goestPro[0].img} alt="image of products available"></a>
+            <img src=${goestPro[0].img} alt="image of ${goestperf.category} products available">
+                <figcaption>
+                    <h2>${goestperf.category}</h2>
+                </figcaption>
             </figure>
+        </a>
+        <a href="subpages/yarrow.html" alt="contains Name of product">
             <figure id="figYarrow" class="data" >
-            <figcaption>
-            <h2>
-            <a href="subpages/yarrow.html" alt="contains Name of product">${figYarrow.category}</a></h2>
-            </figcaption>
-            <a id=${figPro[0]._id} href="subpages/yarrow.html" alt="contains Image of product"><img src=${figPro[0].img} alt="image of products available"></a>
+            <img src=${figPro[0].img} alt="image of ${figYarrow.category} productsavailable">
+                <figcaption>
+                    <h2>${figYarrow.category}</h2>
+                </figcaption>
             </figure>
+        </a>
+        <a href="subpages/botanical.html" alt="contains Name of product">
             <figure id="botanical" class="data" >
-            <figcaption>
-            <h2>
-            <a href="subpages/botanical.html" alt="contains Name of product">${botanical.category}</a></h2>
-            </figcaption>
-            <a id=${boPro[0]._id} href="subpages/botanical.html" alt="contains Image of product"><img src=${boPro[0].img} alt="image of products available"></a>
-            </figure>`)
+            <img src=${boPro[0].img} alt="image of ${botanical.category} products available">
+                <figcaption>
+                    <h2>${botanical.category}</h2>
+                </figcaption>
+            </figure>
+        </a>`)
             
         // $("#topSeller").click(function(){
         //     $.each(topPro, function(index, value){

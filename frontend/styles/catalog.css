@@ -269,17 +269,14 @@ header h1 {
       flex-wrap: wrap;
 }
 
-.grid .data #catalog figure {
+.grid .data #catalog a {
+  color: #3c4049;
+  text-decoration: none;
   position: relative;
   text-align: center;
-  color: #5c89b4;
 }
 
-.grid .data #catalog figure a img {
-  max-width: 300px;
-}
-
-.grid .data #catalog figcaption {
+.grid .data #catalog a figure figcaption {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -289,203 +286,15 @@ header h1 {
   padding: 1%;
 }
 
-.grid .data #catalog figcaption h2 {
-  background-color: #ffffff9a;
+.grid .data #catalog a figure figcaption h2 {
+  background-color: #fffffff5;
   font-size: 25px;
   letter-spacing: 3px;
-}
-
-.grid .data #catalog figcaption a {
-  color: black;
-  text-decoration: none;
-}
-
-.grid .data #topSellers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 2%;
-  margin-bottom: 5%;
-}
-
-.grid .data #topSellers figure {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.grid .data #topSellers figure img {
-  max-width: 100%;
-}
-
-.grid .data #topSellers figure button {
-  background-color: #dddddd;
-  border: none;
   padding: 1%;
-  height: 40px;
 }
 
-.grid .data #topSellers figure button:hover {
-  background-color: gray;
-  color: white;
-  cursor: pointer;
-}
-
-.grid .data #topSellers figure figcaption ul {
-  padding: 0%;
-}
-
-.grid .data #topSellers figure figcaption h2 {
-  font-size: 20px;
-}
-
-.grid .data #goest {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 2%;
-  margin-bottom: 5%;
-}
-
-.grid .data #goest figure {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.grid .data #goest figure img {
+.grid .data #catalog a figure figcaption img {
   max-width: 100%;
-}
-
-.grid .data #goest figure button {
-  background-color: #dddddd;
-  border: none;
-  padding: 1%;
-  height: 40px;
-}
-
-.grid .data #goest figure button:hover {
-  background-color: gray;
-  color: white;
-  cursor: pointer;
-}
-
-.grid .data #goest figure figcaption ul {
-  padding: 0%;
-}
-
-.grid .data #goest figure figcaption h2 {
-  font-size: 20px;
-}
-
-.grid .data #yarrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 2%;
-  margin-bottom: 5%;
-}
-
-.grid .data #yarrow figure {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.grid .data #yarrow figure img {
-  max-width: 100%;
-}
-
-.grid .data #yarrow figure button {
-  background-color: #dddddd;
-  border: none;
-  padding: 1%;
-  height: 40px;
-}
-
-.grid .data #yarrow figure button:hover {
-  background-color: gray;
-  color: white;
-  cursor: pointer;
-}
-
-.grid .data #yarrow figure figcaption ul {
-  padding: 0%;
-}
-
-.grid .data #yarrow figure figcaption h2 {
-  font-size: 20px;
-}
-
-.grid .data #botanical {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 2%;
-  margin-bottom: 5%;
-}
-
-.grid .data #botanical figure {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.grid .data #botanical figure img {
-  max-width: 100%;
-}
-
-.grid .data #botanical figure button {
-  background-color: #dddddd;
-  border: none;
-  padding: 1%;
-  height: 40px;
-}
-
-.grid .data #botanical figure button:hover {
-  background-color: gray;
-  color: white;
-  cursor: pointer;
-}
-
-.grid .data #botanical figure figcaption ul {
-  padding: 0%;
-}
-
-.grid .data #botanical figure figcaption h2 {
-  font-size: 20px;
 }
 
 footer {

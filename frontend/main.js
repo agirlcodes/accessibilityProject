@@ -23,7 +23,8 @@ $(document).ready(function(){
       $('img').css('filter', 'grayscale(1)');
       $('.searchBarImg').css('filter', 'grayscale(1)');
       $('#landingImg').css('filter', 'grayscale(1)');
-      $ ('footer').css('background-color', 'gray');
+      $ ('footer').css({'background-color': '#464646', 'color': 'white'});
+      $ ('footer a').css({'color': 'white'});
   });
   $('#coloredBackground').click(function(){
     $('img').css('filter', 'grayscale(0)');
