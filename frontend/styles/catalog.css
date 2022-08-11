@@ -109,6 +109,7 @@
   }
   body .searchBarResults figure figcaption button:hover {
     background-color: #a3a3a3;
+    cursor: pointer;
   }
   body #accessibilityNav {
     background: white;
