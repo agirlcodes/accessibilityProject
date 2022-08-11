@@ -7,8 +7,12 @@ API: coEnA3dWJl3LeXhBku231l1e4zE1Hql5P5xaoTRaocfMCCtRbbPiR7NCC5TY6OS2
 TO-DO: 
 make the webpage more complex
 - [] mobile view
+  - [] footer
+  - [] accessibiltiy menu
 - [] cart functionality
-- [] Search Bar
+- [X] Search Bar
+  - [] add a way to close pop-up
+  - [] fix colour change
 - [] Modals
   - [] Add feature to remove and add stuff to cart
   - [X] allow for payment gateway

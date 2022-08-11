@@ -11,65 +11,66 @@
     <body>
         <nav id="accessibilityNav">
             <div id="container">
-                <span>X</span>
-                <button aria-label="change text to fingerspell" id="fingerspell"><img src="../../icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
-                <button aria-label="Increase font size" value="increase" class="increaseFont">
+                    <span>X</span>
+                    <button aria-label="change text to fingerspell" id="fingerspell"><img src="../../icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
+                    <button aria-label="Increase font size" value="increase" class="increaseFont">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
+                            <text id="add symbol" data-name="+" transform="translate(10 30)" font-size="20" font-family="SegoeUI, Segoe UI" ><tspan x="0" y="0">+</tspan></text>
+                        <text id="A letter" transform="translate(0 45)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">A</tspan></text>
+                    </svg>
+                </button>
+                <button aria-label="decrease font size" value="decrease" class="decreaseFont">
                     <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
-                        <text id="_" data-name="+" transform="translate(10 30)" font-size="20" font-family="SegoeUI, Segoe UI" ><tspan x="0" y="0">+</tspan></text>
-                    <text id="A" transform="translate(0 45)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">A</tspan></text>
-                </svg>
-            </button>
-            <button aria-label="decrease font size" value="decrease" class="decreaseFont">
-                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
-                    <text id="A" transform="translate(0 45)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">A</tspan></text>
-                    <text id="_" data-name="-" transform="translate(10 30)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-</tspan></text>
-                </svg>
-            </button>
-            <div class="background-change">
-                <p>Background:</p>
-                <button aria-label="colored background" id="coloredBackground" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 42 42">
-                        <g id="Rectangle_17" data-name="Rectangle 17" fill="#fff" stroke="#000" stroke-width="5">
-                            <rect width="42" height="42" stroke="none"/>
-                            <rect x="2.5" y="2.5" width="37" height="37" fill="none"/>
-                        </g>
-                        <path id="Path_12" data-name="Path 12" d="M2830.251,292.421l-38.881,38.468h38.881Z" transform="translate(-2789.893 -290.891)"/>
+                        <text id="A letter" transform="translate(0 45)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">A</tspan></text>
+                        <text id="minus symbol" data-name="-" transform="translate(10 30)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-</tspan></text>
                     </svg>
                 </button>
-                <button aria-label="black and white color background" id="monochromeBackground">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
-                        <g id="Rectangle_19" data-name="Rectangle 19" fill="#e5c54a" stroke="#000" stroke-width="5">
-                            <rect width="41" height="42" stroke="none"/>
-                            <rect x="2.5" y="2.5" width="36" height="37" fill="none"/>
-                        </g>
-                        <path id="Path_14" data-name="Path 14" d="M2822.446,292.421l-31.076,32.048h31.076Z" transform="translate(-2786.441 -287.432)" fill="#045884"/>
-                    </svg>
-                </button>
+                <div class="background-change">
+                    <p>Background:</p>
+                    <button aria-label="Monochrome background" id="monochromeBackground" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 42 42">
+                            <g id="Rectangle_17" data-name="Rectangle 17" fill="#fff" stroke="#000" stroke-width="5">
+                                <rect width="42" height="42" stroke="none"/>
+                                <rect x="2.5" y="2.5" width="37" height="37" fill="none"/>
+                            </g>
+                            <path id="Path_12" data-name="Path 12" d="M2830.251,292.421l-38.881,38.468h38.881Z" transform="translate(-2789.893 -290.891)"/>
+                        </svg>
+                    </button>
+                    <button aria-label="colored background" id="coloredBackground">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
+                            <g id="Rectangle_19" data-name="Rectangle 19" fill="#e5c54a" stroke="#000" stroke-width="5">
+                                <rect width="41" height="42" stroke="none"/>
+                                <rect x="2.5" y="2.5" width="36" height="37" fill="none"/>
+                            </g>
+                            <path id="Path_14" data-name="Path 14" d="M2822.446,292.421l-31.076,32.048h31.076Z" transform="translate(-2786.441 -287.432)" fill="#045884"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
-        </div>
         </nav>
         <div class="searchBar">
-            <dfn title="Search Field">
-            </dfn>
-            <form id="searchBarLayout">
-                    <button aria-label="Search Bar button"><img src="../../icons/search.png" alt=""></button>
-                    <input id="searchBar" type="text" placeholder="Search Bar">
-                    <section class="searchBarResults"></section>
-                    <!-- CART -->
+            <form>
+                <label id="searchBarLayout"for="searchBar"> 
+                    <button id="submitBtn" type="submit" value="">
+                    <img src="../../icons/search.png" alt=""></button>
+                    <input id="searchBar" type="text" placeholder="Search">
+                        <!-- CART -->
                     <button id="cartModal"><dfn title="Cart"><img src="../../icons/shopping-cart.png" alt="Cart Icon"></dfn>
                         <div id="cart"></div>
                     </button>
-                </form>
+                </label>
+            </form>
         </div>
+        <section class="searchBarResults"></section>
         <div class="grid">
         <header id="landingImg">
             <h1>Nirvana Cosmetics</h1>
         </header>
             <nav id="menu">
                 <ul id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="catalog/catalog.html">Catalog</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../catalog/catalog.html">Catalog</a></li>
+                    <li><a href="../../about.html">About Us</a></li>
                 </ul>
                 <ul id="socialMedia">
                     <li><a href="#" alt="link to facebook account"><img src="../../icons/facebook.png" alt="Facebook logo"></a></li>

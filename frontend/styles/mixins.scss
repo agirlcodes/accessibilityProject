@@ -8,7 +8,6 @@
     margin-bottom: 0%;
     z-index: 999;
     #container{
-      // background-color: #205e69;
       display: flex;
       flex-direction: row;
       top: 0%;
@@ -80,18 +79,23 @@
     background-color: white;
     width: 50%;
     margin-left: 25%;
+    z-index: 999;
     figure{
       display: flex;
-      // padding: 1%;
+      max-width: 300px;
       img{
-        max-width: 200px;
+        width: 100%;
+        max-height: 400px;
       }
       figcaption{
         margin-left: 10%;
         button{
-          height: 30px;
-          width: 100px;
+          min-height: 30px;
+          min-width: 100px;
           border: none;
+          h4{
+            margin: 0%;
+          }
         }
         button:hover{
           background-color: rgb(163, 163, 163);
@@ -128,7 +132,7 @@
   }
   color: #3c4049;
   line-height: 1.6;
-  h1, h2, h3{
+  h1, h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }

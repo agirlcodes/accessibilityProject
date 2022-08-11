@@ -19,7 +19,7 @@ body ul li {
   list-style-type: none;
 }
 
-body h1, body h2, body h3 {
+body h1, body h2, body h3, body h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
 }
@@ -94,16 +94,18 @@ body .searchBarResults {
   background-color: white;
   width: 50%;
   margin-left: 25%;
+  z-index: 999;
 }
 
 body .searchBarResults figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 300px;
 }
 
 body .searchBarResults figure img {
-  max-width: 200px;
+  width: 100%;
 }
 
 body .searchBarResults figure figcaption {
@@ -111,9 +113,13 @@ body .searchBarResults figure figcaption {
 }
 
 body .searchBarResults figure figcaption button {
-  height: 30px;
-  width: 100px;
+  min-height: 30px;
+  min-width: 100px;
   border: none;
+}
+
+body .searchBarResults figure figcaption button h4 {
+  margin: 0%;
 }
 
 body .searchBarResults figure figcaption button:hover {

@@ -10,20 +10,16 @@ header{
 .grid{
   @include gridLayout;
   .data{
-    // margin-left: 30px;  
     padding: 2%;;
     #catalog{
       display: flex;
       flex-wrap: wrap;
-      // width: 100px;
       figure{
         position: relative;
         text-align: center;
         color: #5c89b4;
-        // position: relative;
         a img{
           max-width: 300px;
-          // border-radius: 9%;
         }
       }
       figcaption{

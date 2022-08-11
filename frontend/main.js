@@ -21,6 +21,7 @@ $(document).ready(function(){
       $('.data').css('color', 'black');
       $('a').css('color', 'black');
       $('img').css('filter', 'grayscale(1)');
+      $('.searchBarImg').css('filter', 'grayscale(1)');
       $('#landingImg').css('filter', 'grayscale(1)');
       $ ('footer').css('background-color', 'gray');
   });
@@ -33,7 +34,7 @@ $(document).ready(function(){
   });
   $('#fingerspell').click(function(){
     $(".data, a, h1, h2, h3").css({"font-family":"Gallaudet", "font-size": "50px","font-weight": "normal", "letter-spacing": "10px"});
-    $("h1, h2, h3").css({"font-size": "70px"});
+    $("h1, h2, h3").css({"font-size": "90px", "color":"black"});
     $("a").css({"text-align": "center"});
   });
   
@@ -57,29 +58,25 @@ $('#topSellersContent').append(`
 })
 // SEARCHBAR
 // TRY ADD CATEGORY TO DETAILS
+// ADD A WAY TO CLOSE POP-UP?
 let compData = [Goest,TopSellers, Yarrow, Botanical]
   $('#searchBar').keyup(function(e){
     e.preventDefault();
     let input = $('#searchBar').val()
     input = input.toString().toLowerCase();
-    let GoestProducts = []
-    console.log(GoestProducts)
     $.each(compData, function(index, value){
-      console.log(value)
       for(var key in value) {
-        console.log(key)
         let dataValue = value[key]
-        GoestProducts = value[key]
           if (dataValue.name.toLowerCase().indexOf(input)!= -1) {
             $('.searchBarResults').css({'display':'block'})
             $('.searchBarResults').html(`
             <figure class="data">
-              <img src="${dataValue.img} alt="image of products available>
+              <img class="searchBarImg" src="${dataValue.img} alt="image of products available>
               <figcaption class="data">
               <h3>${dataValue.name}</h3>
               <p class="data">£${dataValue.price}
               </p>
-              <button>Add To Cart</button>
+              <button><h4 class="data">Add To Cart</h4></button>
               </figcaption>
             </figure>
             `)
