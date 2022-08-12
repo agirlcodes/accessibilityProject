@@ -1,3 +1,13 @@
+/*
+ * jQuery Simple Shopping Cart v0.1
+ * Basis shopping cart using javascript/Jquery.
+ *
+ * Authour : Sirisha
+ */
+
+
+/* '(function(){})();' this function is used, to make all variables of the plugin Private */
+
 (function ($, window, document, undefined) {
 
     /* Default Options */
@@ -15,9 +25,7 @@
         this.name = name;
         this.price = price;
         this.count = count;
-        console.log(name)
     }
-
     /*Constructor function*/
     function simpleCart(domEle, options) {
 
@@ -30,8 +38,8 @@
         //Initial init function
         this.init();
     }
-
-
+    
+    
     /*plugin functions */
     $.extend(simpleCart.prototype, {
         init: function () {
@@ -42,28 +50,27 @@
         },
         _setupCart: function () {
             this.cart_ele.addClass("cart-grid panel panel-defaults");
-            this.cart_ele.append("<span id='closeModal'>x</span><div class='panel-heading cart-heading'><div class='total-cart-count'>Your Cart 0 items</div><div class='spacer'></div><i class='fa fa-dollar total-cart-cost'>£0</i><div></div></div>")
+            this.cart_ele.append("<a href='#' rel='modal:close'></a><div class='panel-heading cart-heading'><div class='total-cart-count'>Your Cart 0 items</div><div class='spacer'></div><i class='fa fa-dollar total-cart-cost'>0</i><div></div></div>")
             this.cart_ele.append("<div class='panel-body cart-body'><div class='cart-products-list' id='show-cart'><!-- Dynamic Code from Script comes here--></div></div>")
             this.cart_ele.append("<div class='cart-summary-container'>\n\
-                                <div class='cart-offer'></div>\n\
-                                    <div class='cart-total-amount'>\n\
-                                    <div>Total</div>\n\
-                                        <div class='spacer'></div>\n\
-                                        <div><i class='fa fa-dollar total-cart-cost'>0</i></div>\n\
-                                        </div>\n\
-                                        <div class='cart-checkout'>\n\
-                                            <div class='elfsight-app-4af341d1-ff80-409d-8b46-29dc061282f2'></div>\n\
-                                        </div>\n\
-                                    </div>");
-                                },
-                                        // <button type='submit' class='btn btn-primary'>Proceed To Checkout</button>\n\
+            <div class='cart-offer'></div>\n\
+            <div class='cart-total-amount'>\n\
+            <div>Total</div>\n\
+            <div class='spacer'></div>\n\
+            <div><i class='fa fa-dollar total-cart-cost'>0</i></div>\n\
+            </div>\n\
+            <div class='elfsight-app-4af341d1-ff80-409d-8b46-29dc061282f2'></div>\n\
+            </div>\n\
+            </div>");
+        },
         _addProductstoCart: function () {
+            console.log("btn working")
         },
         _updateCartDetails: function () {
             var mi = this;
             $(this.options.cartProductListClass).html(mi._displayCart());
             $(this.options.totalCartCountClass).html("Your Cart " + mi._totalCartCount() + " items");
-            $(this.options.totalCartCostClass).html("£" +mi._totalCartCost());
+            $(this.options.totalCartCostClass).html(mi._totalCartCost());
         },
         _setCartbuttons: function () {
 
@@ -102,6 +109,7 @@
             var item = new Item(name, price, count);
             this.cart.push(item);
             this._saveCart();
+            console.log("additem working")
         },
         _removeItemfromCart: function (name, price, count) {
             for (var i in this.cart) {
@@ -137,7 +145,7 @@
                        <div class='quantityContainer'>\n\
                             <input type='number' class='quantity form-control item-count' data-name='" + cartArray[i].name + "' data-price='" + cartArray[i].price + "' min='0' value=" + cartArray[i].count + " name='number'>\n\
                        </div>\n\
-                       <div class='quantity-am'><i class='fa fa-dollar'>£" + cartArray[i].price + "</i></div>\n\
+                       <div class='quantity-am'><i class='fa fa-dollar'>" + cartArray[i].price + "</i></div>\n\
                        </div>";
             }
             return output;
@@ -151,7 +159,6 @@
         },
         _listCart: function () {
             var cartCopy = [];
-            console.log(cartCopy);
             for (var i in this.cart) {
                 var item = this.cart[i];
                 var itemCopy = {};
@@ -187,3 +194,6 @@
     }
     ;
 })(jQuery, window, document);
+
+
+

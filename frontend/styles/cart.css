@@ -1,125 +1,51 @@
 /*Cart*/
-#cart{
-    /* margin-top: 10%; */
-    background-color: #ffffff;
-    /* display: none; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 98%;
-    padding: 1%;
-    z-index: 999;
-}
-/* .cart-grid  {
-    display: fixed;
-} */
-
-.close{
-    font-size: 1.5em;
-}
-.cart-heading{
-    display: flex;
-    padding: 2%;
-    background: #54a2eb !important;
-    color: #fff !important;
-}
-.cart-body{
-    text-align: center;
-}
-.cart-summary-container{
-    /* width: 27rem; */
-    border-top: 1px solid hsla(0,0%,59%,.16);
-    width: 100%;
-}
-.cart-total-amount{
-    font-weight: 700;
-    padding: 2rem;
-    font-size: 1.3rem;
-    display: flex;
-    border-top: 1px solid hsla(0,0%,59%,.16);
-    border-bottom: 1px solid hsla(0,0%,59%,.16);
-}
-.cart-checkout{
-    cursor: pointer;
-    height: 6rem;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.spacer{
-    flex-grow:1;
-    visibility: hidden;
+element.style {
+  display: inline-block;
 }
 
-.quantityContainer{
-    display: flex;
-    align-items: center;
-}
-.quantity{
-    width: 5rem;
-    height: 2rem;
-    margin: 0 .5rem;
-    text-align: center;
-    padding: 0;
-    font-weight: bold;
-}
-.quantity-am {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
-.name{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
-.cart-each-product {
-    display: flex;
-    color: #2d2d2d;
-    justify-content: space-between;
-    margin: 1rem 0 0 0;
+.modal {
+  display: none;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  padding: 15px 30px;
+  text-align: left;
 }
 
-/*//Cart*/
+div {
+  display: block;
+}
 
-/* Products */
-.product-container{
-    margin-top: 2rem;
+.blocker {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
 }
-.menu-item-container {
-    padding: 1rem;
-    background: #fff;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.16);
-    position: relative;
-    margin: 1rem;
+
+.modal a.close-modal {
+  top: 10px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA3hJREFUaAXlm8+K00Acx7MiCIJH/yw+gA9g25O49SL4AO3Bp1jw5NvktC+wF88qevK4BU97EmzxUBCEolK/n5gp3W6TTJPfpNPNF37MNsl85/vN/DaTmU6PknC4K+pniqeKJ3k8UnkvDxXJzzy+q/yaxxeVHxW/FNHjgRSeKt4rFoplzaAuHHDBGR2eS9G54reirsmienDCTRt7xwsp+KAoEmt9nLaGitZxrBbPFNaGfPloGw2t4JVamSt8xYW6Dg1oCYo3Yv+rCGViV160oMkcd8SYKnYV1Nb1aEOjCe6L5ZOiLfF120EjWhuBu3YIZt1NQmujnk5F4MgOpURzLfAwOBSTmzp3fpDxuI/pabxpqOoz2r2HLAb0GMbZKlNV5/Hg9XJypguryA7lPF5KMdTZQzHjqxNPhWhzIuAruOl1eNqKEx1tSh5rfbxdw7mOxCq4qS68ZTjKS1YVvilu559vWvFHhh4rZrdyZ69Vmpgdj8fJbDZLJpNJ0uv1cnr/gjrUhQMuI+ANjyuwftQ0bbL6Erp0mM/ny8Fg4M3LtdRxgMtKl3jwmIHVxYXChFy94/Rmpa/pTbNUhstKV+4Rr8lLQ9KlUvJKLyG8yvQ2s9SBy1Jb7jV5a0yapfF6apaZLjLLcWtd4sNrmJUMHyM+1xibTjH82Zh01TNlhsrOhdKTe00uAzZQmN6+KW+sDa/JD2PSVQ873m29yf+1Q9VDzfEYlHi1G5LKBBWZbtEsHbFwb1oYDwr1ZiF/2bnCSg1OBE/pfr9/bWx26UxJL3ONPISOLKUvQza0LZUxSKyjpdTGa/vDEr25rddbMM0Q3O6Lx3rqFvU+x6UrRKQY7tyrZecmD9FODy8uLizTmilwNj0kraNcAJhOp5aGVwsAGD5VmJBrWWbJSgWT9zrzWepQF47RaGSiKfeGx6Szi3gzmX/HHbihwBser4B9UJYpFBNX4R6vTn3VQnez0SymnrHQMsRYGTr1dSk34ljRqS/EMd2pLQ8YBp3a1PLfcqCpo8gtHkZFHKkTX6fs3MY0blKnth66rKCnU0VRGu37ONrQaA4eZDFtWAu2fXj9zjFkxTBOo8F7t926gTp/83Kyzzcy2kZD6xiqxTYnHLRFm3vHiRSwNSjkz3hoIzo8lCKWUlg/YtGs7tObunDAZfpDLbfEI15zsEIY3U/x/gHHc/G1zltnAgAAAABJRU5ErkJggg==");
 }
-.item-name {
-    font-size: 1.4rem;
-    color: #6b412f;
-    letter-spacing: .42px;
-    font-weight: 700;
-    padding-bottom: .5rem;
-    padding-right: 1.7rem;
-}
-.item-price-container {
-    margin-top: .5rem;
-    display: flex;
-    align-items: center;
-}
-.nonveg{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 9;
-    color: rgb(255, 193, 77);
-}
-.veg{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 9;
-    color: #2baf2b;
-}
+/*# sourceMappingURL=cart.css.map */

@@ -10,8 +10,8 @@ $(document).ready(function(){
             <figure>
                 <img src=${value.img} alt="image of products available">
                 <figcaption>
-                <h2 class="data">${value.name}</h2>
-                <h3 class="data">£${value.price}</h3>
+                <h2 class="data getData">${value.name}</h2>
+                <h3 class="data getData">£${value.price}</h3>
                 <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </a>`
@@ -22,9 +22,10 @@ $(document).ready(function(){
             <figure>
                 <img src=${value.img} alt="image of products available">
                 <figcaption>
-                    <h2 class="data">${value.name}</h2>
-                    <h3 class="data">£${value.price}</h3>
-                <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>                </figcaption>
+                    <h2 class="data getData">${value.name}</h2>
+                    <h3 class="data getData">£${value.price}</h3>
+                <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>                
+                </figcaption>
             </figure>
             `
             )
@@ -34,8 +35,8 @@ $(document).ready(function(){
             <figure>
                 <img src=${value.img} alt="image of products available">
                 <figcaption>
-                <h2 class="data">${value.name}</h2>
-                <h3 class="data">£${value.price}</h3>
+                <h2 class="data getData">${value.name}</h2>
+                <h3 class="data getData">£${value.price}</h3>
                 <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </figure>
@@ -47,8 +48,8 @@ $(document).ready(function(){
             <figure>
                 <img src=${value.img} alt="image of products available">
                 <figcaption>
-                <h2 class="data">${value.name}</h2>
-                <h3 class="data">£${value.price}</h3>
+                <h2 class="data getData">${value.name}</h2>
+                <h3 class="data getData">£${value.price}</h3>
                 <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </figure>
