@@ -19,13 +19,14 @@
       p{
         width: 85%;
       }
+      
       #catalogNav{
-        margin-top: 2%;
+        box-shadow: 0px 5px 11px -8px rgba(146, 146, 146, 0.438);
         position: sticky;
-        top: 74px;
+        top: 75px;
         height: 50px;
         background-color: white;
-        border-top: 1px solid rgb(155, 155, 155);
+        border-top: 1px solid #d7d8d2;
         ul{
           display: flex;
           flex-direction: row;
@@ -41,6 +42,7 @@
       }
       .categoryLayout{
         width: 100%;
+        margin-left: 2%;
         h2{
           margin-top: 8%;
           text-transform: capitalize !important;
@@ -48,7 +50,7 @@
           padding-bottom: 1%;
           padding-left: 1%;
           padding-right: 0%;
-          width: 100%;
+          width: 98%;
           background-color: #205e69b4;
           color: white;
           letter-spacing: 2px;
@@ -57,10 +59,12 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
+          align-items: center;
           figure{
             width: 19%;
             min-height: auto;
-            justify-items: center;
+            // box-shadow: 0px 16px 11px -8px rgba(146, 146, 146, 0.56);
+            align-self: center;
             aside{
               width: 100%;
               max-width: 200px;

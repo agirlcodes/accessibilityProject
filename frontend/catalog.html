@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cat retry</title>
+        <title>Catalog</title>
         <link rel="stylesheet" href="styles/catalog.css">
         <link rel="stylesheet" href="styles/cart.css">
     </head>
@@ -53,7 +53,7 @@
         <div class="searchBar">
             <form>
                 <label id="searchBarLayout"for="searchBar"> 
-                    <button aria-label="alternate form of submitting to search" id="submitBtn" type="submit" value="">
+                    <button type="button" aria-label="alternate form of submitting to search" id="submitBtn" type="none" value="">
                     <img src="icons/search.png" alt=""></button>
                     <input id="searchBar" type="text" placeholder="Search">
                         <!-- CART -->
@@ -61,11 +61,23 @@
                 </label>
             </form>
             <div id="ex1" class="modal">
-                <div id="cart">
-                    
-                </div>
+                <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                <div id="cart"></div>
+                <table id="cartDisplayLayout">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="insertCart">
+                    </tbody>
+                    <!-- <tr class="cartData"></tr> -->
+                </table>
                 <div class='cart-checkout'>
-                    <div class='elfsight-app-4af341d1-ff80-409d-8b46-29dc061282f2'></div>
+                    <!-- <div class='elfsight-app-4af341d1-ff80-409d-8b46-29dc061282f2'></div> -->
+                    <div id="paypal-button-container"></div>
                 </div>
             </div>
         </div>
@@ -74,50 +86,52 @@
             <header id="landingImg">
                 <h1>Nirvana Cosmetics</h1>
             </header>
-            <nav id="menu">
-                <ul class="data" id="linksMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="catalog.html">Catalog</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-                <ul id="socialMedia">
-                    <li><a href="#" alt="link to facebook account"><img src="icons/facebook.png" alt="Facebook logo"></a></li>
-                    <li><a href="#" alt="link to facebook account"><img src="icons/twitter.png" alt="Twitter logo"></a></li>
-                    <li><a href="#" alt="link to facebook account"><img src="icons/instagram.png" alt="Instagram logo"></a></li>
-                </ul>
-            </nav>
             <main class="data" id="layout">
-            <nav id="catalogNav">
-                <ul>
-                    <li><a href="#topSellerNav">Top Sellers</a></li>
-                    <li><a href="#goestPerNav">Goest Perfume</a></li>
-                    <li><a href="#yarrowNav">Fig Yarrow</a></li>
-                    <li><a href="#botanicalNav">Herbivore Botanical</a></li>
-                </ul>
-            </nav>
-            <h1>Catalog</h1>
-            <p>lorem ipsum dolor sit amet, consect lorem ipsum dolor lorem lorem lorem ipsum dolor sit amet, consect lorem ipsum dolor lorem lorem lorem ipsum dolor sit amet, consect lorem ipsum dolor lorem lorem lorem ipsum dolor sit amet, consect lorem ipsum dolor lorem lorem</p>
-                <div id="topSellerNav" class="categoryLayout">
-                    <br>
-                    <h2>TOP SELLERS</h2>
-                    <div class="productLayout" id="topSellers"></div>
-                </div>
-                <div class="categoryLayout" id="goestPerNav">
-                    <br>
-                    <h2>GOEST PERFUME</h2>
-                    <div class="productLayout" id="goestPer"></div>
-                </div>
-                <div class="categoryLayout" id="yarrowNav">
-                    <br>
-                    <h2>FIG YARROW</h2>
-                    <div class="productLayout" id="yarrow"></div>
-                </div>
-                <div class="categoryLayout"id="botanicalNav">
-                    <br>
-                    <h2>HERBIVORE BOTANICAL</h2>
-                    <div class="productLayout" id="botanical"></div>
-                </div>
-        </main>
+                <nav id="menu">
+                    <ul class="data" id="linksMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                    <ul id="socialMedia">
+                        <li><a href="#" alt="link to facebook account"><img src="icons/facebook.png" alt="Facebook logo"></a></li>
+                        <li><a href="#" alt="link to facebook account"><img src="icons/twitter.png" alt="Twitter logo"></a></li>
+                        <li><a href="#" alt="link to facebook account"><img src="icons/instagram.png" alt="Instagram logo"></a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <nav id="catalogNav">
+                        <ul>
+                            <li><a href="#topSellerNav">Top Sellers</a></li>
+                            <li><a href="#goestPerNav">Goest Perfume</a></li>
+                            <li><a href="#yarrowNav">Fig Yarrow</a></li>
+                            <li><a href="#botanicalNav">Herbivore Botanical</a></li>
+                        </ul>
+                    </nav>
+                    <h1>Catalog</h1>
+                    <p>lorem ipsum dolor sit amet, consect lorem ipsum dolor lorem lorem lorem ipsum dolor sit amet, consect lorem ipsum dolor lorem lorem lorem ipsum dolor sit amet, consect lorem ipsum dolor lorem lorem lorem ipsum dolor sit amet, consect lorem ipsum dolor lorem lorem</p>
+                        <div id="topSellerNav" class="categoryLayout">
+                            <br>
+                            <h2>TOP SELLERS</h2>
+                            <div class="productLayout" id="topSellers"></div>
+                        </div>
+                        <div class="categoryLayout" id="goestPerNav">
+                            <br>
+                            <h2>GOEST PERFUME</h2>
+                            <div class="productLayout" id="goestPer"></div>
+                        </div>
+                        <div class="categoryLayout" id="yarrowNav">
+                            <br>
+                            <h2>FIG YARROW</h2>
+                            <div class="productLayout" id="yarrow"></div>
+                        </div>
+                        <div class="categoryLayout"id="botanicalNav">
+                            <br>
+                            <h2>HERBIVORE BOTANICAL</h2>
+                            <div class="productLayout" id="botanical"></div>
+                        </div>
+                </section>
+            </main>
             </div>
             <footer class="data">
                 <div id="footerLayout">
@@ -154,6 +168,8 @@
                     <small>Developed by Nataly Angulo</small>
                 </section>
             </footer>
+            <script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&currency=USD"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&components=buttons"></script>
         </body>
 <!-- ACCESSIBILITY API -->
 <!-- Begin Accessible Web A11Y Center Button Snippet --> 
