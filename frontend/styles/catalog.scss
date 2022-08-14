@@ -11,32 +11,83 @@
   .grid{
     @include gridLayout;
     .data{
-      padding: 2%;;
-      #catalog{
-        display: flex;
-        flex-wrap: wrap;
-        a{
-          color: #3c4049;
-          text-decoration: none;
-          position: relative;
-          text-align: center;
+      padding-left: 2%;;
+      margin-bottom: 15%;
+      h1, p{
+        margin-left: 2%;
+      }
+      p{
+        width: 85%;
+      }
+      #catalogNav{
+        margin-top: 2%;
+        position: sticky;
+        top: 74px;
+        height: 50px;
+        background-color: white;
+        border-top: 1px solid rgb(155, 155, 155);
+        ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          a:hover{
+            text-decoration: underline;
+          }
+          a::after{
+            // text-decoration: underline;
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+      .categoryLayout{
+        width: 100%;
+        h2{
+          margin-top: 8%;
+          text-transform: capitalize !important;
+          padding-top: 2%;
+          padding-bottom: 1%;
+          padding-left: 1%;
+          padding-right: 0%;
+          width: 100%;
+          background-color: #205e69b4;
+          color: white;
+          letter-spacing: 2px;
+        }
+        .productLayout{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
           figure{
+            width: 19%;
+            min-height: auto;
+            justify-items: center;
+            aside{
+              width: 100%;
+              max-width: 200px;
+              margin: 0%;
+              // margin-left: 15%;
+              img{
+                height: auto;
+                max-width: 100%;
+              }
+            }
             figcaption{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            padding: 1%;
-            h2{
-              background-color: #fffffff5;
-              font-size: 25px;
-              letter-spacing: 3px;
-              padding: 1%;
-            }
-            img{
-              max-width: 100%;
-            }
+              text-align: center;
+              width: 85%;
+              h4{
+                margin-top: 0%;
+                margin-bottom: 3%;
+              }
+              button{
+                width: 90%;
+                min-height: 50px;
+                min-width: 100px;
+                border: none;
+              }
+              button:hover{
+                background-color: rgb(163, 163, 163);
+                cursor: pointer;
+              }
             }
           }
         }
@@ -52,37 +103,52 @@
   #layout{
     text-align: center;
   }
-  #catalog{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 20%;
-    margin-bottom: 15%;
-    a{
-      color: #3c4049;
-      text-decoration: none;
-      position: relative;
-      text-align: center;
+  .categoryLayout{
+    width: 100%;
+    h2{
+      // padding: 2%;
+      margin-top: 8%;
+      text-transform: capitalize !important;
+      padding-top: 2%;
+      padding-bottom: 1%;
+      padding-left: 1%;
+      padding-right: 0%;
+      width: 100%;
+      background-color: #205e69b4;
+      color: white;
+      letter-spacing: 2px;
+      // text-align: center;
+    }
+    .productLayout{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 10%;
       figure{
-        width: 100%;
-        figcaption{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+        width: 25%;
+        aside{
           width: 100%;
-          padding: 1%;
-          h2{
-            background-color: #fffffff5;
-            font-size: 25px;
-            letter-spacing: 3px;
-            padding: 1%;
+          max-width: 300px;
+          margin: 0%;
+          img{
+            height: auto;
+            max-width: 100%;
           }
-          aside{
-            img{
-              max-width: 200px;
-              width: 100%;
-              height: auto;
-            }
+        }
+        figcaption{
+          text-align: center;
+          h4{
+            margin-top: 0%;
+            margin-bottom: 3%;
+          }
+          button{
+            width: 100%;
+            min-height: 30px;
+            min-width: 90px;
+            border: none;
+          }
+          button:hover{
+            background-color: rgb(163, 163, 163);
+            cursor: pointer;
           }
         }
       }

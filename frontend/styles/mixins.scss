@@ -19,6 +19,10 @@
                 cursor: pointer;
             }
         }
+        #resetBtn{
+          height: 5%;
+          width: 35px;
+        }
     
     }
     .background-change{
@@ -130,17 +134,25 @@
 }
 @mixin bodyLayout{
   background-color: white;
-  font-size: 16px;
   ul li{
     list-style-type: none;
   }
   line-height: 1.6;
   color: #3c4049;
-  h1, h2, h3, h4{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-  }
-  p, a{
+  // h1{
+    // }
+    h1, h2{
+      font-size: 2em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: normal;
+    }
+    h3, h4{
+      font-size: 1em;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: normal;
+    }
+    p, a{
+    font-size: 1em;
     color: #3c4049;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
@@ -196,6 +208,12 @@
 @mixin mobileLayout{
   body{
     @include bodyLayout;
+    p, a{
+      font-size: 1.9vw;
+    }
+    h1, h2, h3, h4{
+      font-size: 2.1vw;
+    }
     margin: 0%;
     @include accessibility;
     #accessibilityNav{
@@ -400,39 +418,38 @@ footer{
 }
 }
 @mixin productLayout{
-       // background-color: #ec16169a;
-       display: flex;
-       flex-wrap: wrap;
-       margin: 2%;
-       margin-bottom: 5%;
-       figure{
-         width: 20%;
-         display: flex;
-         flex-direction: column;
-         text-align: center;
-         img{
-           max-width: 100%;
-         }
-         button{
-           background-color: rgb(221, 221, 221);
-           border: none;
-           padding: 1%;
-           height: 40px;
-         }
-         button:hover{
-           background-color: gray;
-           color: white;
-           cursor: pointer;
-         }
-         figcaption{
-           ul{
-             padding: 0%;
-           }
-           h2{
-             font-size: 20px;
-           }
-         }
-       }
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+  margin-bottom: 5%;
+  figure{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    img{
+      max-width: 100%;
+    }
+    button{
+      background-color: rgb(221, 221, 221);
+      border: none;
+      padding: 1%;
+      height: 40px;
+    }
+    button:hover{
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+    }
+    figcaption{
+      ul{
+        padding: 0%;
+      }
+      h2{
+        font-size: 20px;
+      }
+    }
+  }
 }
 @mixin footer{
   font-weight: normal !important;

@@ -39,10 +39,11 @@ $(document).on('click', 'button[class^="addCart"]', function() {
     setItems.push(selectedItem)
     alert(`You have added ${name} to cart`)
     save()
-    // loadCart()
+    loadCart()
 })
 $('#cartModal').click(reload, function(){
     loadCart(setItems)
+    console.log(setItems)
     if($(setItems) != null){
         $('#cart').html('')  
         for (let i = 0; i < setItems.length; i++) {

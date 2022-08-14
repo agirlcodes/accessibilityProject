@@ -25,6 +25,7 @@ $(document).ready(function(){
       $('#landingImg').css('filter', 'grayscale(1)');
       $ ('footer').css({'background-color': '#464646', 'color': 'white'});
       $ ('footer a').css({'color': 'white'});
+      $ ('h1').css({'color': 'white'});
   });
   $('#coloredBackground').click(function(){
     $('img').css('filter', 'grayscale(0)');
@@ -38,6 +39,10 @@ $(document).ready(function(){
     $("h1").css({"font-size": "90px", "color":"black","top": "25%"});
     $("a").css({"text-align": "center"});
   });
+  $('#resetBtn').click(function() {
+    // alert('Reset')
+    location.reload();
+  })
   
 $.getJSON(`${db_url}`, function(data){
 //TOP SELLERS Home page
@@ -47,7 +52,7 @@ let Yarrow = data[2].product;
 let Botanical = data[3].product;
 $.each(TopSellers, function(index, value){
 $('#topSellersContent').append(`
-<a href="catalog/subpages/topSellers.html" alt="contains product image">
+<a href="subpages/topSellers.html" alt="contains product image">
   <figure>
     <img src=${value.img} alt="image of products available">
     <figcaption>

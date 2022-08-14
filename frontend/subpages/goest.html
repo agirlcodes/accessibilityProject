@@ -7,7 +7,7 @@
         <title>Goest Perfume</title>
         <link rel="stylesheet" href="../styles/subpages.css">
         <!-- <link rel="stylesheet" href="/frontend/modal/modal.css"> -->
-        <!-- <link rel="stylesheet" href="../../styles/cart.css"> -->
+        <link rel="stylesheet" href="../styles/cart.css">
     </head>
     <body>
         <nav id="accessibilityNav">
@@ -56,11 +56,17 @@
                     <img src="../icons/search.png" alt=""></button>
                     <input id="searchBar" type="text" placeholder="Search">
                         <!-- CART -->
-                    <button id="cartModal"><dfn title="Cart"><img src="../icons/shopping-cart.png" alt="Cart Icon"></dfn>
-                        <div id="cart"></div>
-                    </button>
+                    <button id="cartModal"><a href="#ex1" rel="modal:open"><img src="../icons/shopping-cart.png" alt="Cart Icon"></a></button>
                 </label>
             </form>
+            <div id="ex1" class="modal">
+                <div id="cart">
+                    
+                </div>
+                <div class='cart-checkout'>
+                    <div class='elfsight-app-4af341d1-ff80-409d-8b46-29dc061282f2'></div>
+                </div>
+            </div>
         </div>
         <section class="searchBarResults"></section>
         <div class="grid">
@@ -128,14 +134,19 @@
     type="text/javascript"
     src="https://ramp.accessibleweb.com/badge/tfK0AO4zefc2ccRP7o3_P379AikBiyv9-7N5Q8Vaxxs/script.js"></script> 
 <!-- End Accessible Web A11Y Center Button Snippet --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>    
+<!-- PAYPAL -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<!-- <script>
-    // $(document).ready(function () {
-    //     $('#cart').simpleCart();
-    // });
-</script> -->
+
+<!-- uuid script -->
+<script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+<!-- modal -->
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+
 <script src="../js/main.js"></script>
 <script src="../js/cart.js"></script>
 <script src="../js/subpages.js"></script>

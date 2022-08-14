@@ -8,10 +8,12 @@ $(document).ready(function(){
         $.each(TopSellers, function(index, value){
             $('#topSellers').append(`
             <figure>
-                <img src=${value.img} alt="image of products available">
+                <aside>
+                    <img src=${value.img} alt="image of products available">
+                </aside>
                 <figcaption>
-                <h2 class="data getData">${value.name}</h2>
-                <h3 class="data getData">£${value.price}</h3>
+                <h3 class="data getData">${value.name}</h3>
+                <h4 class="data getData">£${value.price}</h4>
                 <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </a>`
@@ -20,10 +22,12 @@ $(document).ready(function(){
         $.each(Goest, function(index, value){
             $('#goestPer').append(`
             <figure>
-                <img src=${value.img} alt="image of products available">
+                <aside>
+                    <img src=${value.img} alt="image of products available">
+                </aside>
                 <figcaption>
-                    <h2 class="data getData">${value.name}</h2>
-                    <h3 class="data getData">£${value.price}</h3>
+                    <h3 class="data getData">${value.name}</h3>
+                    <h4 class="data getData">£${value.price}</h4>
                 <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>                
                 </figcaption>
             </figure>
@@ -33,10 +37,12 @@ $(document).ready(function(){
         $.each(Yarrow, function(index, value){
             $('#yarrow').append(`
             <figure>
-                <img src=${value.img} alt="image of products available">
+                <aside>
+                    <img src=${value.img} alt="image of products available">
+                </aside>
                 <figcaption>
-                <h2 class="data getData">${value.name}</h2>
-                <h3 class="data getData">£${value.price}</h3>
+                <h3 class="data getData">${value.name}</h3>
+                <h4 class="data getData">£${value.price}</h4>
                 <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </figure>
@@ -46,10 +52,12 @@ $(document).ready(function(){
         $.each(Botanical, function(index, value){
             $('#botanical').append(`
             <figure>
-                <img src=${value.img} alt="image of products available">
+                <aside>
+                    <img src=${value.img} alt="image of products available">
+                </aside>
                 <figcaption>
-                <h2 class="data getData">${value.name}</h2>
-                <h3 class="data getData">£${value.price}</h3>
+                <h3 class="data getData">${value.name}</h3>
+                <h4 class="data getData">£${value.price}</h4>
                 <button id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </figure>
@@ -57,4 +65,7 @@ $(document).ready(function(){
             )
         })
     })
+    // $('#goBackOption').click(function(e){
+    //     e.preventDefault()
+    // })
 })

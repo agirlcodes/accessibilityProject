@@ -11,18 +11,24 @@
 @media (min-width: 700.5px) {
   body {
     background-color: white;
-    font-size: 16px;
     line-height: 1.6;
     color: #3c4049;
   }
   body ul li {
     list-style-type: none;
   }
-  body h1, body h2, body h3, body h4 {
+  body h1, body h2 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+  }
+  body h3, body h4 {
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }
   body p, body a {
+    font-size: 1em;
     color: #3c4049;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
@@ -117,7 +123,7 @@
     position: sticky;
     top: 0;
     margin-bottom: 0%;
-    z-index: 999;
+    z-index: 1;
   }
   body #accessibilityNav #container {
     display: -webkit-box;
@@ -136,6 +142,10 @@
   }
   body #accessibilityNav #container button :hover {
     cursor: pointer;
+  }
+  body #accessibilityNav #container #resetBtn {
+    height: 5%;
+    width: 35px;
   }
   body #accessibilityNav .background-change {
     display: -webkit-box;
@@ -225,38 +235,97 @@
     margin-left: 10%;
   }
   .grid .data {
-    padding: 2%;
+    padding-left: 2%;
+    margin-bottom: 15%;
   }
-  .grid .data #catalog {
+  .grid .data h1, .grid .data p {
+    margin-left: 2%;
+  }
+  .grid .data p {
+    width: 85%;
+  }
+  .grid .data #catalogNav {
+    margin-top: 2%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 74px;
+    height: 50px;
+    background-color: white;
+    border-top: 1px solid #9b9b9b;
+  }
+  .grid .data #catalogNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .grid .data #catalogNav ul a:hover {
+    text-decoration: underline;
+  }
+  .grid .data #catalogNav ul a::after {
+    border-bottom: 1px solid black;
+  }
+  .grid .data .categoryLayout {
+    width: 100%;
+  }
+  .grid .data .categoryLayout h2 {
+    margin-top: 8%;
+    text-transform: capitalize !important;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 0%;
+    width: 100%;
+    background-color: #205e69b4;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .grid .data .categoryLayout .productLayout {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .grid .data #catalog a {
-    color: #3c4049;
-    text-decoration: none;
-    position: relative;
-    text-align: center;
+  .grid .data .categoryLayout .productLayout figure {
+    width: 19%;
+    min-height: auto;
+    justify-items: center;
   }
-  .grid .data #catalog a figure figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+  .grid .data .categoryLayout .productLayout figure aside {
     width: 100%;
-    padding: 1%;
+    max-width: 200px;
+    margin: 0%;
   }
-  .grid .data #catalog a figure figcaption h2 {
-    background-color: #fffffff5;
-    font-size: 25px;
-    letter-spacing: 3px;
-    padding: 1%;
-  }
-  .grid .data #catalog a figure figcaption img {
+  .grid .data .categoryLayout .productLayout figure aside img {
+    height: auto;
     max-width: 100%;
+  }
+  .grid .data .categoryLayout .productLayout figure figcaption {
+    text-align: center;
+    width: 85%;
+  }
+  .grid .data .categoryLayout .productLayout figure figcaption h4 {
+    margin-top: 0%;
+    margin-bottom: 3%;
+  }
+  .grid .data .categoryLayout .productLayout figure figcaption button {
+    width: 90%;
+    min-height: 50px;
+    min-width: 100px;
+    border: none;
+  }
+  .grid .data .categoryLayout .productLayout figure figcaption button:hover {
+    background-color: #a3a3a3;
+    cursor: pointer;
   }
   footer {
     font-weight: normal !important;
@@ -327,7 +396,6 @@
 @media (max-width: 700px) {
   body {
     background-color: white;
-    font-size: 16px;
     line-height: 1.6;
     color: #3c4049;
     margin: 0%;
@@ -335,14 +403,27 @@
   body ul li {
     list-style-type: none;
   }
-  body h1, body h2, body h3, body h4 {
+  body h1, body h2 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+  }
+  body h3, body h4 {
+    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }
   body p, body a {
+    font-size: 1em;
     color: #3c4049;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
+  }
+  body p, body a {
+    font-size: 1.9vw;
+  }
+  body h1, body h2, body h3, body h4 {
+    font-size: 2.1vw;
   }
   body #accessibilityNav {
     background: white;
@@ -350,7 +431,7 @@
     position: sticky;
     top: 0;
     margin-bottom: 0%;
-    z-index: 999;
+    z-index: 1;
   }
   body #accessibilityNav #container {
     display: -webkit-box;
@@ -369,6 +450,10 @@
   }
   body #accessibilityNav #container button :hover {
     cursor: pointer;
+  }
+  body #accessibilityNav #container #resetBtn {
+    height: 5%;
+    width: 35px;
   }
   body #accessibilityNav .background-change {
     display: -webkit-box;
@@ -605,43 +690,57 @@
   #layout {
     text-align: center;
   }
-  #catalog {
+  .categoryLayout {
+    width: 100%;
+  }
+  .categoryLayout h2 {
+    margin-top: 8%;
+    text-transform: capitalize !important;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 0%;
+    width: 100%;
+    background-color: #205e69b4;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .categoryLayout .productLayout {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 20%;
-    margin-bottom: 15%;
+    margin-left: 10%;
   }
-  #catalog a {
-    color: #3c4049;
-    text-decoration: none;
-    position: relative;
+  .categoryLayout .productLayout figure {
+    width: 25%;
+  }
+  .categoryLayout .productLayout figure aside {
+    width: 100%;
+    max-width: 300px;
+    margin: 0%;
+  }
+  .categoryLayout .productLayout figure aside img {
+    height: auto;
+    max-width: 100%;
+  }
+  .categoryLayout .productLayout figure figcaption {
     text-align: center;
   }
-  #catalog a figure {
-    width: 100%;
+  .categoryLayout .productLayout figure figcaption h4 {
+    margin-top: 0%;
+    margin-bottom: 3%;
   }
-  #catalog a figure figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+  .categoryLayout .productLayout figure figcaption button {
     width: 100%;
-    padding: 1%;
+    min-height: 30px;
+    min-width: 90px;
+    border: none;
   }
-  #catalog a figure figcaption h2 {
-    background-color: #fffffff5;
-    font-size: 25px;
-    letter-spacing: 3px;
-    padding: 1%;
-  }
-  #catalog a figure figcaption aside img {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
+  .categoryLayout .productLayout figure figcaption button:hover {
+    background-color: #a3a3a3;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=catalog.css.map */
