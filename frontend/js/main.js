@@ -84,7 +84,7 @@ let compData = [Goest,TopSellers, Yarrow, Botanical]
               <h3>${dataValue.name}</h3>
               <p class="data">£${dataValue.price}
               </p>
-              <button id="addCart" class="productVal">Add To Cart</button>
+              <button aria-label="add ${dataValue.name} to cart Button" class="addCart productVal data">Add To Cart</button>
               </figcaption>
             </figure>
             `)

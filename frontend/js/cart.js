@@ -29,7 +29,6 @@ function loadCart(){
 function reload() {
     reload = location.reload();
 }
-console.log(setItems)
 $(document).on('click', 'button[class^="addCart"]', function() {
     console.log("working")
     let img = $(this).parent().parent().find('img')[0].src
@@ -55,16 +54,17 @@ $('#cartModal').click(reload, function(){
                 // console.log(index, value.name)
                 // if(indexId === index){
                     //     console.log("I am repeated", indexId)
-            $('#cart').append(`
-                <figure class="data">
-                <img class="searchBarImg" src="${el.img} alt="image of products available>
-                <figcaption class="data">
-                <h3>${el.name}</h3>
-                <p class="data">${el.price}</p>
-                <button id=${el.id} class="removeItem" type="submit">Remove Item</button>
-                </figcaption>
-            </figure>`)                      
-        }
+            $('#insertCart').append(`
+                <tr class="data">
+                    <td class="cartProductLayout">
+                        <img class="searchBarImg" src="${el.img} alt="${el.name} products available>
+                        <h3>${el.name}</h3>
+                    </td>
+                    <td class="data">${el.price}</td>
+                    <td class="data">${el.price}</td>
+                </tr>`)                      
+                }
+                // <button id=${el.id} class="removeItem" type="submit">Remove Item</button>
                 // e.preventDefault()
                 // loadCart(setItems)
                 // // console.log(loadCart(setItems))
@@ -74,6 +74,8 @@ $('#cartModal').click(reload, function(){
                 // )
             }
             else{
+                alert("cart is empty!");
+                $('#insertCart').append('<p>Your Cart Is Empty</p>')
                 console.log("refresh please")
             }
         })    
@@ -101,6 +103,33 @@ $('.removeItem').click(function(){
     // let deleteItem = [{name: name,img: img,price: price}]
     // localStorage.setItem('products', JSON.stringify)
 })
+paypal.Buttons({
+    // Sets up the transaction when a payment button is clicked
+    createOrder: (data, actions) => {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '77.44' // Can also reference a variable or function
+          }
+        }]
+      });
+    },
+    // Finalize the transaction after payer approval
+    onApprove: (data, actions) => {
+      return actions.order.capture().then(function(orderData) {
+        // Successful capture! For dev/demo purposes:
+        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+        const transaction = orderData.purchase_units[0].payments.captures[0];
+        alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+        // When ready to go live, remove the alert and show a success message within this page. For example:
+        // const element = document.getElementById('paypal-button-container');
+        // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+        // Or go to another URL:  actions.redirect('thank_you.html');
+      });
+    }
+  }).render('#paypal-button-container');
+
+
     // console.log(returnData[index].value)
     // let removeItem = index
     // console.log(returnData)   

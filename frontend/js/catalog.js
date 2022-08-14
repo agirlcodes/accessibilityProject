@@ -44,54 +44,7 @@ $(document).ready(function(){
                     <h2>${botanical.category}</h2>
                 </figcaption>
             </figure>
-        </a>`)
-            
-        // $("#topSeller").click(function(){
-        //     $.each(topPro, function(index, value){
-        //         $('#topSellers').append(`
-        //         <figure class="data">
-        //         <img src=${value.img} alt="image of products available">
-        //         <figcaption>
-        //         <ul>
-        //         <li><h2>${value.name}</h2></li>
-        //         <li data-price="${value.price}">£ ${value.price}</li></ul>
-        //         </figcaption>
-        //         <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
-        //         </figure>
-        //         `)
-        //     })
-        //     // $('#cart').simpleCart();
-        //     // $("#cart").css("display", "none");
-        //     // $('#cartModal').click(function(event){
-        //     //     event.preventDefault();
-        //     //     console.log("im on catalog?")
-        //     //     $('#cart').toggle()
-                
-        //     // })
-        // //     $('#closeModal').click(function(event){
-        // //         event.preventDefault();
-        // //         $('#cart').css("display: none")
-        // //         console.log("close it damnnit")
-        // //     })
-        // })
-        // $("#goestPerfume",function(){
-        //     alert("clicked on")
-        //     $.each(goestPro, function(index, value){
-        //         console.log(value)
-        //         $('#goestPer').append(`
-        //         <figure class="data">
-        //         <img src=${value.img} alt="image of products available">
-        //         <figcaption>
-        //         <ul>
-        //         <li><h2>${value.name}</h2></li>
-        //         <li data-price="${value.price}">£ ${value.price}</li></ul>
-        //         </figcaption>
-        //         <button class="sc-add-to-cart" data-name="${value.name}" data-price="${value.price}" type="submit">ADD To Cart</button>
-        //         </figure>
-        //         `)
-        //     })
-        // })
-            
+        </a>`)            
     })
     
 })
