@@ -52,7 +52,7 @@ let Yarrow = data[2].product;
 let Botanical = data[3].product;
 $.each(TopSellers, function(index, value){
 $('#topSellersContent').append(`
-<a href="subpages/topSellers.html" alt="contains product image">
+<a href="catalog.html" alt="contains product image">
   <figure>
     <img src=${value.img} alt="image of products available">
     <figcaption>
