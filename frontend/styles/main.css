@@ -181,6 +181,8 @@
     top: 50%;
     left: 5%;
     width: 600px;
+    right: 0px;
+    left: 0px;
     letter-spacing: 3px;
     font-weight: normal;
   }
@@ -198,9 +200,6 @@
   .grid #landingImg {
     -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/span 2;
   }
   .grid #layout {
     width: 100%;
@@ -212,15 +211,13 @@
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/span 2;
+    grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
   }
   .grid #layout #menu {
     width: 40%;
     margin-right: 2%;
-    z-index: 999;
   }
   .grid #layout #menu #linksMenu {
     font-size: 16px;
@@ -265,8 +262,7 @@
     margin-bottom: 20px;
     width: 100%;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/span 2;
+    grid-column: 1;
   }
   .grid #newCollection #launchBanner {
     width: 100%;
@@ -291,7 +287,6 @@
     margin-left: 1%;
   }
   .grid #newCollection h2 {
-    font-size: 30px;
     letter-spacing: 5px;
     margin: 0%;
   }
@@ -313,13 +308,13 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .grid #topSellersContent a {
+    width: 25%;
+    margin-right: 5%;
     text-decoration: none;
     text-align: center;
   }
@@ -329,8 +324,8 @@
     margin-bottom: 4%;
   }
   .grid #topSellersContent a figure img {
-    width: auto;
-    height: 400px;
+    width: 100%;
+    max-width: 70%;
   }
   .grid #topSellersContent a:visited {
     color: #3c4049;
@@ -699,29 +694,30 @@
     text-align: center;
   }
   #mainData #topSellersContent {
-    margin-left: 20%;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 5%;
   }
   #mainData #topSellersContent a {
-    width: auto;
-    width: 400px;
+    -ms-grid-column-align: space-between;
+        justify-self: space-between;
     margin: 0%;
   }
   #mainData #topSellersContent a figure {
     margin: 0%;
     margin-bottom: 5%;
+    margin-left: 25%;
+    max-width: 100px;
   }
   #mainData #topSellersContent a figure figcaption {
-    text-align: center;
-    width: 400px;
     margin: 0%;
-  }
-  #mainData #topSellersContent a figure figcaption h2 {
-    margin: 0%;
-    width: 100%;
   }
   #mainData #topSellersContent a figure img {
-    max-width: 300px;
-    margin-left: 10%;
+    width: 90%;
   }
   #mainData article {
     text-align: left;
@@ -729,6 +725,7 @@
     margin-left: 10%;
   }
   #newCollection {
+    margin-top: 0%;
     margin-bottom: 20px;
     margin-top: 5%;
     width: 100%;
@@ -748,7 +745,6 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: 5%;
   }
   #newCollection aside img {
     max-width: 600px;

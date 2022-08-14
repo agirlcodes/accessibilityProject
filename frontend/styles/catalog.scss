@@ -10,8 +10,8 @@
   }
   .grid{
     @include gridLayout;
-    .data{
-      padding-left: 2%;;
+    #layout{
+      // padding-left: 2%;;
       margin-bottom: 15%;
       h1, p{
         margin-left: 2%;
@@ -27,6 +27,8 @@
         height: 50px;
         background-color: white;
         border-top: 1px solid #d7d8d2;
+        padding: 1%;
+        padding-left: 0%;
         ul{
           display: flex;
           flex-direction: row;
@@ -41,14 +43,14 @@
         }
       }
       .categoryLayout{
-        width: 100%;
+        width: 98%;
         margin-left: 2%;
         h2{
           margin-top: 8%;
           text-transform: capitalize !important;
           padding-top: 2%;
           padding-bottom: 1%;
-          padding-left: 1%;
+          margin-left: 1%;
           padding-right: 0%;
           width: 98%;
           background-color: #205e69b4;
@@ -115,7 +117,7 @@
       text-transform: capitalize !important;
       padding-top: 2%;
       padding-bottom: 1%;
-      padding-left: 1%;
+      // padding-left: 1%;
       padding-right: 0%;
       width: 100%;
       background-color: #205e69b4;

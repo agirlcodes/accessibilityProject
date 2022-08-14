@@ -35,8 +35,8 @@ $(document).ready(function(){
     // $ ('footer a').css('color', 'white');
   });
   $('#fingerspell').click(function(){
-    $(".data, a, h1, h2, h3").css({"font-family":"Gallaudet", "font-size": "50px","font-weight": "normal", "letter-spacing": "10px"});
-    $("h1").css({"font-size": "90px", "color":"black","top": "25%"});
+    $(".data, a, h2, h3").css({"font-family":"Gallaudet", "font-size": "2.5vw","font-weight": "normal", "letter-spacing": "10px"});
+    $("h1").css({"font-family":"Gallaudet", "font-size": "4vw", "color":"black","top": "25%", "margin-right":"0%"});
     $("a").css({"text-align": "center"});
   });
   $('#resetBtn').click(function() {
@@ -52,11 +52,11 @@ let Yarrow = data[2].product;
 let Botanical = data[3].product;
 $.each(TopSellers, function(index, value){
 $('#topSellersContent').append(`
-<a href="catalog.html" alt="contains product image">
+<a href="catalog.html#topSellerNav" alt="contains product image">
   <figure>
     <img src=${value.img} alt="image of products available">
     <figcaption>
-      <h2 class="data">${value.name}</h2>
+      <h3 class="data">${value.name}</h3>
     </figcaption>
   </figure>
 </a>

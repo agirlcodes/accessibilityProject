@@ -181,6 +181,8 @@
     top: 50%;
     left: 5%;
     width: 600px;
+    right: 0px;
+    left: 0px;
     letter-spacing: 3px;
     font-weight: normal;
   }
@@ -198,11 +200,9 @@
   .grid #landingImg {
     -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/span 2;
   }
   .grid #layout {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -210,16 +210,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 90%;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/span 2;
+    grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
   }
   .grid #layout #menu {
-    width: 30%;
-    margin-right: 5%;
+    width: 40%;
+    margin-right: 2%;
   }
   .grid #layout #menu #linksMenu {
     font-size: 16px;
@@ -254,17 +252,16 @@
     max-width: 80%;
     margin-left: 10%;
   }
-  .grid .data {
-    padding-left: 2%;
+  .grid #layout {
     margin-bottom: 15%;
   }
-  .grid .data h1, .grid .data p {
+  .grid #layout h1, .grid #layout p {
     margin-left: 2%;
   }
-  .grid .data p {
+  .grid #layout p {
     width: 85%;
   }
-  .grid .data #catalogNav {
+  .grid #layout #catalogNav {
     -webkit-box-shadow: 0px 5px 11px -8px rgba(146, 146, 146, 0.438);
             box-shadow: 0px 5px 11px -8px rgba(146, 146, 146, 0.438);
     position: -webkit-sticky;
@@ -273,8 +270,10 @@
     height: 50px;
     background-color: white;
     border-top: 1px solid #d7d8d2;
+    padding: 1%;
+    padding-left: 0%;
   }
-  .grid .data #catalogNav ul {
+  .grid #layout #catalogNav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -285,29 +284,29 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .grid .data #catalogNav ul a:hover {
+  .grid #layout #catalogNav ul a:hover {
     text-decoration: underline;
   }
-  .grid .data #catalogNav ul a::after {
+  .grid #layout #catalogNav ul a::after {
     border-bottom: 1px solid black;
   }
-  .grid .data .categoryLayout {
-    width: 100%;
+  .grid #layout .categoryLayout {
+    width: 98%;
     margin-left: 2%;
   }
-  .grid .data .categoryLayout h2 {
+  .grid #layout .categoryLayout h2 {
     margin-top: 8%;
     text-transform: capitalize !important;
     padding-top: 2%;
     padding-bottom: 1%;
-    padding-left: 1%;
+    margin-left: 1%;
     padding-right: 0%;
     width: 98%;
     background-color: #205e69b4;
     color: white;
     letter-spacing: 2px;
   }
-  .grid .data .categoryLayout .productLayout {
+  .grid #layout .categoryLayout .productLayout {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -320,37 +319,37 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .grid .data .categoryLayout .productLayout figure {
+  .grid #layout .categoryLayout .productLayout figure {
     width: 19%;
     min-height: auto;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .grid .data .categoryLayout .productLayout figure aside {
+  .grid #layout .categoryLayout .productLayout figure aside {
     width: 100%;
     max-width: 200px;
     margin: 0%;
   }
-  .grid .data .categoryLayout .productLayout figure aside img {
+  .grid #layout .categoryLayout .productLayout figure aside img {
     height: auto;
     max-width: 100%;
   }
-  .grid .data .categoryLayout .productLayout figure figcaption {
+  .grid #layout .categoryLayout .productLayout figure figcaption {
     text-align: center;
     width: 85%;
   }
-  .grid .data .categoryLayout .productLayout figure figcaption h4 {
+  .grid #layout .categoryLayout .productLayout figure figcaption h4 {
     margin-top: 0%;
     margin-bottom: 3%;
   }
-  .grid .data .categoryLayout .productLayout figure figcaption button {
+  .grid #layout .categoryLayout .productLayout figure figcaption button {
     width: 90%;
     min-height: 50px;
     min-width: 100px;
     border: none;
   }
-  .grid .data .categoryLayout .productLayout figure figcaption button:hover {
+  .grid #layout .categoryLayout .productLayout figure figcaption button:hover {
     background-color: #a3a3a3;
     cursor: pointer;
   }
@@ -725,7 +724,6 @@
     text-transform: capitalize !important;
     padding-top: 2%;
     padding-bottom: 1%;
-    padding-left: 1%;
     padding-right: 0%;
     width: 100%;
     background-color: #205e69b4;
