@@ -57,17 +57,11 @@ $('#cartModal').click(reload, function(){
         for (let i = 0; i < setItems.length; i++) {
             const el = setItems[i];
             console.log(el.price)
-            // return;
-            // $(setItems).each(function(index, value){
-                // location.reload()
-                // console.log(index, value.name)
-                // if(indexId === index){
-                    //     console.log("I am repeated", indexId)
             $('#insertCart').append(`
                 <tr class="data">
                     <td class="cartProductLayout">
-                        <img class="searchBarImg" src="${el.img} alt="${el.name} products available>
-                        <h3>${el.name}</h3>
+                        <img class="searchBarImg" src="${el.img} alt="${el.name} products available">
+                        <h3 class="data">${el.name}</h3>
                     </td>
                     <td class="data">${el.price}</td>
                     <td class="data">${el.price}</td>

@@ -38,7 +38,7 @@
     margin-left: 25%;
   }
   body .searchBar {
-    margin-top: 2%;
+    margin-top: 6%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -47,7 +47,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
   body .searchBar #searchBarLayout {
     border-bottom: 1px solid black;
@@ -88,7 +88,7 @@
     background-color: white;
     width: 50%;
     margin-left: 25%;
-    z-index: 999;
+    z-index: 1;
   }
   body .searchBarResults figure {
     display: -webkit-box;
@@ -227,7 +227,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 75px;
-    z-index: 1000;
+    z-index: 1;
     background-color: white;
     padding: 0%;
   }
@@ -300,8 +300,9 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   footer #footerLayout a {
     display: block;

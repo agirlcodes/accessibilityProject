@@ -489,7 +489,7 @@ footer{
   #footerLayout{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     a{
       display: block;
       padding: 12px 0;

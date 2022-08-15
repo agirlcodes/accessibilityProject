@@ -273,11 +273,12 @@
     position: -webkit-sticky;
     position: sticky;
     top: 75px;
-    height: 50px;
+    height: auto;
     background-color: white;
     border-top: 1px solid #d7d8d2;
     padding: 1%;
     padding-left: 0%;
+    z-index: 1;
   }
   .grid #layout #catalogNav ul {
     display: -webkit-box;
@@ -375,8 +376,9 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   footer #footerLayout a {
     display: block;
