@@ -10,6 +10,8 @@
 
 @media (min-width: 700.5px) {
   body {
+    height: 100vh;
+    text-align: justify;
     background-color: white;
     margin: 0%;
     line-height: 1.6;
@@ -36,7 +38,7 @@
     margin-left: 25%;
   }
   body .searchBar {
-    margin-top: 2%;
+    margin-top: 6%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -45,7 +47,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
   body .searchBar #searchBarLayout {
     border-bottom: 1px solid black;
@@ -81,21 +83,12 @@
   body .searchBar #searchBarLayout button:hover {
     cursor: pointer;
   }
-  body .searchBar #cart #cartDisplayLayout {
-    margin: 2%;
-    border: 2px solid black;
-    background-color: red;
-  }
-  body .searchBar #cart #cartDisplayLayout .cartProductLayout img {
-    width: 100%;
-    width: 200px;
-  }
   body .searchBarResults {
     position: absolute;
     background-color: white;
     width: 50%;
     margin-left: 25%;
-    z-index: 999;
+    z-index: 1;
   }
   body .searchBarResults figure {
     display: -webkit-box;
@@ -123,12 +116,11 @@
     cursor: pointer;
   }
   body #accessibilityNav {
-    background: white;
-    position: -webkit-sticky;
-    position: sticky;
+    background: #5aa29b;
+    position: fixed;
     top: 0;
+    z-index: 1030;
     margin-bottom: 0%;
-    z-index: 1;
     width: 100%;
   }
   body #accessibilityNav #container {
@@ -139,17 +131,32 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
     top: 0%;
+    margin-left: 40%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   body #accessibilityNav #container button {
     background-color: transparent;
+    height: 10%;
     border: none;
+    margin-left: 1%;
   }
   body #accessibilityNav #container button img {
     max-width: 100px;
   }
   body #accessibilityNav #container button :hover {
     cursor: pointer;
+  }
+  body #accessibilityNav #container #decreaseIcon {
+    margin-top: 40%;
+    height: 28px;
+  }
+  body #accessibilityNav #container #increaseIcon {
+    margin-top: 55%;
+    height: 23px;
   }
   body #accessibilityNav #container #resetBtn {
     height: 5%;
@@ -163,6 +170,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 10%;
   }
   header {
     background-image: url(../icons/skincare-1.jpg);
@@ -194,12 +202,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .grid #landingImg {
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
   .grid #layout {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -207,29 +210,35 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 2;
-    grid-row: 2;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-left: 2%;
   }
   .grid #layout #menu {
-    width: 40%;
+    width: auto;
     margin-right: 2%;
   }
   .grid #layout #menu #linksMenu {
+    width: 100%;
     font-size: 16px;
     margin: 0%;
     position: -webkit-sticky;
     position: sticky;
     top: 75px;
+    z-index: 1;
     background-color: white;
+    padding: 0%;
   }
-  .grid #layout #menu #linksMenu a {
+  .grid #layout #menu #linksMenu li a {
     border-top: 1px solid #d7d8d2;
     display: block;
     padding: 12px 0;
     text-decoration: none;
     color: #3c4049;
+    padding: 10%;
+  }
+  .grid #layout #menu #linksMenu li a img {
+    width: 24px;
   }
   .grid #layout #menu #socialMedia {
     display: -webkit-box;
@@ -247,7 +256,7 @@
   .grid #layout article {
     text-align: left;
     max-width: 80%;
-    margin-left: 10%;
+    margin-left: 5%;
   }
   .grid #layout {
     margin-bottom: 15%;
@@ -418,6 +427,8 @@
 
 @media (max-width: 700px) {
   body {
+    height: 100vh;
+    text-align: justify;
     background-color: white;
     margin: 0%;
     line-height: 1.6;
@@ -441,12 +452,11 @@
     font-family: 'Courier Prime', monospace;
   }
   body #accessibilityNav {
-    background: white;
-    position: -webkit-sticky;
-    position: sticky;
+    background: #5aa29b;
+    position: fixed;
     top: 0;
+    z-index: 1030;
     margin-bottom: 0%;
-    z-index: 1;
     width: 100%;
   }
   body #accessibilityNav #container {
@@ -457,17 +467,32 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
     top: 0%;
+    margin-left: 40%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   body #accessibilityNav #container button {
     background-color: transparent;
+    height: 10%;
     border: none;
+    margin-left: 1%;
   }
   body #accessibilityNav #container button img {
     max-width: 100px;
   }
   body #accessibilityNav #container button :hover {
     cursor: pointer;
+  }
+  body #accessibilityNav #container #decreaseIcon {
+    margin-top: 40%;
+    height: 28px;
+  }
+  body #accessibilityNav #container #increaseIcon {
+    margin-top: 55%;
+    height: 23px;
   }
   body #accessibilityNav #container #resetBtn {
     height: 5%;
@@ -481,10 +506,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 10%;
   }
   body #accessibilityNav #container {
     padding: 0%;
     padding-left: 0%;
+    margin-left: 25%;
   }
   body form {
     width: 90%;
@@ -617,6 +644,9 @@
     text-decoration: none;
     color: #3c4049;
   }
+  .grid #menu #linksMenu img {
+    width: 24px;
+  }
   .grid #menu #socialMedia {
     margin: 0%;
     visibility: hidden;
@@ -696,6 +726,11 @@
   }
   #layout {
     text-align: center;
+  }
+  #catalogNav {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
   }
   .categoryLayout {
     width: 100%;

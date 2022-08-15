@@ -10,7 +10,10 @@
 
 @media (min-width: 700.5px) {
   body {
+    height: 100vh;
+    text-align: justify;
     background-color: white;
+    margin: 0%;
     line-height: 1.6;
     color: #3c4049;
   }
@@ -18,17 +21,14 @@
     list-style-type: none;
   }
   body h1, body h2 {
-    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }
   body h3, body h4 {
-    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }
   body p, body a {
-    font-size: 1em;
     color: #3c4049;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
@@ -75,8 +75,6 @@
   body .searchBar #searchBarLayout #cartModal {
     background-color: transparent;
     border: none;
-    justify-self: flex-start;
-    width: 60px;
   }
   body .searchBar #searchBarLayout #cartModal img {
     height: 26px;
@@ -84,15 +82,6 @@
   }
   body .searchBar #searchBarLayout button:hover {
     cursor: pointer;
-  }
-  body .searchBar #cart #cartDisplayLayout {
-    margin: 2%;
-    border: 2px solid black;
-    background-color: red;
-  }
-  body .searchBar #cart #cartDisplayLayout .cartProductLayout img {
-    width: 100%;
-    width: 200px;
   }
   body .searchBarResults {
     position: absolute;
@@ -127,12 +116,13 @@
     cursor: pointer;
   }
   body #accessibilityNav {
-    background: white;
+    background: #5aa29b;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     margin-bottom: 0%;
     z-index: 1;
+    width: 100%;
   }
   body #accessibilityNav #container {
     display: -webkit-box;
@@ -143,14 +133,25 @@
         -ms-flex-direction: row;
             flex-direction: row;
     top: 0%;
-    padding-left: 45%;
   }
   body #accessibilityNav #container button {
     background-color: transparent;
+    height: 10%;
     border: none;
+    margin-top: 2%;
+  }
+  body #accessibilityNav #container button img {
+    max-width: 100px;
   }
   body #accessibilityNav #container button :hover {
     cursor: pointer;
+  }
+  body #accessibilityNav #container #decreaseIcon {
+    height: 29px;
+  }
+  body #accessibilityNav #container #increaseIcon {
+    height: 23px;
+    padding-top: 3px;
   }
   body #accessibilityNav #container #resetBtn {
     height: 5%;
@@ -164,6 +165,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 10%;
   }
   header {
     background-image: url(../icons/skincare-1.jpg);
@@ -181,28 +183,27 @@
     top: 50%;
     left: 5%;
     width: 600px;
+    right: 0px;
+    left: 0px;
     letter-spacing: 3px;
     font-weight: normal;
   }
   .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 20% 80%;
-        grid-template-columns: 20% 80%;
-    -ms-grid-rows: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
-    margin: 0%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .grid #landingImg {
     -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/span 2;
   }
   .grid #layout {
+    margin-right: 0px;
+    margin-left: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -210,21 +211,32 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 90%;
-    -ms-grid-column: 2;
-    grid-column: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
   }
+  .grid #layout #menu {
+    width: 40%;
+    margin-right: 2%;
+  }
   .grid #layout #menu #linksMenu {
     font-size: 16px;
+    margin: 0%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 75px;
+    background-color: white;
   }
-  .grid #layout #menu #linksMenu a {
+  .grid #layout #menu #linksMenu li a {
     border-top: 1px solid #d7d8d2;
     display: block;
     padding: 12px 0;
     text-decoration: none;
     color: #3c4049;
+  }
+  .grid #layout #menu #linksMenu li a img {
+    width: 24px;
   }
   .grid #layout #menu #socialMedia {
     display: -webkit-box;
@@ -372,7 +384,10 @@
 
 @media (max-width: 700px) {
   body {
+    height: 100vh;
+    text-align: justify;
     background-color: white;
+    margin: 0%;
     line-height: 1.6;
     color: #3c4049;
     margin: 0%;
@@ -381,34 +396,26 @@
     list-style-type: none;
   }
   body h1, body h2 {
-    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }
   body h3, body h4 {
-    font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
   }
   body p, body a {
-    font-size: 1em;
     color: #3c4049;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
-  body p, body a {
-    font-size: 1.9vw;
-  }
-  body h1, body h2, body h3, body h4 {
-    font-size: 2.1vw;
-  }
   body #accessibilityNav {
-    background: white;
+    background: #5aa29b;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     margin-bottom: 0%;
     z-index: 1;
+    width: 100%;
   }
   body #accessibilityNav #container {
     display: -webkit-box;
@@ -419,14 +426,25 @@
         -ms-flex-direction: row;
             flex-direction: row;
     top: 0%;
-    padding-left: 45%;
   }
   body #accessibilityNav #container button {
     background-color: transparent;
+    height: 10%;
     border: none;
+    margin-top: 2%;
+  }
+  body #accessibilityNav #container button img {
+    max-width: 100px;
   }
   body #accessibilityNav #container button :hover {
     cursor: pointer;
+  }
+  body #accessibilityNav #container #decreaseIcon {
+    height: 29px;
+  }
+  body #accessibilityNav #container #increaseIcon {
+    height: 23px;
+    padding-top: 3px;
   }
   body #accessibilityNav #container #resetBtn {
     height: 5%;
@@ -440,16 +458,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    height: 10%;
   }
   body #accessibilityNav #container {
     padding: 0%;
-    padding-left: 10%;
-  }
-  body #accessibilityNav #container #fingerspell {
-    visibility: hidden;
+    padding-left: 0%;
   }
   body form {
-    width: 100%;
+    width: 90%;
     margin-left: 0%;
   }
   body .searchBar {
@@ -482,14 +498,13 @@
   }
   body .searchBar #searchBarLayout #searchBar {
     text-indent: 10px;
-    width: 100%;
+    width: 90%;
     border: none;
   }
   body .searchBar #searchBarLayout #cartModal {
     background-color: transparent;
     border: none;
-    justify-self: flex-start;
-    width: 60px;
+    padding: 0%;
   }
   body .searchBar #searchBarLayout #cartModal img {
     height: 26px;
@@ -533,19 +548,17 @@
     background-color: #a3a3a3;
   }
   .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
-    margin: 0%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .grid header {
     background-image: url(../icons/skincare-1.jpg);
-    height: 300px;
+    height: 250px;
     top: 20%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -562,11 +575,7 @@
     font-weight: normal;
   }
   .grid #landingImg {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/span 1;
+    width: 100%;
   }
   .grid #menu {
     -ms-grid-column: 1;
@@ -619,7 +628,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding: 1%;
   }
   footer #footerLayout a {
     display: block;

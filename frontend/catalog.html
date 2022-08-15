@@ -11,23 +11,17 @@
     <body>
         <nav id="accessibilityNav">
             <div id="container">
-                    <span>X</span>
-                    <button aria-label="change text to fingerspell" id="fingerspell"><img src="icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
-                    <button aria-label="Increase font size" value="increase" class="increaseFont">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
-                            <text id="add symbol" data-name="+" transform="translate(10 30)" font-size="20" font-family="SegoeUI, Segoe UI" ><tspan x="0" y="0">+</tspan></text>
-                        <text id="A letter" transform="translate(0 45)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">A</tspan></text>
-                    </svg>
+                <!-- <span>X</span> -->
+                <button type="button" aria-label="change text to fingerspell" id="fingerspell"><img src="icons/icons8-sign-language-50.png" alt="Access to fingerspell feature"></button>
+                <button aria-label="Increase font size" value="increase" class="increaseFont">
+                    <img  id="increaseIcon" src="icons/resize-font-inc.png" alt="font-increase icon">
                 </button>
-                <button aria-label="decrease font size" value="decrease" class="decreaseFont">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="69" viewBox="0 0 41 69">
-                        <text id="A symbol" transform="translate(0 45)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">A</tspan></text>
-                        <text id="minus symbol" data-name="-" transform="translate(10 30)" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">-</tspan></text>
-                    </svg>
+                <button type="button" aria-label="decrease font size" value="decrease" class="decreaseFont">
+                    <img id="decreaseIcon" src="icons/resize-font-dec.png" alt="font-decrease Icon">
                 </button>
                 <div class="background-change">
                     <p>Background:</p>
-                    <button aria-label="Monochrome background" id="monochromeBackground" >
+                    <button type="button" aria-label="Monochrome background" id="monochromeBackground" >
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 42 42">
                             <g id="Rectangle_17" data-name="Rectangle 17" fill="#fff" stroke="#000" stroke-width="5">
                                 <rect width="42" height="42" stroke="none"/>
@@ -36,7 +30,7 @@
                             <path id="Path_12" data-name="Path 12" d="M2830.251,292.421l-38.881,38.468h38.881Z" transform="translate(-2789.893 -290.891)"/>
                         </svg>
                     </button>
-                    <button aria-label="colored background" id="coloredBackground">
+                    <button type="button" aria-label="colored background" id="coloredBackground">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 42">
                             <g id="Rectangle_19" data-name="Rectangle 19" fill="#e5c54a" stroke="#000" stroke-width="5">
                                 <rect width="41" height="42" stroke="none"/>
@@ -50,7 +44,8 @@
                 </button>
             </div>
         </nav>
-        <div class="searchBar">
+        <div class="searchBar" id="searchNav">
+            <br>
             <form>
                 <label id="searchBarLayout"for="searchBar"> 
                     <button type="button" aria-label="alternate form of submitting to search" id="submitBtn" type="none" value="">
@@ -103,6 +98,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="catalog.html">Catalog</a></li>
                         <li><a href="about.html">About Us</a></li>
+                        <li><a href="#searchNav">Cart<img id="cartIconSet" src="icons/shopping-cart.png" alt=""></a></li>
                     </ul>
                     <ul id="socialMedia">
                         <li><a href="#" alt="link to facebook account"><img src="icons/facebook.png" alt="Facebook logo"></a></li>

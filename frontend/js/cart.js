@@ -29,6 +29,14 @@ function loadCart(){
 function reload() {
     reload = location.reload();
 }
+function calTotals(){
+    setItems = JSON.parse(localStorage.getItem('product'));
+    for (let i = 0; i < setItems.length; i){
+        let elm = setItems[i]
+        console.log(elm)
+    }
+    // console.log(setItems)
+}
 $(document).on('click', 'button[class^="addCart"]', function() {
     console.log("working")
     let img = $(this).parent().parent().find('img')[0].src
@@ -45,9 +53,10 @@ $('#cartModal').click(reload, function(){
     console.log(setItems)
     if($(setItems) != null){
         $('#cart').html('')  
+        // calTotals()
         for (let i = 0; i < setItems.length; i++) {
             const el = setItems[i];
-            console.log(el.name)
+            console.log(el.price)
             // return;
             // $(setItems).each(function(index, value){
                 // location.reload()
@@ -72,13 +81,14 @@ $('#cartModal').click(reload, function(){
                 // let indexId = $(this).children()[0];
                 // console.log(indexId)
                 // )
-            }
-            else{
-                alert("cart is empty!");
-                $('#insertCart').append('<p>Your Cart Is Empty</p>')
-                console.log("refresh please")
-            }
-        })    
+    }
+    else{
+        alert("cart is empty!");
+        $('#insertCart').append('<p>Your Cart Is Empty</p>')
+        console.log("refresh please")
+    }
+    })    
+        // function 
 $('.removeItem').click(function(){
     // removeItem()
     // console.log(returnData.index()
@@ -103,6 +113,7 @@ $('.removeItem').click(function(){
     // let deleteItem = [{name: name,img: img,price: price}]
     // localStorage.setItem('products', JSON.stringify)
 })
+
 paypal.Buttons({
     // Sets up the transaction when a payment button is clicked
     createOrder: (data, actions) => {
