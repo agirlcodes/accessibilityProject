@@ -2,19 +2,22 @@
 @mixin accessibility {
   #accessibilityNav{
     background: white;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     margin-bottom: 0%;
     z-index: 1;
+    width: 100%;
     #container{
       display: flex;
       flex-direction: row;
       top: 0%;
-      padding-left: 45%;
+      // margin-left: 45%;
         button{
             background-color: transparent;
             border: none;
+            img{
+              max-width: 100px;
+            }
             :hover{
                 cursor: pointer;
             }
@@ -66,8 +69,8 @@
         #cartModal{
           background-color: transparent;
           border: none;
-          justify-self: flex-start;
-          width: 60px;
+          // justify-self: flex-start;
+          // width: 60px;
           img{
             height: 26px;
             width: auto;
@@ -77,24 +80,6 @@
           cursor: pointer;
         }
       }
-    #cart{
-      #cartDisplayLayout{
-        margin: 2%;
-        border: 2px solid black;
-        background-color: red;
-        .cartProductLayout{
-          // #insertCart{
-          //   display: flex;
-          //   flex-direction: row;
-          //   width: 100px;
-            img{
-              width: 100%;
-              width: 200px;
-            // }
-          }
-        }
-      }
-    }
   }
   .searchBarResults{
     position: absolute;
@@ -154,6 +139,7 @@
 }
 @mixin bodyLayout{
   background-color: white;
+  margin: 0%;
   ul li{
     list-style-type: none;
   }
@@ -162,34 +148,38 @@
   // h1{
     // }
     h1, h2{
-      font-size: 2em;
+      // font-size: 2em;
       font-family: 'Montserrat', sans-serif;
       font-weight: normal;
     }
     h3, h4{
-      font-size: 1em;
+      // font-size: 1em;
       font-family: 'Montserrat', sans-serif;
       font-weight: normal;
     }
     p, a{
-    font-size: 1em;
+    // font-size: 1em;
     color: #3c4049;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
 }
 @mixin gridLayout{
-  display: grid;
-  grid-template-columns:100% ;
-  grid-template-rows: auto auto auto auto;
-  margin: 0%;
-  box-sizing: border-box;
+  // display: grid;
+  // grid-template-columns:100% ;
+  // grid-template-rows: auto auto auto auto;
+  // margin: 0%;
+  // box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   #landingImg{
     grid-row: 1;
     // grid-column: 1;
   }
   #layout{
-    width: 100%;
+    // width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
     #menu{
       width: 40%;
       margin-right: 2%;
@@ -233,25 +223,25 @@
 @mixin mobileLayout{
   body{
     @include bodyLayout;
-    p, a{
-      font-size: 1.9vw;
-    }
-    h1, h2, h3, h4{
-      font-size: 2.1vw;
-    }
+    // p, a{
+    //   font-size: 1.9vw;
+    // }
+    // h1, h2, h3, h4{
+    //   font-size: 2.1vw;
+    // }
     margin: 0%;
     @include accessibility;
     #accessibilityNav{
       #container{
         padding: 0%;
-        padding-left: 10%;
-      #fingerspell{
-        visibility: hidden;
-      }
+        padding-left: 0%;
+      // #fingerspell{
+      //   visibility: hidden;
+      // }
       }
     }
     form{
-      width: 100%;
+      width: 90%;
       margin-left: 0%;
     }
     .searchBar{
@@ -276,7 +266,7 @@
           }
           #searchBar{
             text-indent: 10px;
-            width: 100%;
+            width: 90%;
             border: none;
           }
           margin-left: 1%;
@@ -284,8 +274,9 @@
           #cartModal{
             background-color: transparent;
             border: none;
-            justify-self: flex-start;
-            width: 60px;
+            // justify-self: flex-start;
+            // width: 60px;
+            padding: 0%;
             img{
               height: 26px;
               width: auto;
@@ -331,14 +322,16 @@
     }
   }
   .grid{
-  display: grid;
-  grid-template-columns:100% ;
-  grid-template-rows: auto auto auto auto;
-  margin: 0%;
-  box-sizing: border-box;
+  // display: grid;
+  // grid-template-columns:90% ;
+  // grid-template-rows: auto auto auto auto;
+  // margin: 0%;
+  // box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
   header{
     background-image: url(../icons/skincare-1.jpg);
-      height: 300px;
+      height: 250px;
       top: 20%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -356,8 +349,7 @@
       }
   }
   #landingImg{
-    grid-row: 1;
-    grid-column: 1/span 1;
+    width: 100%;
   }
   #menu{
     grid-column: 1;
@@ -401,7 +393,7 @@ footer{
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
-    padding: 1%;
+    // padding: 1%;
     a{
       display: block;
       padding: 12px 0;

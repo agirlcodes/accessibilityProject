@@ -15,39 +15,43 @@
     .data{
       margin: 2%;
       margin-bottom: 10%;
-      .imageLayout{
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      p{
-        margin-top: 5%;
-        width: 45%;
-      }
-      .aboutImg{
-          margin-top: 2%;
+      #aboutLayout{
+        display: flex;
+        flex-wrap: wrap;
+        .imageLayout{
+        // display: flex;
+        // flex-wrap: wrap;
+        // width: 100%;
+        p{
+          margin-top: 5%;
           width: 45%;
-          height: auto;
-          // padding-bottom: 1%;
-          padding: 1%;
         }
-        #shoulderImg{
-          margin-left: 1%;
+        .aboutImg{
+        //     margin-top: 2%;
+            width: 35%;
+            height: auto;
+            // padding-bottom: 1%;
+            padding: 1%;
+          }
+        //   #shoulderImg{
+        //     margin-left: 1%;
+        //   }
+        //   #smileFaceImg{
+        //     margin-right: 1%;
+        //   }
+        //   #shoulderImg{
+        //     margin-left: 1%;
+        //   }
+        //   #bottomImg{
+        //     padding-left: 1%;
+        //     // width: %;
+        //     height: 100%;
+        //   }
         }
-        #smileFaceImg{
-          margin-right: 1%;
+        #aboutUsContent{
+          width: 100%;
+          margin-left: 0%;
         }
-        #shoulderImg{
-          margin-left: 1%;
-        }
-        #bottomImg{
-          padding-left: 1%;
-          // width: %;
-          height: 100%;
-        }
-      }
-      #aboutUsContent{
-        width: 100%;
-        margin-left: 0%;
       }
     }
   }

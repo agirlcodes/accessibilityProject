@@ -66,11 +66,34 @@
                 </label>
             </form>
             <div id="ex1" class="modal">
-                <div id="cart">
-                    
-                </div>
-                <div class='cart-checkout'>
-                    <div id="paypal-button-container"></div>
+                <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+                <div id="cart"></div>
+                <div id="cartLayout">
+                    <table id="cartDisplayLayout">
+                        <thead>
+                            <tr>
+                                <th><h3>Item</h3></th>
+                                <th><h3><dfn title="Quantity">Qty.</dfn></h3></th>
+                                <th><h3>Price</h3></th>
+                            </tr>
+                        </thead>
+                        <tbody id="insertCart">
+                        </tbody>
+                        <tr>
+                            <td>TOTAL</td>
+                            <td>num</td>
+                            <td>£</td>
+                        </tr>
+                        <!-- <tr class="cartData"></tr> -->
+                    </table>
+                    <div class='cart-checkout'>
+                        <h3>Order Summary</h3>
+                        <ul>
+                            <li><h4>SubTotal</h4></li>
+                            <li><h5>£786</h5></li>
+                        </ul>
+                        <div id="paypal-button-container"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,14 +174,15 @@
         </section>
     </footer>
 </body>
+<!-- PAYPAL -->
 <script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&currency=USD"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&components=buttons"></script>
 <!-- ACCESSIBILITY API -->
 <!-- Begin Accessible Web A11Y Center Button Snippet --> 
-<!-- <script async defer 
+<script async defer 
     id="aweb-script"
     type="text/javascript"
-    src="https://ramp.accessibleweb.com/badge/tfK0AO4zefc2ccRP7o3_P379AikBiyv9-7N5Q8Vaxxs/script.js"></script>  -->
+    src="https://ramp.accessibleweb.com/badge/tfK0AO4zefc2ccRP7o3_P379AikBiyv9-7N5Q8Vaxxs/script.js"></script> 
 <!-- End Accessible Web A11Y Center Button Snippet --> 
 <!-- uuid script -->
 <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
@@ -167,11 +191,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<!-- PAYPAL LINK -->
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script> -->
-
-<!-- <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script> -->
-
 
 <!-- SCRIPTS -->
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>

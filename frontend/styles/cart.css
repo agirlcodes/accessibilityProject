@@ -1,4 +1,3 @@
-/*Cart*/
 element.style {
   display: inline-block;
 }
@@ -14,6 +13,81 @@ element.style {
   background: #fff;
   padding: 15px 30px;
   text-align: left;
+  background-color: #ebebeb;
+}
+
+.modal #cartLayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2%;
+  height: 100%;
+  margin-top: 1%;
+}
+
+.modal #cartLayout table {
+  background-color: white;
+  width: 70%;
+  padding: 2%;
+  margin: 2%;
+  margin-right: 0%;
+  border-radius: 1%;
+}
+
+.modal #cartLayout table tbody {
+  border-top: 1px solid #d7d8d2;
+}
+
+.modal #cartLayout table tbody tr {
+  padding: 1%;
+}
+
+.modal #cartLayout table tbody .cartProductLayout {
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.modal #cartLayout table tbody .cartProductLayout img {
+  max-width: 100px;
+}
+
+.modal #cartLayout table tbody .cartProductLayout h3 {
+  margin-left: 2%;
+  font-size: 1.1em;
+}
+
+.modal .cart-checkout {
+  background-color: white;
+  justify-self: flex-end;
+  margin: 2%;
+  height: 0%;
+  padding: 3%;
+  padding-top: 1%;
+  border-left: 1px solid #d7d8d2;
+  border-radius: 1%;
+}
+
+.modal .cart-checkout ul {
+  border-bottom: 1px solid #d7d8d2;
+  padding: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 div {
@@ -38,7 +112,9 @@ div {
 }
 
 .modal a.close-modal {
-  top: 10px;
+  position: absolute;
+  top: 11px;
+  right: 14px;
   display: block;
   width: 30px;
   height: 30px;

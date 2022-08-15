@@ -61,11 +61,34 @@
             </label>
         </form>
         <div id="ex1" class="modal">
-            <div id="cart">
-                
-            </div>
-            <div class='cart-checkout'>
-                <div class='elfsight-app-4af341d1-ff80-409d-8b46-29dc061282f2'></div>
+            <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+            <div id="cart"></div>
+            <div id="cartLayout">
+                <table id="cartDisplayLayout">
+                    <thead>
+                        <tr>
+                            <th><h3>Item</h3></th>
+                            <th><h3><dfn title="Quantity">Qty.</dfn></h3></th>
+                            <th><h3>Price</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody id="insertCart">
+                    </tbody>
+                    <tr>
+                        <td>TOTAL</td>
+                        <td>num</td>
+                        <td>£</td>
+                    </tr>
+                    <!-- <tr class="cartData"></tr> -->
+                </table>
+                <div class='cart-checkout'>
+                    <h3>Order Summary</h3>
+                    <ul>
+                        <li><h4>SubTotal</h4></li>
+                        <li><h5>£786</h5></li>
+                    </ul>
+                    <div id="paypal-button-container"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -74,30 +97,34 @@
     <header id="landingImg">
         <h1>Nirvana Cosmetics</h1>
     </header>
-    <nav id="menu">
-        <ul class="data" id="linksMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catalog.html">Catalog</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-        <ul id="socialMedia">
-            <li><a href="#" alt="link to facebook account"><img src="icons/facebook.png" alt="Facebook logo"></a></li>
-            <li><a href="#" alt="link to facebook account"><img src="icons/twitter.png" alt="Twitter logo"></a></li>
-            <li><a href="#" alt="link to facebook account"><img src="icons/instagram.png" alt="Instagram logo"></a></li>
-        </ul>
-    </nav>
-        <main class="data" id="layout">
-            <h1>About Us</h1>
-            <article id="aboutUsContent">
-                <p>Our story began in 2001 in a small studio in the middle of nowhere. With only one desk and next to no free time, our brand was born. Our passion for unique design and collaboration brought our vision, and products, to life. Our products bring together the finest materials and stunning design to create something very special. We believe in quality, care, and creating unique products that everyone can enjoy. Colorful, creative, and inspired by what we see everyday, each product represents what we love about the world we live in. We hope theyll inspire you too.</p>
-            </article>
-            <section class="imageLayout">
-                <p>hello Our story began in 2001 in a small studio in the middle of nowhere. With only one desk and next to no free time, our brand was born. Our passion for unique design and collaboration brought our vision, and products, to life. Our products bring together the finest materials and stunning design to create something very special.</p>
-                <img class="aboutImg" id="shoulderImg" src="icons/shoulder.jpeg" alt="Promotion material of woman drinkong smoothie">
-                <img class="aboutImg" id="smileFaceImg" src="icons/happyface.jpeg" alt="Promotion material of woman drinkong smoothie">
-                <p>hello Our story began in 2001 in a small studio in the middle of nowhere. With only one desk and next to no free time, our brand was born. Our passion for unique design and collaboration brought our vision, and products, to life. Our products bring together the finest materials and stunning design to create something very special.</p>
-                <p>hello Our story began in 2001 in a small studio in the middle of nowhere.</p>
-                <img class="aboutImg" id="bottomImg" src="icons/face.jpeg" alt="Promotion material of woman drinkong smoothie">
+    <main class="data" id="layout">
+            <nav id="menu">
+                <ul class="data" id="linksMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <ul id="socialMedia">
+                    <li><a href="#" alt="link to facebook account"><img src="icons/facebook.png" alt="Facebook logo"></a></li>
+                    <li><a href="#" alt="link to facebook account"><img src="icons/twitter.png" alt="Twitter logo"></a></li>
+                    <li><a href="#" alt="link to facebook account"><img src="icons/instagram.png" alt="Instagram logo"></a></li>
+                </ul>
+            </nav>
+            <section>
+                <h1>About Us</h1>
+                <div id="aboutLayout">
+                    <article id="aboutUsContent">
+                        <p class="data">Our story began in 2001 in a small studio in the middle of nowhere. With only one desk and next to no free time, our brand was born. Our passion for unique design and collaboration brought our vision, and products, to life. Our products bring together the finest materials and stunning design to create something very special. We believe in quality, care, and creating unique products that everyone can enjoy. Colorful, creative, and inspired by what we see everyday, each product represents what we love about the world we live in. We hope theyll inspire you too.</p>
+                    </article>
+                    <section class="imageLayout data">
+                        <img class="aboutImg" id="shoulderImg" src="icons/shoulder.jpeg" alt="Promotion material of woman drinkong smoothie">
+                        <img class="aboutImg" id="smileFaceImg" src="icons/happyface.jpeg" alt="Promotion material of woman drinkong smoothie">
+                        <p class="data">hello Our story began in 2001 in a small studio in the middle of nowhere. With only one desk and next to no free time, our brand was born. Our passion for unique design and collaboration brought our vision, and products, to life. Our products bring together the finest materials and stunning design to create something very special.</p>
+                        <p class="data">hello Our story began in 2001 in a small studio in the middle of nowhere. With only one desk and next to no free time, our brand was born. Our passion for unique design and collaboration brought our vision, and products, to life. Our products bring together the finest materials and stunning design to create something very special.</p>
+                        <p class="data">hello Our story began in 2001 in a small studio in the middle of nowhere.</p>
+                        <img class="aboutImg" id="bottomImg" src="icons/face.jpeg" alt="Promotion material of woman drinkong smoothie">
+                    </section>
+                </div>
             </section>
         </main>
         </div>
@@ -136,6 +163,9 @@
                 <small>Developed by Nataly Angulo</small>
             </section>
         </footer>
+<!-- PAYPAL -->
+<script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&currency=USD"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&components=buttons"></script>
 </body>
 <!-- ACCESSIBILITY API -->
 <!-- Begin Accessible Web A11Y Center Button Snippet --> 
@@ -144,6 +174,7 @@
     type="text/javascript"
     src="https://ramp.accessibleweb.com/badge/tfK0AO4zefc2ccRP7o3_P379AikBiyv9-7N5Q8Vaxxs/script.js"></script> 
 <!-- End Accessible Web A11Y Center Button Snippet --> 
+
 <!-- uuid script -->
 <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
 <!-- modal -->
@@ -151,10 +182,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<!-- PAYPAL LINK -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-
+<!-- SCRITPS -->
 <script src="js/main.js"></script>
 <script src="js/cart.js" ></script>
 </html>
