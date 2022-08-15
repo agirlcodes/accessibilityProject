@@ -44,14 +44,15 @@
             </button>
         </div>
     </nav>
-    <div id="searchNav" class="searchBar">
+    <div class="searchBar" id="searchNav">
+        <br>
         <form>
             <label id="searchBarLayout"for="searchBar"> 
-                <button aria-label="alternate form of submitting to search" id="submitBtn" type="submit" value="">
+                <button type="button" aria-label="alternate form of submitting to search" id="submitBtn" type="none" value="">
                 <img src="icons/search.png" alt=""></button>
                 <input id="searchBar" type="text" placeholder="Search">
                     <!-- CART -->
-                <button id="cartModal"><a href="#ex1" rel="modal:open"><img src="icons/shopping-cart.png" alt="Cart Icon"></a></button>
+                <button aria-label="button to open cart" class="cartModal"><a href="#ex1" rel="modal:open"><img src="icons/shopping-cart.png" alt="Cart Icon"></a></button>
             </label>
         </form>
         <div id="ex1" class="modal">
@@ -60,6 +61,10 @@
             <div id="cartLayout">
                 <table id="cartDisplayLayout">
                     <thead>
+                        <tr>
+                            <td><h2 class="data">Nirvana Cosmetics</h2></td>
+                            <td><h3 class="data">Your Cart</h3></td>
+                        </tr>
                         <tr>
                             <th><h3>Item</h3></th>
                             <th><h3><dfn title="Quantity">Qty.</dfn></h3></th>
@@ -75,10 +80,10 @@
                     </tr>
                     <!-- <tr class="cartData"></tr> -->
                 </table>
-                <div class='cart-checkout'>
-                    <h3>Order Summary</h3>
-                    <ul>
-                        <li><h4>SubTotal</h4></li>
+                <div class='cart-checkout data'>
+                    <h3 class="data">Order Summary</h3>
+                    <ul class="data">
+                        <li><h4 class="data">SubTotal</h4></li>
                         <li><h5>£786</h5></li>
                     </ul>
                     <div id="paypal-button-container"></div>
@@ -88,23 +93,23 @@
     </div>
     <section class="searchBarResults"></section>
     <div class="grid">
-    <header id="landingImg">
-        <h1>Nirvana Cosmetics</h1>
-    </header>
-    <main class="data" id="layout">
-        <nav id="menu">
-            <ul class="data" id="linksMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#searchNav">Cart<img id="cartIconSet" src="icons/shopping-cart.png" alt=""></a></li>
-            </ul>
-            <ul id="socialMedia">
-                <li><a href="#" alt="link to facebook account"><img src="icons/facebook.png" alt="Facebook logo"></a></li>
-                <li><a href="#" alt="link to facebook account"><img src="icons/twitter.png" alt="Twitter logo"></a></li>
-                <li><a href="#" alt="link to facebook account"><img src="icons/instagram.png" alt="Instagram logo"></a></li>
-            </ul>
-        </nav>
+        <header id="landingImg">
+            <h1>Nirvana Cosmetics</h1>
+        </header>
+        <main id="layout">
+            <nav class="menu">
+                <ul class="data linksMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><button aria-label="button to open cart" class="cartModal"><a href="#ex1" rel="modal:open"><img src="icons/shopping-cart.png" alt="Cart Icon"></a></button></li>
+                </ul>
+                <ul id="socialMedia">
+                    <li><a href="#" alt="link to facebook account"><img src="icons/facebook.png" alt="Facebook logo"></a></li>
+                    <li><a href="#" alt="link to facebook account"><img src="icons/twitter.png" alt="Twitter logo"></a></li>
+                    <li><a href="#" alt="link to facebook account"><img src="icons/instagram.png" alt="Instagram logo"></a></li>
+                </ul>
+            </nav>
             <section>
                 <h1>About Us</h1>
                 <div id="aboutLayout">

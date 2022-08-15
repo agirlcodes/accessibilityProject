@@ -57,29 +57,34 @@
         letter-spacing: 5px;
       }
     }
-    #topSellersContent{
-      display: flex;
-      flex-wrap: wrap;
-      // width: 100%;
-      justify-content: space-evenly;
-      a{
-        width: 25%;
-        margin-right: 5%;
-        text-decoration: none;
+    #mainData{  
+      h2{
         text-align: center;
-        figure{
-          margin: 0%;
-          margin-left: 5%;
-          margin-bottom: 4%;
-          img{
-            width: 100%;
-            max-width: 70%;
-            // height: 400px;
+      }
+      #topSellersContent{
+        display: flex;
+        flex-wrap: wrap;
+        // width: 100%;
+        justify-content: space-evenly;
+        a{
+          width: 25%;
+          margin-right: 5%;
+          text-decoration: none;
+          text-align: center;
+          figure{
+            margin: 0%;
+            margin-left: 5%;
+            margin-bottom: 4%;
+            img{
+              width: 100%;
+              max-width: 70%;
+              // height: 400px;
+            }
           }
         }
-      }
-      a:visited{
-        color: #3c4049;
+        a:visited{
+          color: #3c4049;
+        }
       }
     }
   }

@@ -48,7 +48,7 @@ $(document).on('click', 'button[class^="addCart"]', function() {
     save()
     loadCart()
 })
-$('#cartModal').click(reload, function(){
+$('.cartModal').click(reload, function(){
     loadCart(setItems)
     console.log(setItems)
     if($(setItems) != null){

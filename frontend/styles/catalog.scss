@@ -11,6 +11,11 @@
   .grid{
     @include gridLayout;
     #layout{
+      .menu{
+        .linksMenu{
+          width: 200px;
+        }
+      }
       margin-bottom: 15%;
       h1, p{
         margin-left: 2%;
