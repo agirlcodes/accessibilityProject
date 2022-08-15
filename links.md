@@ -7,21 +7,22 @@ API: coEnA3dWJl3LeXhBku231l1e4zE1Hql5P5xaoTRaocfMCCtRbbPiR7NCC5TY6OS2
 TO-DO: 
 - [] mobile view
   - [X] home
-  - [] about - find way to scale images
-  - [] catalog - find way to scale images
+  - [X] about - find way to scale images
+  - [X] catalog - find way to scale images
     - [X] subpages
   - [X] footer
   - [X] accessibiltiy menu
-- [] cart functionality
 - [] add copywritting
+- [] Accessibility layout
 - [] Debugging
   - [] add a way to close pop-up
-  - [X] fix colour change
+  - [] fix colour change - text footer
 - [] cart
   - [] Add feature to remove and add stuff to 
-  - [X] allow for payment gateway
-    - [X] change font
-    - [X] alter font-size on h1,h2 and h3 (kinda off for some reason?)
+  - [x] allow for payment gateway
+  - [X] Design
+- [x] alter font-size on h1,h2 and h3 (kinda off for some reason?)
+- [X] change font
 - [X] go over About layout
 - [X] Add content to subpages
 - [X] make the webpage more complex

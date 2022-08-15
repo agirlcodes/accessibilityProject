@@ -14,6 +14,7 @@
     text-align: justify;
     background-color: white;
     margin: 0%;
+    text-align: justify;
     line-height: 1.6;
     color: #3c4049;
   }
@@ -38,7 +39,7 @@
     margin-left: 25%;
   }
   body .searchBar {
-    margin-top: 6%;
+    margin-top: 4%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,7 +117,7 @@
     cursor: pointer;
   }
   body #accessibilityNav {
-    background: #5aa29b;
+    background: #eeeeee;
     position: fixed;
     top: 0;
     z-index: 1030;
@@ -161,6 +162,10 @@
   body #accessibilityNav #container #resetBtn {
     height: 5%;
     width: 35px;
+    margin-top: 1%;
+  }
+  body #accessibilityNav #container .buttonAdjust {
+    margin-top: 5%;
   }
   body #accessibilityNav .background-change {
     display: -webkit-box;
@@ -203,6 +208,7 @@
             flex-direction: column;
     width: 100%;
     margin: 0%;
+    margin-bottom: 10%;
   }
   .grid #layout {
     display: -webkit-box;
@@ -226,7 +232,7 @@
     margin: 0%;
     position: -webkit-sticky;
     position: sticky;
-    top: 75px;
+    top: 57px;
     z-index: 1;
     background-color: white;
     padding: 0%;
@@ -257,32 +263,36 @@
   }
   .grid #layout article {
     text-align: left;
-    max-width: 80%;
     margin-left: 5%;
   }
-  .grid .data {
-    margin: 2%;
-    margin-bottom: 10%;
-  }
-  .grid .data #aboutLayout {
+  .grid .data #aboutLayout .imageLayout {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
   }
-  .grid .data #aboutLayout .imageLayout p {
-    margin-top: 5%;
-    width: 45%;
+  .grid .data #aboutLayout .imageLayout img {
+    padding-right: 1%;
   }
-  .grid .data #aboutLayout .imageLayout .aboutImg {
+  .grid .data #aboutLayout p {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    width: 80%;
+    text-align: justify;
+  }
+  .grid .data #aboutLayout .aboutImg {
     width: 35%;
     height: auto;
-    padding: 1%;
+  }
+  .grid .data #aboutLayout #bottomImg {
+    width: 81%;
   }
   .grid .data #aboutLayout #aboutUsContent {
     width: 100%;
     margin-left: 0%;
+    margin-bottom: 2%;
   }
   footer {
     font-weight: normal !important;
@@ -357,6 +367,7 @@
     text-align: justify;
     background-color: white;
     margin: 0%;
+    text-align: justify;
     line-height: 1.6;
     color: #3c4049;
     margin: 0%;
@@ -378,7 +389,7 @@
     font-family: 'Courier Prime', monospace;
   }
   body #accessibilityNav {
-    background: #5aa29b;
+    background: #eeeeee;
     position: fixed;
     top: 0;
     z-index: 1030;
@@ -423,6 +434,10 @@
   body #accessibilityNav #container #resetBtn {
     height: 5%;
     width: 35px;
+    margin-top: 1%;
+  }
+  body #accessibilityNav #container .buttonAdjust {
+    margin-top: 5%;
   }
   body #accessibilityNav .background-change {
     display: -webkit-box;
@@ -438,6 +453,9 @@
     padding: 0%;
     padding-left: 0%;
     margin-left: 25%;
+  }
+  body #accessibilityNav #container #fingerspell {
+    visibility: hidden;
   }
   body form {
     width: 90%;
@@ -652,7 +670,7 @@
   }
   #layout {
     padding-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
   #layout h1 {
     text-align: center;
@@ -667,16 +685,17 @@
             flex-direction: column;
     width: 100%;
   }
-  .imageLayout p {
+  p {
     margin-top: 5%;
     width: 80%;
   }
-  .imageLayout .aboutImg {
+  .aboutImg {
     margin-top: 2%;
     width: 80%;
     height: auto;
-    padding: 1%;
-    margin-left: 0%;
+  }
+  #bottomImg {
+    width: 80%;
   }
   #aboutUsContent {
     width: 90%;

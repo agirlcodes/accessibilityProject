@@ -24,7 +24,7 @@ $(document).ready(function(){
       $('.searchBarImg').css('filter', 'grayscale(1)');
       $('#landingImg').css('filter', 'grayscale(1)');
       $ ('footer').css({'background-color': '#464646', 'color': 'white'});
-      $ ('footer a, footer p').css({'color': 'white'});
+      $ ('footer a, footer p, footer h3').css({'color': 'white'});
       $ ('h1').css({'color': 'white'});
   });
   $('#coloredBackground').click(function(){
@@ -42,11 +42,13 @@ $(document).ready(function(){
       $("h1").css({"font-family":"Gallaudet", "font-size": "90px", "color":"black","top": "25%", "margin-right":"0%"});
       $("a").css({"font-family":"Gallaudet","text-align": "center", "font-size":"45px"});
       $("body").css({"width":"100%"});
+      $ ('footer').css({'flex-direction': 'row', 'font-size':'1em'});
     }else{
       $(".data").css({"font-family":"Gallaudet", "font-size": "30px","font-weight": "normal", "letter-spacing": "10px"});
       $(".data p").css({"font-family":"Gallaudet", "font-size": "1.7em","font-weight": "normal", "letter-spacing": "10px"});
       $("a").css({"font-family":"Gallaudet","text-align": "center", "font-size":"1.1em"})
       $("h1").css({"font-family":"Gallaudet", "font-size": "3.1em", "color":"black","top": "25%", "margin-right":"0%", "background-color": "white"});
+      $ ('footer a, footer p, footer h3').css({'font-size': '1em'});
     }
   });
   $('#resetBtn').click(function() {

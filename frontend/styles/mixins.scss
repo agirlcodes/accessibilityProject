@@ -1,7 +1,7 @@
 // FIX NAV MENU
 @mixin accessibility {
   #accessibilityNav{
-    background: rgb(90, 162, 155);
+    background: #eeeeee;
     position: fixed;
     top: 0;
     z-index: 1030;
@@ -39,8 +39,11 @@
         #resetBtn{
           height: 5%;
           width: 35px;
+          margin-top: 1%;
         }
-        
+        .buttonAdjust{
+          margin-top: 5%;
+        }
       }
       .background-change{
         display: flex;
@@ -55,7 +58,7 @@
     margin-left: 25%;
   }
   .searchBar{
-    margin-top: 6%;
+    margin-top: 4%;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -157,6 +160,7 @@
   text-align: justify;
   background-color: white;
   margin: 0%;
+  text-align: justify; 
   ul li{
     list-style-type: none;
   }
@@ -198,7 +202,7 @@
         font-size: 16px;
         margin: 0%;
         position: sticky;
-        top: 75px;
+        top: 57px;
         z-index: 1;
         background-color: white;
         padding: 0%;
@@ -231,7 +235,7 @@
     }
     article{
       text-align: left;
-      max-width: 80%;
+      // max-width: 80%;
       margin-left: 5%;
     }
   }
@@ -246,9 +250,9 @@
         padding: 0%;
         padding-left: 0%;
         margin-left: 25%;
-      // #fingerspell{
-      //   visibility: hidden;
-      // }
+      #fingerspell{
+        visibility: hidden;
+      }
       }
     }
     form{
@@ -500,6 +504,7 @@ footer{
     .dividedLayout{
       padding: 1%;
       width: 250px;
+      
     }
     #missionStatement{
       width: 450px;

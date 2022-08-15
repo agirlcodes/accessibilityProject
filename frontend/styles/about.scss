@@ -12,45 +12,39 @@
     @include gridLayout;
     width: 100%;
     margin: 0%;
+    margin-bottom: 10%;
     .data{
-      margin: 2%;
-      margin-bottom: 10%;
       #aboutLayout{
-        display: flex;
-        flex-wrap: wrap;
         .imageLayout{
-        // display: flex;
-        // flex-wrap: wrap;
-        // width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          img{
+            padding-right: 1%;
+          }
+        }
         p{
-          margin-top: 5%;
-          width: 45%;
+          margin-top: 1%;
+          margin-bottom: 5%;
+          width: 80%;
+          text-align: justify;
         }
         .aboutImg{
         //     margin-top: 2%;
             width: 35%;
             height: auto;
             // padding-bottom: 1%;
-            padding: 1%;
+            // padding: 1%;
           }
-        //   #shoulderImg{
-        //     margin-left: 1%;
-        //   }
-        //   #smileFaceImg{
-        //     margin-right: 1%;
-        //   }
-        //   #shoulderImg{
-        //     margin-left: 1%;
-        //   }
-        //   #bottomImg{
-        //     padding-left: 1%;
-        //     // width: %;
-        //     height: 100%;
-        //   }
-        }
+          #bottomImg{
+            // padding-left: 1%;
+            // width: %;
+            width: 81%;
+          }
         #aboutUsContent{
           width: 100%;
           margin-left: 0%;
+          margin-bottom: 2%
         }
       }
     }
@@ -63,7 +57,7 @@
   @include mobileLayout;
   #layout{
     padding-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     h1{
       text-align: center;
     }
@@ -72,6 +66,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
     p{
       margin-top: 5%;
       width: 80%;
@@ -81,10 +76,14 @@
         width: 80%;
         height: auto;
         // padding-bottom: 1%;
-        padding: 1%;
-        margin-left: 0%;
+        // padding: 1%;
+        // margin-left: 0%;
       }
-    }
+      #bottomImg{
+        // padding-left: 1%;
+        // width: %;
+        width: 80%;
+      }
     #aboutUsContent{
       width: 90%;
       margin-left: 0%;
