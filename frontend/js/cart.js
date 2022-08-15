@@ -60,7 +60,7 @@ $('.cartModal').click(reload, function(){
             $('#insertCart').append(`
                 <tr class="data">
                     <td class="cartProductLayout">
-                        <img class="searchBarImg" src="${el.img} alt="${el.name} products available">
+                        <img class="searchBarImg" src="${el.img}" alt="${el.name} products available">
                         <h3 class="data">${el.name}</h3>
                     </td>
                     <td class="data">${el.price}</td>
