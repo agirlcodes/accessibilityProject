@@ -382,6 +382,9 @@
         }
       }
     }
+    // #cartLayout{
+    //   // background-color: red;
+    }
   }
   .grid{
   display:flex;
@@ -527,7 +530,7 @@ footer{
     }
   }
 }
-}
+
 @mixin productLayout{
   display: flex;
   flex-wrap: wrap;

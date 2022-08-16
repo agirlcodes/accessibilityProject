@@ -92,21 +92,16 @@ let compData = [Goest,TopSellers, Yarrow, Botanical]
           if (dataValue.name.toLowerCase().indexOf(input)!= -1) {
             $('.searchBarResults').css({'display':'block'})
             $('.searchBarResults').html(`
-            <figure class="data">
-              <aside>
-                <img class="searchBarImg" src="${dataValue.img} alt="image of products available>
-              </aside>
-              <figcaption class="data">
-              <h3>${dataValue.name}</h3>
-              <p class="data">£${dataValue.price}
-              </p>
-              <button aria-label="add ${dataValue.name} to cart Button" class="addCart productVal data">Add To Cart</button>
-              </figcaption>
-            </figure>
+            <figure>
+                <aside>
+                    <img src=${dataValue.img} alt="image of products available">
+                </aside>
+                <figcaption>
+                <h3 class="data getData">${dataValue.name}</h3>
+                <h4 class="data getData">£<span>${dataValue.price}</span></h4>
+                <button aria-label="add ${dataValue.name} to cart Button" class="addCart productVal data">Add To Cart</button>
+                </figcaption>
             `)
-          //   $(document).on('click', 'button[id^="addCart"]', function() {
-          //     console.log(dataValue.name.toLowerCase())
-          // });
           }
       }
     });

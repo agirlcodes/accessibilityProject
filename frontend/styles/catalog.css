@@ -1,3 +1,188 @@
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid header {
+  background-image: url(../icons/skincare-1.jpg);
+  height: 250px;
+  top: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2%;
+}
+
+.grid header h1 {
+  font-size: 30px;
+  color: white;
+  position: relative;
+  top: 50%;
+  margin-left: 5%;
+  letter-spacing: 3px;
+  font-weight: normal;
+}
+
+.grid #landingImg {
+  width: 100%;
+}
+
+.grid #layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-left: 2%;
+}
+
+.grid #layout .menu {
+  width: auto;
+  width: 100%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.grid #layout .menu .linksMenu {
+  font-size: 16px;
+  margin: 0%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 57px;
+  z-index: 1;
+  background-color: white;
+  padding: 0%;
+}
+
+.grid #layout .menu .linksMenu li a {
+  border-top: 1px solid #d7d8d2;
+  display: block;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #3c4049;
+  padding: 2%;
+}
+
+.grid #layout .menu .linksMenu li .cartModal {
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  width: 0%;
+  height: 0%;
+}
+
+.grid #layout .menu .linksMenu li .cartModal img {
+  height: 26px;
+  width: auto;
+}
+
+.grid #layout .menu #socialMedia {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.grid #layout .menu #socialMedia a {
+  border-top: 1px solid #d7d8d2;
+  padding: 12px 0;
+  padding-right: 10px;
+}
+
+.grid #layout .menu #socialMedia a img {
+  height: 23px;
+}
+
+.grid #layout article {
+  text-align: left;
+  margin-left: 5%;
+}
+
+footer {
+  font-weight: normal !important;
+  width: 100%;
+  margin-bottom: -1%;
+  background-color: #205e69;
+  color: #ffffff;
+}
+
+footer a {
+  color: white;
+}
+
+footer #footerLayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+footer #footerLayout a {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid white;
+}
+
+footer #footerLayout p {
+  color: white;
+}
+
+footer #footerLayout .dividedLayout {
+  padding: 2%;
+}
+
+footer .footerSocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40%;
+  list-style-type: none;
+}
+
+footer .footerSocialMedia a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  padding: 12px 0;
+  padding-right: 20px;
+  max-height: 65px;
+}
+
+footer #fineprint {
+  text-align: center !important;
+}
+
+footer #fineprint small {
+  margin-left: 1%;
+}
+
+footer #fineprint small a {
+  text-decoration: underline;
+}
+
+footer #fineprint small a:hover {
+  color: black;
+}
+
 @font-face {
   font-family: Gallaudet;
   src: url("../font/GallaudetRegular-qZe1.ttf");
@@ -672,176 +857,17 @@
   body .searchBarResults figure figcaption button:hover {
     background-color: #a3a3a3;
   }
-  .grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .grid header {
-    background-image: url(../icons/skincare-1.jpg);
-    height: 250px;
-    top: 20%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 2%;
-  }
-  .grid header h1 {
-    font-size: 30px;
-    color: white;
-    position: relative;
-    top: 50%;
-    margin-left: 5%;
-    letter-spacing: 3px;
-    font-weight: normal;
-  }
-  .grid #landingImg {
-    width: 100%;
-  }
-  .grid #layout {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-left: 2%;
-  }
-  .grid #layout .menu {
-    width: auto;
-    width: 100%;
-    margin-right: 2%;
-    text-align: center;
-  }
-  .grid #layout .menu .linksMenu {
-    font-size: 16px;
-    margin: 0%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 57px;
-    z-index: 1;
-    background-color: white;
-    padding: 0%;
-  }
-  .grid #layout .menu .linksMenu li a {
-    border-top: 1px solid #d7d8d2;
-    display: block;
-    padding: 12px 0;
-    text-decoration: none;
-    color: #3c4049;
-    padding: 1%;
-  }
-  .grid #layout .menu .linksMenu li .cartModal {
-    background-color: transparent;
-    border: none;
-    width: 40%;
-  }
-  .grid #layout .menu .linksMenu li .cartModal img {
-    height: 26px;
-    width: auto;
-  }
-  .grid #layout .menu #socialMedia {
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
-  }
-  .grid #layout .menu #socialMedia a {
-    border-top: 1px solid #d7d8d2;
-    padding: 12px 0;
-    padding-right: 10px;
-  }
-  .grid #layout .menu #socialMedia a img {
-    height: 23px;
-  }
-  .grid #layout article {
-    text-align: left;
-    margin-left: 5%;
-  }
-  footer {
-    font-weight: normal !important;
-    width: 100%;
-    margin-bottom: -1%;
-    background-color: #205e69;
-    color: #ffffff;
-  }
-  footer a {
-    color: white;
-  }
-  footer #footerLayout {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-  footer #footerLayout a {
-    display: block;
-    padding: 12px 0;
-    border-bottom: 1px solid white;
-  }
-  footer #footerLayout p {
-    color: white;
-  }
-  footer #footerLayout .dividedLayout {
-    padding: 2%;
-  }
-  footer .footerSocialMedia {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 40%;
-    list-style-type: none;
-  }
-  footer .footerSocialMedia a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-decoration: none;
-    padding: 12px 0;
-    padding-right: 20px;
-    max-height: 65px;
-  }
-  footer #fineprint {
-    text-align: center !important;
-  }
-  footer #fineprint small {
-    margin-left: 1%;
-  }
-  footer #fineprint small a {
-    text-decoration: underline;
-  }
-  footer #fineprint small a:hover {
-    color: black;
-  }
   #layout {
     text-align: center;
   }
   #catalogNav {
     -webkit-box-shadow: 0px 5px 11px -8px rgba(146, 146, 146, 0.438);
             box-shadow: 0px 5px 11px -8px rgba(146, 146, 146, 0.438);
-    position: -webkit-sticky;
-    position: sticky;
     top: 55px;
     height: auto;
     background-color: white;
     border-top: 1px solid #d7d8d2;
-    padding: 1%;
+    padding: 3%;
     padding-left: 0%;
     padding-right: 0%;
     z-index: 1;

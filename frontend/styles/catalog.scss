@@ -23,7 +23,6 @@
       p{
         width: 85%;
       }
-      
       #catalogNav{
         box-shadow: 0px 5px 11px -8px rgba(146, 146, 146, 0.438);
         position: sticky;
@@ -117,12 +116,12 @@
   }
   #catalogNav{
     box-shadow: 0px 5px 11px -8px rgba(146, 146, 146, 0.438);
-    position: sticky;
+    // position: sticky;
     top: 55px;
     height: auto;
     background-color: white;
     border-top: 1px solid #d7d8d2;
-    padding: 1%;
+    padding: 3%;
     padding-left: 0%;
     padding-right: 0%;
     z-index: 1;

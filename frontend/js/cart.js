@@ -59,8 +59,8 @@ let dataInsert = '';
 $(cartTable).append(`
         <thead>
         <tr>
-            <td><h2 class="data">Nirvana Cosmetics</h2></td>
-            <td><h3 class="data">Your Cart</h3></td>
+            <td><h2 class="data cartHeading">Nirvana Cosmetics</h2></td>
+            <td><h3 class="data mobileCartTitle">Your Cart</h3></td>
         </tr>
         <tr>
             <th><h3>Item</h3></th>
