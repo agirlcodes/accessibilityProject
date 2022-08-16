@@ -43,7 +43,7 @@ $(document).ready(function(){
       $(".data p").css({"font-family":"Gallaudet", "font-size": "2em","font-weight": "normal", "letter-spacing": "10px"});
       $("h1").css({"font-family":"Gallaudet", "font-size": "90px", "color":"black","top": "25%", "margin-right":"0%"});
       $("a").css({"font-family":"Gallaudet","text-align": "center", "font-size":"45px"});
-      $("body").css({"width":"100%"});
+      // $("body").css({"width":"100%"});
       $ ('footer').css({'flex-direction': 'row', 'font-size':'1em'});
       $ ('footer h4').css({'font-size': '15px', 'letter-spacing':'0px'});
     }else{
@@ -58,6 +58,7 @@ $(document).ready(function(){
     // alert('Reset')
     location.reload();
   })
+  console.log(window.visualViewport.scale)
   
 $.getJSON(`${db_url}`, function(data){
 //TOP SELLERS Home page

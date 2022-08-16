@@ -6,7 +6,7 @@
     top: 0;
     z-index: 1030;
     margin-bottom: 0%;
-    width: 99%;
+    width: 100%;
     #container{
       display: flex;
       flex-direction: row;
@@ -173,12 +173,14 @@
       }
 }
 @mixin bodyLayout{
+  position: absolute;
   height: 100vh;
   text-align: justify;
   background-color: white;
   margin: 0%;
-  // padding: 1%;
+  padding: 0%;
   text-align: justify; 
+
   ul li{
     list-style-type: none;
   }
@@ -270,13 +272,13 @@
 @mixin mobileLayout{
   body{
     @include bodyLayout;
-    margin: 0%;
     @include accessibility;
     #accessibilityNav{
+      width: 10%;
       #container{
         padding: 0%;
         padding-left: 0%;
-        margin-left: 20%;
+        margin-left: 0%;
       #fingerspell{
         visibility: hidden;
         height: 0px;
@@ -406,43 +408,65 @@
   #landingImg{
     width: 100%;
   }
-  .menu{
-    grid-column: 1;
-    grid-row: 2;
-    text-align: center;
-    .linksMenu{
-      font-size: 16px;
-      margin: 0%;
-      a{
-        border-top: 1px solid #d7d8d2;
-        display: block;
-        padding: 12px 0;
-        text-decoration: none;
-        color: #3c4049;
+  #layout{
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-left: 2%;
+    .menu{
+      width: auto;
+      width: 20%;
+      margin-right: 2%;
+      .linksMenu{
+        width: 70%;
+        font-size: 16px;
+        margin: 0%;
+        position: sticky;
+        top: 57px;
+        z-index: 1;
+        background-color: white;
+        padding: 0%;
+        li{
+
+          a{
+            border-top: 1px solid #d7d8d2;
+            display: block;
+            padding: 12px 0;
+            text-decoration: none;
+            color: #3c4049;
+            padding: 10%;
+          }
+          .cartModal{
+            background-color: transparent;
+            border: none;
+            // padding: 1%;
+            // padding-top: 5%;
+            width: 40%;
+            img{
+              height: 26px;
+              width: auto;
+            }
+          }
+        }
       }
-      .cartModal{
-        background-color: transparent;
-        border: none;
-        // padding: 1%;
-        // padding-top: 5%;
-        width: 40%;
-        img{
-          height: 26px;
-          width: auto;
+      #socialMedia{
+        display: flex;
+        padding: 0%;
+        a{
+          border-top: 1px solid #d7d8d2;
+          padding: 12px 0;
+          padding-right: 10px;
+          img{
+            height: 23px;
+          }
         }
       }
     }
-    #socialMedia{
-      margin: 0%;
-      visibility: hidden;
-      height: 0px;
-      width: 0px;
+    article{
+      text-align: left;
+      margin-left: 5%;
     }
-  }
-  #layout{
-    // width: 100%;
-    grid-column:1;
-    grid-row: 3;
   }
 }
 footer{
