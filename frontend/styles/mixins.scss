@@ -274,7 +274,7 @@
     @include bodyLayout;
     @include accessibility;
     #accessibilityNav{
-      width: 10%;
+      width: 100%;
       #container{
         padding: 0%;
         padding-left: 0%;
@@ -410,16 +410,17 @@
   }
   #layout{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
     margin-left: 2%;
     .menu{
       width: auto;
-      width: 20%;
+      width: 100%;
       margin-right: 2%;
+      text-align: center;
       .linksMenu{
-        width: 70%;
+        // width: 70%;
         font-size: 16px;
         margin: 0%;
         position: sticky;
@@ -435,14 +436,16 @@
             padding: 12px 0;
             text-decoration: none;
             color: #3c4049;
-            padding: 10%;
+            padding: 2%;
           }
           .cartModal{
+            visibility: hidden;
             background-color: transparent;
             border: none;
             // padding: 1%;
             // padding-top: 5%;
-            width: 40%;
+            width: 0%;
+            height: 0%;
             img{
               height: 26px;
               width: auto;
@@ -451,8 +454,9 @@
         }
       }
       #socialMedia{
-        display: flex;
-        padding: 0%;
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
         a{
           border-top: 1px solid #d7d8d2;
           padding: 12px 0;
