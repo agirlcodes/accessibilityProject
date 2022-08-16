@@ -6,9 +6,9 @@ API: coEnA3dWJl3LeXhBku231l1e4zE1Hql5P5xaoTRaocfMCCtRbbPiR7NCC5TY6OS2
 
 TO-DO: 
 - [] mobile view
-- [] add a way to close for search pop-up
 - [] add copywritting
-- [] Debugging
+- [X] add a way to close for search pop-up
+- [X] Debugging
   - [X] home
   - [X] about - find way to scale images
   - [X] catalog - find way to scale images
