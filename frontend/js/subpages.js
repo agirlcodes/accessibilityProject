@@ -13,7 +13,7 @@ $(document).ready(function(){
                 </aside>
                 <figcaption>
                 <h3 class="data getData">${value.name}</h3>
-                <h4 class="data getData">£${value.price}</h4>
+                <h4 class="data getData">£<span>${value.price}</span></h4>
                 <button aria-label="add ${value.name} to cart Button" class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </a>`
@@ -27,7 +27,7 @@ $(document).ready(function(){
                 </aside>
                 <figcaption>
                     <h3 class="data getData">${value.name}</h3>
-                    <h4 class="data getData">£${value.price}</h4>
+                    <h4 class="data getData">£<span>${value.price}</span></h4>
                     <button aria-label="add ${value.name} to cart Button" class="addCart productVal data">Add To Cart</button>                
                 </figcaption>
             </figure>
@@ -42,7 +42,7 @@ $(document).ready(function(){
                 </aside>
                 <figcaption>
                 <h3 class="data getData">${value.name}</h3>
-                <h4 class="data getData">£${value.price}</h4>
+                <h4 class="data getData">£<span>${value.price}</span></h4>
                 <button aria-label="add ${value.name} to cart Button" id="${value.name}"  class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </figure>
@@ -57,7 +57,7 @@ $(document).ready(function(){
                 </aside>
                 <figcaption>
                 <h3 class="data getData">${value.name}</h3>
-                <h4 class="data getData">£${value.price}</h4>
+                <h4 class="data getData">£<span>${value.price}</span></h4>
                 <button aria-label="add ${value.name} to cart Button" class="addCart productVal data">Add To Cart</button>
                 </figcaption>
             </figure>

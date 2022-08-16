@@ -52,7 +52,7 @@
                     <img src="icons/search.png" alt=""></button>
                     <input id="searchBar" type="text" placeholder="Search">
                         <!-- CART -->
-                    <button aria-label="button to open cart" class="cartModal"><a href="#ex1" rel="modal:open"><img src="icons/shopping-cart.png" alt="Cart Icon"></a></button>
+                    <button aria-label="button to open cart" class="cartModal"><a href="#ex1" rel="modal:open"><img src="icons/shopping-cart.png" alt="Cart Icon"><span  class="cartNum">0</span></a></button>
                 </label>
             </form>
             <div id="ex1" class="modal">
@@ -60,31 +60,12 @@
                 <div id="cart"></div>
                 <div id="cartLayout">
                     <table id="cartDisplayLayout">
-                        <thead>
-                            <tr>
-                                <td><h2 class="data">Nirvana Cosmetics</h2></td>
-                                <td><h3 class="data">Your Cart</h3></td>
-                            </tr>
-                            <tr>
-                                <th><h3>Item</h3></th>
-                                <th><h3><dfn title="Quantity">Qty.</dfn></h3></th>
-                                <th><h3>Price</h3></th>
-                            </tr>
-                        </thead>
-                        <tbody id="insertCart">
-                        </tbody>
-                        <tr>
-                            <td>TOTAL</td>
-                            <td>num</td>
-                            <td>£</td>
-                        </tr>
-                        <!-- <tr class="cartData"></tr> -->
                     </table>
                     <div class='cart-checkout data'>
                         <h3 class="data">Order Summary</h3>
                         <ul class="data">
                             <li><h4 class="data">SubTotal</h4></li>
-                            <li><h5>£786</h5></li>
+                            <li class="cartTotal"></li>
                         </ul>
                         <div id="paypal-button-container"></div>
                     </div>
@@ -103,7 +84,7 @@
                         <li><a href="catalog.html">Catalog</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="#landingImg">Back to top</a></li>
-                        <li><button aria-label="button to open cart" class="cartModal"><a href="#ex1" rel="modal:open"><img src="icons/shopping-cart.png" alt="Cart Icon"></a></button></li>
+                        <!-- <li><button aria-label="button to open cart" class="cartModal"><a href="#ex1" rel="modal:open"><img src="icons/shopping-cart.png" alt="Cart Icon"></a></button></li> -->
                     </ul>
                     <ul id="socialMedia">
                         <li><a href="#" alt="link to facebook account"><img src="icons/facebook.png" alt="Facebook logo"></a></li>
@@ -185,6 +166,22 @@
 <script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&currency=USD"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&components=buttons"></script>
         </body>
+        <!-- <script>
+function deleteItems(e){
+    let setItems = [];
+    JSON.parse(localStorage.getItem('product'))[0].map(data=>{
+        // console.log(data.name)
+        // console.log(e.target.parentElement.parentElement.children[0].textContent)
+        if(data.name != e.parentElement.parentElement.children[0].textContent){
+            console.log(data)
+            setItems.push(data)
+        }
+    })
+    localStorage.setItem('product', JSON.stringify(setItems))
+    window.location.reload()
+    console.log("deleting")
+}
+        </script> -->
 <!-- ACCESSIBILITY API -->
 <!-- Begin Accessible Web A11Y Center Button Snippet --> 
 <script async defer 
