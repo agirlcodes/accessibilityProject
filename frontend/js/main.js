@@ -45,6 +45,7 @@ $(document).ready(function(){
       $("a").css({"font-family":"Gallaudet","text-align": "center", "font-size":"45px"});
       $("body").css({"width":"100%"});
       $ ('footer').css({'flex-direction': 'row', 'font-size':'1em'});
+      $ ('footer h4').css({'font-size': '15px', 'letter-spacing':'0px'});
     }else{
       $(".data").css({"font-family":"Gallaudet", "font-size": "30px","font-weight": "normal", "letter-spacing": "10px"});
       $(".data p").css({"font-family":"Gallaudet", "font-size": "1.7em","font-weight": "normal", "letter-spacing": "10px"});
