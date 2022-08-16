@@ -321,12 +321,13 @@
     text-transform: capitalize !important;
     padding-top: 2%;
     padding-bottom: 1%;
-    margin-left: 1%;
+    margin-left: 0%;
     padding-right: 0%;
     width: 98%;
     background-color: #205e69b4;
     color: white;
     letter-spacing: 2px;
+    padding-left: 1%;
   }
   .grid #layout .categoryLayout .productLayout {
     display: -webkit-box;
@@ -354,6 +355,8 @@
     margin: 0%;
   }
   .grid #layout .categoryLayout .productLayout figure aside img {
+    -webkit-box-shadow: 0px 16px 11px -8px rgba(146, 146, 146, 0.56);
+            box-shadow: 0px 16px 11px -8px rgba(146, 146, 146, 0.56);
     height: auto;
     max-width: 100%;
   }

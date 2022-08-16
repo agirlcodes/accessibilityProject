@@ -28,9 +28,17 @@ $(document).on('click', 'button[class^="addCart"]', function(e) {
         });
         setItems.push(selectedItem)
         localStorage.setItem('product', JSON.stringify(setItems))
+        alert(`You have added ${selectedItem.name}`)
         location.reload()
     }
+  
+})
 
+$('.cartModal').click(function(){
+    if(JSON.parse(localStorage.getItem('product')) === null){
+        alert("Your Cart is empty")
+        $('.close-modal').click('#close-modal')
+    }
 })
 // SHOPPIN NUM
 let cartNum = document.querySelector('.cartNum')
@@ -64,14 +72,14 @@ $(cartTable).append(`
         <tbody id="insertCart">
         </tbody>
         <tr>
-        <td>TOTAL</td>
-        <td>${num}</td>
-        <td class="sumTotal">£ ${sumTotal}</td>
+        <td><h4 class="data">TOTAL</h4></td>
+        <td class="data">${num}</td>
+        <td class="sumTotal data">£ ${sumTotal}</td>
         </tr>
 `)
 if (JSON.parse(localStorage.getItem('product')) === null) {
     console.log("im empty")
-    $('#insertCart').append(`
+    $('#cartLayout').append(`
         <tr>
             <td colspan="5">There are no items in your Cart</td>
         </tr>
@@ -81,7 +89,7 @@ if (JSON.parse(localStorage.getItem('product')) === null) {
         $('#insertCart').append(` <tr class="data">
             <td class="cartProductLayout">
                 <img class="searchBarImg" src="${data.img} alt="${data.name} products available>
-                <h3>${data.name}</h3>
+                <h3 class="data">${data.name}</h3>
             </td>
             <td>${data.num}</td>
             <td class="data">£ ${data.price}</td>

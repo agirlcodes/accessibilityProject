@@ -26,12 +26,14 @@ $(document).ready(function(){
       $ ('footer').css({'background-color': '#464646', 'color': 'white'});
       $ ('footer a, footer p, footer h3').css({'color': 'white'});
       $ ('h1').css({'color': 'white'});
-  });
-  $('#coloredBackground').click(function(){
-    $('img').css('filter', 'grayscale(0)');
-    $('#landingImg').css('filter', 'grayscale(0)');
-    $ ('footer').css('background-color', '#205e69');
-    $ ('footer a').css('color', 'white');
+      $ ('.categoryLayout h2').css({'background-color': 'black'});
+    });
+    $('#coloredBackground').click(function(){
+      $('img').css('filter', 'grayscale(0)');
+      $('#landingImg').css('filter', 'grayscale(0)');
+      $ ('footer').css('background-color', '#205e69');
+      $ ('footer a').css('color', 'white');
+      $ ('.categoryLayout h2').css({'background-color': '#205e69b4'});
     // $ ('footer a').css('color', 'white');
   });
   let screenSize = document.documentElement.clientWidth || window.innerWidth; 

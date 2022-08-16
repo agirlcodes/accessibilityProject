@@ -6,18 +6,18 @@ API: coEnA3dWJl3LeXhBku231l1e4zE1Hql5P5xaoTRaocfMCCtRbbPiR7NCC5TY6OS2
 
 TO-DO: 
 - [] mobile view
+- [] add a way to close for search pop-up
+- [] add copywritting
+- [] Debugging
   - [X] home
   - [X] about - find way to scale images
   - [X] catalog - find way to scale images
     - [X] subpages
   - [X] footer
   - [X] accessibiltiy menu
-- [] add copywritting
-- [] Accessibility layout
-- [] Debugging
-  - [] add a way to close pop-up
-  - [] fix colour change - text footer
-- [] cart
+- [X] Accessibility layout
+  - [X] fix colour change - text footer
+- [X] cart
   - [] Add feature to remove and add stuff to 
   - [x] allow for payment gateway
   - [X] Design
