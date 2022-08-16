@@ -7,6 +7,10 @@
         <title>Catalog</title>
         <link rel="stylesheet" href="styles/catalog.css">
         <link rel="stylesheet" href="styles/cart.css">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Raleway&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav id="accessibilityNav">
@@ -166,22 +170,6 @@
 <script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&currency=USD"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=AQnXst1ApuV8bLTRFfe5Axgt8z--CwoCe5NGMahme_WLln2a7QUMx67sbe5JE4736hbrX95VnE3fOQTz&components=buttons"></script>
         </body>
-        <!-- <script>
-function deleteItems(e){
-    let setItems = [];
-    JSON.parse(localStorage.getItem('product'))[0].map(data=>{
-        // console.log(data.name)
-        // console.log(e.target.parentElement.parentElement.children[0].textContent)
-        if(data.name != e.parentElement.parentElement.children[0].textContent){
-            console.log(data)
-            setItems.push(data)
-        }
-    })
-    localStorage.setItem('product', JSON.stringify(setItems))
-    window.location.reload()
-    console.log("deleting")
-}
-        </script> -->
 <!-- ACCESSIBILITY API -->
 <!-- Begin Accessible Web A11Y Center Button Snippet --> 
 <script async defer 
