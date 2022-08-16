@@ -74,12 +74,32 @@
     border: none;
   }
   body .searchBar #searchBarLayout .cartModal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     background-color: transparent;
     border: none;
   }
   body .searchBar #searchBarLayout .cartModal img {
     height: 26px;
     width: auto;
+  }
+  body .searchBar #searchBarLayout .cartModal span {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 2%;
+    height: 20px;
+    width: 20px;
+  }
+  body .searchBar #searchBarLayout .cartModal span p {
+    margin-top: 0px;
+    margin-left: 3px;
+    color: white;
   }
   body .searchBar #searchBarLayout button:hover {
     cursor: pointer;
@@ -516,11 +536,31 @@
   body .searchBar #searchBarLayout .cartModal {
     background-color: transparent;
     border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding: 0%;
   }
   body .searchBar #searchBarLayout .cartModal img {
     height: 26px;
     width: auto;
+  }
+  body .searchBar #searchBarLayout .cartModal span {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 2%;
+    height: 20px;
+    width: 20px;
+  }
+  body .searchBar #searchBarLayout .cartModal span p {
+    margin-top: 0px;
+    margin-left: 3px;
+    color: white;
   }
   body .searchBar #searchBarLayout button:hover {
     cursor: pointer;
