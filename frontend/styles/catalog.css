@@ -140,7 +140,7 @@
     cursor: pointer;
   }
   body #accessibilityNav {
-    background: #eeeeee;
+    background: #ebebeb;
     position: fixed;
     top: 0;
     z-index: 1030;
@@ -509,7 +509,7 @@
     font-family: 'Courier Prime', monospace;
   }
   body #accessibilityNav {
-    background: #eeeeee;
+    background: #ebebeb;
     position: fixed;
     top: 0;
     z-index: 1030;
