@@ -32,7 +32,7 @@
     font-weight: normal;
   }
   body p, body a {
-    color: #3c4049;
+    color: #202226;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
@@ -358,11 +358,14 @@
     margin-bottom: -2%;
     background-color: #205e69;
     color: #ffffff;
+    padding-top: 2%;
   }
   footer a, footer p {
     color: white;
   }
   footer #footerLayout {
+    width: 90%;
+    padding: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -381,17 +384,22 @@
     padding: 12px 0;
     border-bottom: 1px solid white;
   }
-  footer #footerLayout #missionStatement {
-    width: 90%;
+  footer #footerLayout nav {
+    padding-right: 2%;
+  }
+  footer #missionStatement {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
   }
   footer .footerSocialMedia {
-    margin-left: 5%;
+    width: 50%;
   }
   footer .footerSocialMedia ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    list-style-type: none;
   }
   footer .footerSocialMedia ul a {
     display: -webkit-box;
@@ -401,11 +409,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 50px;
+    margin-left: 45px;
     text-decoration: none;
     padding: 12px 0;
     padding-right: 10px;
     max-height: 65px;
+  }
+  footer .footerSocialMedia ul a svg {
+    margin-left: 29%;
   }
   footer #fineprint {
     text-align: center !important;
@@ -443,7 +454,7 @@
     font-weight: normal;
   }
   body p, body a {
-    color: #3c4049;
+    color: #202226;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
