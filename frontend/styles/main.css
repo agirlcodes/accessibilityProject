@@ -32,7 +32,7 @@
     font-weight: normal;
   }
   body p, body a {
-    color: #202226;
+    color: #000000;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
@@ -91,7 +91,7 @@
     width: auto;
   }
   body .searchBar #searchBarLayout .cartModal span {
-    background-color: black;
+    background-color: #717171;
     border-radius: 50%;
     color: white;
     padding: 2%;
@@ -101,7 +101,8 @@
   body .searchBar #searchBarLayout .cartModal span p {
     margin-top: 0px;
     margin-left: 3px;
-    color: white;
+    color: black;
+    font-weight: bold;
   }
   body .searchBar #searchBarLayout button:hover {
     cursor: pointer;
@@ -474,7 +475,7 @@
     font-weight: normal;
   }
   body p, body a {
-    color: #202226;
+    color: #000000;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }

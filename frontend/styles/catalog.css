@@ -32,7 +32,7 @@
     font-weight: normal;
   }
   body p, body a {
-    color: #202226;
+    color: #000000;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
@@ -91,7 +91,7 @@
     width: auto;
   }
   body .searchBar #searchBarLayout .cartModal span {
-    background-color: black;
+    background-color: rgba(109, 109, 109, 0.468);
     border-radius: 50%;
     color: white;
     padding: 2%;
@@ -99,9 +99,10 @@
     width: 20px;
   }
   body .searchBar #searchBarLayout .cartModal span p {
-    margin-top: 0px;
-    margin-left: 3px;
-    color: white;
+    margin-top: -2px;
+    margin-left: 3.5px;
+    color: black;
+    font-weight: bold;
   }
   body .searchBar #searchBarLayout button:hover {
     cursor: pointer;
@@ -335,7 +336,7 @@
     border-bottom: 1px solid black;
   }
   .grid #layout .categoryLayout {
-    width: 98%;
+    width: 85%;
     margin-left: 2%;
   }
   .grid #layout .categoryLayout h2 {
@@ -346,7 +347,7 @@
     margin-left: 0%;
     padding-right: 0%;
     width: 98%;
-    background-color: #205e69b4;
+    background-color: #3e8592;
     color: white;
     letter-spacing: 2px;
     padding-left: 1%;
@@ -385,15 +386,16 @@
   .grid #layout .categoryLayout .productLayout figure figcaption {
     text-align: center;
     width: 85%;
+    margin-top: 3%;
   }
-  .grid #layout .categoryLayout .productLayout figure figcaption h4 {
+  .grid #layout .categoryLayout .productLayout figure figcaption h3 {
     margin-top: 0%;
     margin-bottom: 3%;
   }
   .grid #layout .categoryLayout .productLayout figure figcaption button {
     width: 90%;
-    min-height: 50px;
-    min-width: 100px;
+    padding: 10%;
+    max-width: 200px;
     border: none;
   }
   .grid #layout .categoryLayout .productLayout figure figcaption button:hover {
@@ -502,7 +504,7 @@
     font-weight: normal;
   }
   body p, body a {
-    color: #202226;
+    color: #000000;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
