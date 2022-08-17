@@ -63,10 +63,10 @@ $(cartTable).append(`
             <td><h3 class="data mobileCartTitle">Your Cart</h3></td>
         </tr>
         <tr>
-            <th><h3>Item</h3></th>
-            <th><h3><dfn title="Quantity">Qty.</dfn></h3></th>
-            <th><h3>Price</h3></th>
-            <th><h3>Remove</h3></th>
+            <th><h3 class="data">Item</h3></th>
+            <th><h3 class="data"><dfn title="Quantity">Qty.</dfn></h3></th>
+            <th><h3 class="data">Price</h3></th>
+            <th><h3 class="data">Remove</h3></th>
         </tr>
         </thead>
         <tbody id="insertCart">
@@ -93,7 +93,7 @@ if (JSON.parse(localStorage.getItem('product')) === null) {
             </td>
             <td>${data.num}</td>
             <td class="data">£ ${data.price}</td>
-            <td><button class="deleteCartItem" aria-label="delete item from cart" type="button"  >Delete</button></td>
+            <td><button class="deleteCartItem data" aria-label="delete item from cart" type="button"  >Delete</button></td>
         </tr>`)
     })
 }
