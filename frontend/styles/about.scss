@@ -14,13 +14,13 @@
     margin: 0%;
     margin-bottom: 10%;
     #aboutContent{
-      margin-left: 5%;
-      width: 90%;
+      margin-left: 2%;
+      width: 60%;
       h1{
         text-align: center;
       }
       #aboutLayout{
-        width: 90%;
+        // width: 80%;
         .imageLayout{
           display: flex;
           flex-wrap: wrap;
@@ -32,7 +32,7 @@
           }
         }
         p{
-          margin-top: 1%;
+          margin-top: 5%;
           margin-bottom: 5%;
           // // width: 80%;
           // text-align: justify;
@@ -45,7 +45,7 @@
         //     // padding: 1%;
         //   }
           #bottomImg{
-            // padding-left: 1%;
+            padding-right: 0%;
             // width: %;
             width: 100%;
             margin-bottom: 5%;

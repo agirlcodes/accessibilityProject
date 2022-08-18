@@ -32,7 +32,7 @@
     font-weight: normal;
   }
   body p, body a {
-    color: #202226;
+    color: #000000;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
@@ -61,13 +61,11 @@
     display: flex;
     margin-left: 1%;
   }
-  body .searchBar #searchBarLayout #submitBtn {
-    border: none;
-    background-color: transparent;
-    width: 60px;
+  body .searchBar #searchBarLayout #searchIcon {
+    width: 20px;
     padding: 1%;
   }
-  body .searchBar #searchBarLayout #submitBtn img {
+  body .searchBar #searchBarLayout #searchIcon img {
     height: 20px;
   }
   body .searchBar #searchBarLayout #searchBar {
@@ -91,7 +89,7 @@
     width: auto;
   }
   body .searchBar #searchBarLayout .cartModal span {
-    background-color: black;
+    background-color: rgba(175, 175, 175, 0.468);
     border-radius: 50%;
     color: white;
     padding: 2%;
@@ -99,9 +97,10 @@
     width: 20px;
   }
   body .searchBar #searchBarLayout .cartModal span p {
-    margin-top: 0px;
-    margin-left: 3px;
-    color: white;
+    margin-top: -2px;
+    margin-left: 3.5px;
+    color: black;
+    font-weight: bold;
   }
   body .searchBar #searchBarLayout button:hover {
     cursor: pointer;
@@ -139,7 +138,7 @@
     cursor: pointer;
   }
   body #accessibilityNav {
-    background: #eeeeee;
+    background: #ebebeb;
     position: fixed;
     top: 0;
     z-index: 1030;
@@ -154,11 +153,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     top: 0%;
-    margin-left: 35%;
-    padding-left: 1%;
     padding-right: 1%;
   }
   body #accessibilityNav #container button {
@@ -392,6 +390,7 @@
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 5%;
+    color: #ffffff;
   }
   footer .footerSocialMedia {
     width: 50%;
@@ -454,12 +453,12 @@
     font-weight: normal;
   }
   body p, body a {
-    color: #202226;
+    color: #000000;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
   }
   body #accessibilityNav {
-    background: #eeeeee;
+    background: #ebebeb;
     position: fixed;
     top: 0;
     z-index: 1030;
@@ -474,11 +473,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     top: 0%;
-    margin-left: 35%;
-    padding-left: 1%;
     padding-right: 1%;
   }
   body #accessibilityNav #container button {
@@ -555,14 +553,9 @@
     display: flex;
     margin-left: 1%;
   }
-  body .searchBar #searchBarLayout #submitBtn {
-    border: none;
-    background-color: transparent;
-    width: 60px;
+  body .searchBar #searchBarLayout #searchIcon {
+    width: 20px;
     padding: 1%;
-  }
-  body .searchBar #searchBarLayout #submitBtn img {
-    height: 20px;
   }
   body .searchBar #searchBarLayout #searchBar {
     text-indent: 10px;
@@ -675,7 +668,7 @@
             flex-direction: column;
     margin-right: 0px;
     margin-left: 0px;
-    margin-left: 2%;
+    margin-left: 0%;
   }
   .grid #layout .menu {
     width: auto;
@@ -696,21 +689,19 @@
   .grid #layout .menu .linksMenu li a {
     border-top: 1px solid #d7d8d2;
     display: block;
-    padding: 12px 0;
     text-decoration: none;
     color: #3c4049;
     padding: 2%;
   }
-  .grid #layout .menu .linksMenu li .cartModal {
+  .grid #layout .menu .linksMenu .cartModal {
     visibility: hidden;
-    background-color: transparent;
-    border: none;
+    padding: 0%;
     width: 0%;
     height: 0%;
   }
-  .grid #layout .menu .linksMenu li .cartModal img {
-    height: 26px;
-    width: auto;
+  .grid #layout .menu .linksMenu .cartModal img {
+    height: 0px;
+    width: 0px;
   }
   .grid #layout .menu #socialMedia {
     visibility: hidden;
@@ -736,8 +727,11 @@
     background-color: #205e69;
     color: #ffffff;
   }
-  footer a {
+  footer p, footer a {
     color: white;
+  }
+  footer p {
+    padding: 5%;
   }
   footer #footerLayout {
     display: -webkit-box;
@@ -786,7 +780,7 @@
     text-align: center !important;
   }
   footer #fineprint small {
-    margin-left: 1%;
+    margin-left: 0%;
   }
   footer #fineprint small a {
     text-decoration: underline;

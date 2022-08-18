@@ -9,11 +9,13 @@ $(document).ready(function(){
     $('.data').css('font-size', parseInt(curFontSize)+6);
     if(curFontSize == "34px"){
       $('.data').css('font-size', parseInt(curFontSize)+0);
+      console.log("im capped")
     }
   }else{
     $('.data').css('font-size', parseInt(curFontSize)-6);
     if(curFontSize == "10px"){
       $('.data').css('font-size', parseInt(curFontSize)-0);
+      console.log("im capped")
     }
     }  
     });
@@ -27,6 +29,7 @@ $(document).ready(function(){
       $ ('footer a, footer p, footer h3').css({'color': 'white'});
       $ ('h1').css({'color': 'white'});
       $ ('.categoryLayout h2').css({'background-color': 'black'});
+      $('.paypal-button.paypal-button-color-gold, .paypal-button-row.paypal-button-color-gold .menu-button').css('filter', 'grayscale(1)')
     });
     $('#coloredBackground').click(function(){
       $('img').css('filter', 'grayscale(0)');
