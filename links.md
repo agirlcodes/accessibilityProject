@@ -6,7 +6,11 @@ API: coEnA3dWJl3LeXhBku231l1e4zE1Hql5P5xaoTRaocfMCCtRbbPiR7NCC5TY6OS2
 
 TO-DO: 
 - [] mobile view
-- [] add copywritting
+  - [x] align footer menu
+  - [X] centered
+  - [x] center accessible menu
+  - [X] Social media
+- [X] add copywritting
 - [X] add a way to close for search pop-up
 - [X] Debugging
   - [X] home

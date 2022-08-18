@@ -120,22 +120,29 @@
   }
   .searchBarResults{
     position: absolute;
-    background-color: white;
+    background-color: #ebebeb;
+    // border: 1px solid black;
+    border-top: none;
     width: 50%;
     margin-left: 25%;
     z-index: 1;
     figure{
       display: flex;
-      min-width: 300px;
+      // max-width: 300px;
+      background-color: white;
+      padding: 5%;
+      box-shadow: 0px 5px 11px 6px rgba(146, 146, 146, 0.438);
       aside{
         // width: 100%;
+        max-width: 250px;
         img{
           width: 80%;
           height: auto;
         }
       }
       figcaption{
-        margin-left: 10%;
+
+        margin-left: 5%;
         button{
           min-height: 30px;
           min-width: 100px;
@@ -342,13 +349,16 @@
     }
     .searchBarResults{
       position: absolute;
-      background-color: white;
+      // background-color: #ebebeb;
+      background-color: #ebebeb;
       width: 100%;
       margin-left: 0%;
       z-index: 999;
       figure{
         display: flex;
         max-width: 400px;
+        background-color: white;
+        padding: 2%;
         aside{
           max-width:200px;
           img{
@@ -535,7 +545,6 @@
     }
   }
 }
-
 @mixin productLayout{
   display: flex;
   flex-wrap: wrap;

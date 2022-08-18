@@ -107,7 +107,8 @@
   }
   body .searchBarResults {
     position: absolute;
-    background-color: white;
+    background-color: #ebebeb;
+    border-top: none;
     width: 50%;
     margin-left: 25%;
     z-index: 1;
@@ -116,14 +117,20 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 300px;
+    background-color: white;
+    padding: 5%;
+    -webkit-box-shadow: 0px 5px 11px 6px rgba(146, 146, 146, 0.438);
+            box-shadow: 0px 5px 11px 6px rgba(146, 146, 146, 0.438);
+  }
+  body .searchBarResults figure aside {
+    max-width: 250px;
   }
   body .searchBarResults figure aside img {
     width: 80%;
     height: auto;
   }
   body .searchBarResults figure figcaption {
-    margin-left: 10%;
+    margin-left: 5%;
   }
   body .searchBarResults figure figcaption button {
     min-height: 30px;
@@ -654,7 +661,7 @@
   }
   body .searchBarResults {
     position: absolute;
-    background-color: white;
+    background-color: #ebebeb;
     width: 100%;
     margin-left: 0%;
     z-index: 999;
@@ -664,6 +671,8 @@
     display: -ms-flexbox;
     display: flex;
     max-width: 400px;
+    background-color: white;
+    padding: 2%;
   }
   body .searchBarResults figure aside {
     max-width: 200px;

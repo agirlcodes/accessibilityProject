@@ -107,7 +107,8 @@
   }
   body .searchBarResults {
     position: absolute;
-    background-color: white;
+    background-color: #ebebeb;
+    border-top: none;
     width: 50%;
     margin-left: 25%;
     z-index: 1;
@@ -116,14 +117,20 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 300px;
+    background-color: white;
+    padding: 5%;
+    -webkit-box-shadow: 0px 5px 11px 6px rgba(146, 146, 146, 0.438);
+            box-shadow: 0px 5px 11px 6px rgba(146, 146, 146, 0.438);
+  }
+  body .searchBarResults figure aside {
+    max-width: 250px;
   }
   body .searchBarResults figure aside img {
     width: 80%;
     height: auto;
   }
   body .searchBarResults figure figcaption {
-    margin-left: 10%;
+    margin-left: 5%;
   }
   body .searchBarResults figure figcaption button {
     min-height: 30px;
@@ -377,13 +384,16 @@
     background-color: #205e69;
     color: #ffffff;
     padding-top: 2%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer a, footer p {
     color: white;
   }
   footer #footerLayout {
-    width: 80%;
-    padding: 2%;
+    width: 100%;
+    padding: 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -396,6 +406,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin: 0%;
   }
   footer #footerLayout a {
     display: block;
@@ -406,9 +417,8 @@
     padding-right: 2%;
   }
   footer #missionStatement {
-    max-width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 24%;
+    margin-right: 24%;
     margin-top: 5%;
     color: #ffffff;
   }
@@ -419,10 +429,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0%;
   }
   footer .footerSocialMedia ul li {
     max-width: auto;
@@ -435,7 +445,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 40px;
+    margin-left: 35px;
     text-decoration: none;
     max-height: 65px;
   }
@@ -621,7 +631,7 @@
   }
   body .searchBarResults {
     position: absolute;
-    background-color: white;
+    background-color: #ebebeb;
     width: 100%;
     margin-left: 0%;
     z-index: 999;
@@ -631,6 +641,8 @@
     display: -ms-flexbox;
     display: flex;
     max-width: 400px;
+    background-color: white;
+    padding: 2%;
   }
   body .searchBarResults figure aside {
     max-width: 200px;
@@ -770,9 +782,13 @@
             flex-direction: column;
     text-align: center;
   }
+  footer #footerLayout #navMenu {
+    padding: 0%;
+    padding-top: 2%;
+  }
   footer #footerLayout a {
     display: block;
-    padding: 12px 0;
+    padding: 20px 0;
     border-bottom: 1px solid white;
   }
   footer #footerLayout p {
@@ -800,17 +816,20 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 5%;
   }
   footer .footerSocialMedia ul li {
-    margin-left: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer .footerSocialMedia ul li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
