@@ -65,7 +65,8 @@
 @media (max-width: 700px){
   @include mobileLayout;
   #layout{
-    padding-left: 10%;
+    padding-left: 0%;
+    margin: 1%;
     margin-bottom: 3%;
     h1{
       text-align: center;
@@ -74,16 +75,22 @@
   .imageLayout{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    // width: 80%;
   }
     p{
       margin-top: 5%;
-      width: 80%;
+      margin-left: 5%;
+      margin-right: 5%;
     }
     .aboutImg{
         margin-top: 2%;
-        width: 80%;
+        width: 100%;
         height: auto;
+        justify-self: center ;
         // padding-bottom: 1%;
         // padding: 1%;
         // margin-left: 0%;
@@ -91,10 +98,13 @@
       #bottomImg{
         // padding-left: 1%;
         // width: %;
-        width: 80%;
+        width: 100%;
       }
     #aboutUsContent{
       width: 90%;
       margin-left: 0%;
+      p{
+        text-align: justify;
+      }
     }
 }
