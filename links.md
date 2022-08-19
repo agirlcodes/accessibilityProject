@@ -1,11 +1,5 @@
-https://www.achrafothman.net/aslsmt/corpus/sample-corpus-asl-en.asl
-
-https://www.achrafothman.net/aslsmt/corpus/sample-corpus-asl-en.en
-
-API: coEnA3dWJl3LeXhBku231l1e4zE1Hql5P5xaoTRaocfMCCtRbbPiR7NCC5TY6OS2
-
 TO-DO: 
-- [] mobile view
+- [X] mobile view
   - [x] align footer menu
   - [X] centered
   - [x] center accessible menu
@@ -16,7 +10,7 @@ TO-DO:
   - [X] home
   - [X] about - find way to scale images
   - [X] catalog - find way to scale images
-    - [X] subpages
+    -[X] subpages
   - [X] footer
   - [X] accessibiltiy menu
 - [X] Accessibility layout
