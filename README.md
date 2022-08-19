@@ -8,4 +8,7 @@ Email: name@personal.example.com
 
 Password: nirvana1
 
-Bugs: Delete button does not function as intended
+Bugs: Delete button does not function as intended.
+
+On local computer, errors will appear in the console as it is due to needing to run Heroku, otherwise it will not allow functions relating to the data to be completed. Refer to live website:  https://accessibilityproject.herokuapp.com
+
